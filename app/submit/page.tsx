@@ -1,0 +1,166 @@
+'use client'
+import { useState } from 'react'
+
+export default function SubmitPage() {
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [message, setMessage] = useState('')
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+    setMessage('')
+
+    const formData = new FormData(e.currentTarget)
+    
+    try {
+      const response = await fetch('/api/submissions', {
+        method: 'POST',
+        body: formData
+      })
+
+      const result = await response.json()
+
+      if (result.success) {
+        setMessage(`Success! Your submission ID is: ${result.submissionId}. Check your email for payment instructions.`)
+        e.currentTarget.reset()
+      } else {
+        setMessage('Error: ' + result.error)
+      }
+    } catch (error) {
+      setMessage('Error: Failed to submit article')
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
+  const backgroundStyle = {
+    backgroundImage: "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')"
+  }
+
+  return (
+    <div className="min-h-screen bg-white">
+      <section className="relative py-16 bg-cover bg-center" style={backgroundStyle}>
+        <div className="max-w-2xl mx-auto px-6 text-center">
+          <h1 className="text-4xl font-bold text-white mb-4">Submit Your Research</h1>
+          <p className="text-xl text-gray-200">Share your groundbreaking work with the academic community</p>
+        </div>
+      </section>
+
+      <div className="max-w-2xl mx-auto p-6 -mt-8">
+        <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-lg border">
+          <div className="mb-6">
+            <label className="block text-sm font-medium mb-2 text-gray-700">Your Name</label>
+            <input 
+              name="name"
+              type="text" 
+              required
+              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Enter your full name"
+            />
+          </div>
+
+          <div className="mb-6">
+            <label className="block text-sm font-medium mb-2 text-gray-700">Email Address</label>
+            <input 
+              name="email"
+              type="email" 
+              required
+              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Enter your email"
+            />
+          </div>
+          
+          <div className="mb-6">
+            <label className="block text-sm font-medium mb-2 text-gray-700">Article Title</label>
+            <input 
+              name="title"
+              type="text" 
+              required
+              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Enter your article title"
+            />
+          </div>
+          
+          <div className="mb-6">
+            <label className="block text-sm font-medium mb-2 text-gray-700">Service Type</label>
+            <select name="service_type" required className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+              <option value="">Select service...</option>
+              <option value="review_only">Peer Review & Certification - $100</option>
+              <option value="full_publishing">Full Publishing Services - $150</option>
+            </select>
+          </div>
+
+          <div className="mb-6">
+            <label className="block text-sm font-medium mb-2 text-gray-700">Field of Study</label>
+            <select name="field" required className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+              <option value="">Select field...</option>
+              <option value="Social Sciences">Social Sciences</option>
+              <option value="Clinical Psychology">Clinical Psychology</option>
+              <option value="Law and Art">Law and Art</option>
+              <option value="Science and Engineering">Science and Engineering</option>
+              <option value="Psychology">Psychology</option>
+            </select>
+          </div>
+          
+          <div className="mb-6">
+            <label className="block text-sm font-medium mb-2 text-gray-700">Upload Article (PDF)</label>
+            <input 
+              name="file"
+              type="file" 
+              accept=".pdf"
+              required
+              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            />
+          </div>
+          
+          <div className="mb-6">
+            <label className="block text-sm font-medium mb-2 text-gray-700">Abstract</label>
+            <textarea 
+              name="abstract"
+              rows={4}
+              required
+              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Brief summary of your work..."
+            />
+          </div>
+          
+          <div className="bg-blue-50 p-6 rounded-lg mb-6 border border-blue-200">
+            <h3 className="font-semibold mb-3 text-blue-900">Payment Instructions</h3>
+            <div className="text-sm space-y-2 text-blue-800">
+              <p><strong>Review Only:</strong> $100 USD</p>
+              <p><strong>Full Publishing:</strong> $150 USD</p>
+              <hr className="my-3"/>
+              <p><strong>Bank Account:</strong> 1234567890</p>
+              <p><strong>Account Name:</strong> Didee Publications Ltd</p>
+              <p><strong>Bank:</strong> First National Bank</p>
+              <p><strong>Routing:</strong> 021000021</p>
+            </div>
+            <div className="mt-4 p-3 bg-yellow-50 border border-yellow-200 rounded">
+              <p className="text-sm font-medium text-yellow-800">After payment:</p>
+              <p className="text-sm text-yellow-700">Send payment proof to: <strong>support@didee-publications.com</strong></p>
+              <p className="text-xs text-yellow-600 mt-1">Include your submission ID and selected service in the email</p>
+            </div>
+          </div>
+
+          {message && (
+            <div className={`p-4 rounded-lg mb-6 ${message.includes('Success') ? 'bg-green-50 text-green-800 border border-green-200' : 'bg-red-50 text-red-800 border border-red-200'}`}>
+              {message}
+            </div>
+          )}
+          
+          <button 
+            type="submit"
+            disabled={isSubmitting}
+            className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors disabled:opacity-50"
+          >
+            {isSubmitting ? 'Submitting...' : 'Submit Article'}
+          </button>
+          
+          <p className="text-xs text-gray-500 text-center mt-3">
+            Review will begin after payment confirmation
+          </p>
+        </form>
+      </div>
+    </div>
+  );
+}
