@@ -1,20 +1,28 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { supabaseAdmin } from '@/lib/supabase'
+import { db } from '@/lib/aws'
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    const { data: submission, error } = await supabaseAdmin
-      .from('submissions')
-      .select('*')
-      .eq('id', params.id)
-      .single()
-
-    if (error) throw error
-
-    return NextResponse.json({ submission })
+    const { id } = await params
+    
+    const query = `
+      SELECT * FROM submissions 
+      WHERE id = $1
+    `
+    
+    const result = await db.query(query, [id])
+    
+    if (result.rows.length === 0) {
+      return NextResponse.json(
+        { error: 'Submission not found' },
+        { status: 404 }
+      )
+    }
+    
+    return NextResponse.json({ submission: result.rows[0] })
   } catch (error) {
     console.error('Error fetching submission:', error)
     return NextResponse.json(
