@@ -2,9 +2,13 @@ import { S3Client } from '@aws-sdk/client-s3'
 import { SESClient } from '@aws-sdk/client-ses'
 import { Pool } from 'pg'
 
-// Use Amplify's built-in AWS credentials (no manual keys needed)
+// AWS Configuration with fallback
 const awsConfig = {
-  region: 'us-east-1'
+  region: 'us-east-1',
+  credentials: process.env.ACCESS_KEY_ID ? {
+    accessKeyId: process.env.ACCESS_KEY_ID,
+    secretAccessKey: process.env.SECRET_ACCESS_KEY!,
+  } : undefined
 }
 
 // S3 Client
