@@ -2,6 +2,13 @@ import { S3Client } from '@aws-sdk/client-s3'
 import { SESClient } from '@aws-sdk/client-ses'
 import { Pool } from 'pg'
 
+// Debug environment variables
+console.log('Environment check:', {
+  hasAccessKey: !!process.env.ACCESS_KEY_ID,
+  hasSecretKey: !!process.env.SECRET_ACCESS_KEY,
+  region: process.env.REGION
+})
+
 // AWS Configuration
 const awsConfig = {
   region: process.env.REGION || 'us-east-1',
