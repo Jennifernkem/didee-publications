@@ -27,6 +27,12 @@ export const s3Client = new S3Client(awsConfig)
 export const sesClient = new SESClient(awsConfig)
 
 // PostgreSQL Connection Pool
+console.log('DATABASE_URL check:', {
+  hasUrl: !!process.env.DATABASE_URL,
+  urlStart: process.env.DATABASE_URL?.substring(0, 20),
+  urlLength: process.env.DATABASE_URL?.length
+})
+
 export const db = new Pool({
   connectionString: process.env.DATABASE_URL,
   ssl: { rejectUnauthorized: false }
