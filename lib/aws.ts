@@ -27,7 +27,7 @@ export const s3Client = new S3Client(awsConfig)
 export const sesClient = new SESClient(awsConfig)
 
 // PostgreSQL Connection Pool - Hardcoded for testing
-const DATABASE_URL = 'postgresql://Didee:YourActualPassword@didee-publications-db.ccfouu8a6u3s.us-east-1.rds.amazonaws.com:5432/didee_publications'
+const DATABASE_URL = 'postgresql://Didee:Password123@didee-publications-db.ccfouu8a6u3s.us-east-1.rds.amazonaws.com:5432/didee_publications'
 
 console.log('Using hardcoded DATABASE_URL for testing')
 
