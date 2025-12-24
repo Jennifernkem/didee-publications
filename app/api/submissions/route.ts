@@ -43,15 +43,15 @@ export async function POST(request: NextRequest) {
       message: 'Submission received successfully. File upload and emails will be added later.' 
     })
 
-  } catch (error) {
+  } catch (error: any) {
     console.error('Detailed submission error:', {
-      message: error.message,
-      stack: error.stack,
-      name: error.name,
-      code: error.code
+      message: error?.message || 'Unknown error',
+      stack: error?.stack,
+      name: error?.name,
+      code: error?.code
     })
     return NextResponse.json(
-      { success: false, error: `Failed to process submission: ${error.message}` },
+      { success: false, error: `Failed to process submission: ${error?.message || 'Unknown error'}` },
       { status: 500 }
     )
   }
