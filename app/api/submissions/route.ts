@@ -44,9 +44,14 @@ export async function POST(request: NextRequest) {
     })
 
   } catch (error) {
-    console.error('Submission error:', error)
+    console.error('Detailed submission error:', {
+      message: error.message,
+      stack: error.stack,
+      name: error.name,
+      code: error.code
+    })
     return NextResponse.json(
-      { success: false, error: 'Failed to process submission' },
+      { success: false, error: `Failed to process submission: ${error.message}` },
       { status: 500 }
     )
   }
