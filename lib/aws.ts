@@ -26,15 +26,13 @@ export const s3Client = new S3Client(awsConfig)
 // SES Client  
 export const sesClient = new SESClient(awsConfig)
 
-// PostgreSQL Connection Pool
-console.log('DATABASE_URL check:', {
-  hasUrl: !!process.env.DATABASE_URL,
-  urlStart: process.env.DATABASE_URL?.substring(0, 20),
-  urlLength: process.env.DATABASE_URL?.length
-})
+// PostgreSQL Connection Pool - Hardcoded for testing
+const DATABASE_URL = 'postgresql://Didee:YourActualPassword@didee-publications-db.ccfouu8a6u3s.us-east-1.rds.amazonaws.com:5432/didee_publications'
+
+console.log('Using hardcoded DATABASE_URL for testing')
 
 export const db = new Pool({
-  connectionString: process.env.DATABASE_URL,
+  connectionString: DATABASE_URL,
   ssl: { rejectUnauthorized: false }
 })
 
