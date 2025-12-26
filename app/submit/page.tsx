@@ -6,27 +6,46 @@ export default function SubmitPage() {
   const [message, setMessage] = useState('')
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    alert('Form submitted!')
+    console.log('=== FORM SUBMIT STARTED ===')
     e.preventDefault()
     setIsSubmitting(true)
     setMessage('')
+    console.log('Form prevented default, starting submission...')
 
     const formData = new FormData(e.currentTarget)
     
     try {
+      console.log('Sending request to /api/submissions')
       const response = await fetch('/api/submissions', {
         method: 'POST',
         body: formData
       })
 
+      console.log('Response status:', response.status)
+      console.log('Response ok:', response.ok)
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`)
+      }
+      
       const result = await response.json()
+      console.log('Parsed result:', result)
 
       if (result.success) {
+        console.log('Success detected, setting message')
         setMessage(`Success! Your submission ID is: ${result.submissionId}. Check your email for payment instructions.`)
+        console.log('About to reset form')
         e.currentTarget.reset()
+        console.log('Form reset complete')
       } else {
+        console.log('Result success was false')
         setMessage('Error: ' + result.error)
       }
     } catch (error) {
+      console.error('Frontend error details:', error)
+      console.error('Error name:', error.name)
+      console.error('Error message:', error.message)
       setMessage('Error: Failed to submit article')
     } finally {
       setIsSubmitting(false)
