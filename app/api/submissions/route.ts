@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { db } from '@/lib/aws'
+import { supabase } from '@/lib/supabase'
 
 export async function POST(request: NextRequest) {
   try {
@@ -15,43 +15,37 @@ export async function POST(request: NextRequest) {
     // Generate submission ID
     const submissionId = `SUB-${Date.now()}`
 
-    // Save submission to database only (no S3, no SES)
-    const query = `
-      INSERT INTO submissions (id, title, field, service_type, abstract, author_email, author_name, file_key, status, created_at)
-      VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)
-      RETURNING *
-    `
-    
-    const values = [
-      submissionId,
-      title,
-      field,
-      serviceType,
-      abstract,
-      authorEmail,
-      authorName,
-      'no-file-uploaded', // placeholder
-      'pending_payment',
-      new Date()
-    ]
+    // Save to Supabase
+    const { data, error } = await supabase
+      .from('submissions')
+      .insert({
+        id: submissionId,
+        title,
+        field,
+        service_type: serviceType,
+        abstract,
+        author_email: authorEmail,
+        author_name: authorName,
+        file_path: 'no-file-uploaded',
+        status: 'pending_payment',
+        created_at: new Date().toISOString()
+      })
 
-    const result = await db.query(query, values)
+    if (error) {
+      console.error('Supabase error:', error)
+      throw error
+    }
 
     return NextResponse.json({ 
       success: true, 
       submissionId,
-      message: 'Submission received successfully. File upload and emails will be added later.' 
+      message: 'Submission received successfully!' 
     })
 
   } catch (error: any) {
-    console.error('Detailed submission error:', {
-      message: error?.message || 'Unknown error',
-      stack: error?.stack,
-      name: error?.name,
-      code: error?.code
-    })
+    console.error('Submission error:', error)
     return NextResponse.json(
-      { success: false, error: `Failed to process submission: ${error?.message || 'Unknown error'}` },
+      { success: false, error: error?.message || 'Failed to process submission' },
       { status: 500 }
     )
   }
