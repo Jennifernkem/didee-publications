@@ -17,6 +17,7 @@ export default function Home() {
             <nav className="hidden md:flex space-x-8">
               <a href="/" className="text-gray-700 hover:text-blue-600">Home</a>
               <a href="/about" className="text-gray-700 hover:text-blue-600">About</a>
+              <a href="/articles" className="text-gray-700 hover:text-blue-600">Articles</a>
               <a href="/reviewers" className="text-gray-700 hover:text-blue-600">Editorial Board</a>
               <a href="/submit" className="text-gray-700 hover:text-blue-600">Submit Article</a>
               <a href="/dashboard" className="text-gray-700 hover:text-blue-600">Author Login</a>
