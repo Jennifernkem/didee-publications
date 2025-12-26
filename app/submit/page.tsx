@@ -2,35 +2,41 @@
 import { useState } from 'react'
 
 export default function SubmitPage() {
-  const [isSubmitting, setIsSubmitting] = useState(false)
+
   const [message, setMessage] = useState('')
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    setIsSubmitting(true)
-    setMessage('')
-
-    const formData = new FormData(e.currentTarget)
     
-    try {
-      const response = await fetch('/api/submissions', {
-        method: 'POST',
-        body: formData
-      })
-      
-      const result = await response.json()
+    const formData = new FormData(e.currentTarget)
+    const name = formData.get('name')
+    const email = formData.get('email')
+    const title = formData.get('title')
+    const serviceType = formData.get('service_type')
+    const field = formData.get('field')
+    const abstract = formData.get('abstract')
+    
+    const submissionId = `SUB-${Date.now()}`
+    
+    const emailBody = `New Article Submission - ${submissionId}
 
-      if (result.success) {
-        setMessage(`Success! Your submission ID is: ${result.submissionId}. Check your email for payment instructions.`)
-        e.currentTarget.reset()
-      } else {
-        setMessage('Error: ' + (result.error || 'Submission failed'))
-      }
-    } catch (error) {
-      setMessage('Error: Failed to submit article')
-    } finally {
-      setIsSubmitting(false)
-    }
+Author: ${name}
+Email: ${email}
+Title: ${title}
+Service: ${serviceType}
+Field: ${field}
+
+Abstract:
+${abstract}
+
+Please confirm payment and process this submission.`
+    
+    const mailtoLink = `mailto:support@didee-publications.com?subject=Article Submission - ${submissionId}&body=${encodeURIComponent(emailBody)}`
+    
+    window.open(mailtoLink)
+    
+    setMessage(`Success! Your submission ID is: ${submissionId}. An email has been opened for you to send. Please attach your PDF file to the email.`)
+    e.currentTarget.reset()
   }
 
   const backgroundStyle = {
@@ -150,14 +156,13 @@ export default function SubmitPage() {
           
           <button 
             type="submit"
-            disabled={isSubmitting}
-            className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors disabled:opacity-50"
+            className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
           >
-            {isSubmitting ? 'Submitting...' : 'Submit Article'}
+            Submit Article via Email
           </button>
           
           <p className="text-xs text-gray-500 text-center mt-3">
-            Review will begin after payment confirmation
+            This will open your email client. Please attach your PDF file and send the email to complete your submission.
           </p>
         </form>
       </div>
