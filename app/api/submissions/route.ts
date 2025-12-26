@@ -45,11 +45,13 @@ export async function POST(request: NextRequest) {
     }
 
     console.log('Success! Returning response')
-    return NextResponse.json({ 
+    const response = {
       success: true, 
       submissionId,
       message: 'Submission received successfully!' 
-    })
+    }
+    console.log('Response object:', response)
+    return NextResponse.json(response)
 
   } catch (error: any) {
     console.error('=== SUBMISSION ERROR ===', {
