@@ -6,8 +6,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-4">
-              <div className="w-12 h-12 bg-blue-600 rounded flex items-center justify-center">
-                <span className="text-white font-bold text-xl">D</span>
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center shadow-lg">
+                <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2L2 7v10c0 5.55 3.84 9.739 9 11 5.16-1.261 9-5.45 9-11V7l-10-5z"/>
+                  <path d="M9 12l2 2 4-4" stroke="white" strokeWidth="2" fill="none"/>
+                </svg>
               </div>
               <div>
                 <h1 className="text-2xl font-bold text-gray-900">Didee Publications</h1>
@@ -72,8 +75,11 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4">
+      <section className="py-16 bg-gray-50 relative">
+        <div className="absolute inset-0 opacity-5">
+          <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="" className="w-full h-full object-cover" />
+        </div>
+        <div className="max-w-7xl mx-auto px-4 relative z-10">
           <div className="text-center mb-12">
             <h3 className="text-4xl font-bold text-gray-900 mb-4">Our Services</h3>
             <p className="text-gray-600 max-w-2xl mx-auto text-lg">
@@ -115,8 +121,11 @@ export default function Home() {
       </section>
 
       {/* Submission Info */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 text-center">
+      <section className="py-16 bg-white relative">
+        <div className="absolute inset-0 opacity-10">
+          <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="" className="w-full h-full object-cover" />
+        </div>
+        <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
           <h3 className="text-3xl font-bold text-gray-900 mb-8">Ready to Submit?</h3>
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-8">
             <h4 className="text-xl font-semibold mb-4">Submission Fee: $100 USD</h4>
