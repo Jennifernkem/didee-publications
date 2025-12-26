@@ -1,2 +1,2 @@
-// Only Supabase - no AWS database code
-export { supabase } from './supabase'
+// This file is kept for compatibility but no longer used
+// All functionality moved to Supabase
