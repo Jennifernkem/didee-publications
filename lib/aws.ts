@@ -26,13 +26,14 @@ export const s3Client = new S3Client(awsConfig)
 // SES Client  
 export const sesClient = new SESClient(awsConfig)
 
-// PostgreSQL Connection Pool - Now connecting to our actual database
-const DATABASE_URL = 'postgresql://Didee:Password123!!!@didee-publications-db.ccfouu8a6u3s.us-east-1.rds.amazonaws.com:5432/didee_publications'
-
-console.log('Connecting to didee_publications database')
+// PostgreSQL Connection Pool
+console.log('DATABASE_URL check:', {
+  hasUrl: !!process.env.DATABASE_URL,
+  nodeEnv: process.env.NODE_ENV
+})
 
 export const db = new Pool({
-  connectionString: DATABASE_URL,
+  connectionString: process.env.DATABASE_URL || 'postgresql://Didee:Password123!!!@didee-publications-db.ccfouu8a6u3s.us-east-1.rds.amazonaws.com:5432/didee_publications',
   ssl: { rejectUnauthorized: false }
 })
 
