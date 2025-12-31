@@ -2,26 +2,28 @@ export default function EditorialBoardPage() {
   const chiefEditor = {
     name: "Associate Professor Foluke Bosun-Arije",
     title: "Chief Editor",
-    affiliation: "University of Doha for Science and Technology"
+    affiliation: "University of Doha for Science and Technology, Qatar",
+    email: "Folukestella.bosunarije@udst.edu.qa"
   }
 
   const editorialBoard = [
-    { name: "Professor Adebayo Oluwole", specialty: "Academic Research" },
-    { name: "Professor Julius Akinsola", specialty: "Educational Sciences" },
-    { name: "Professor Philip Edema", specialty: "Research Methodology" },
+    { name: "Professor Adebayo Oluwole", specialty: "Professor of Counselling Psychology and Positive Psychology" },
+    { name: "Professor Julius Akinsola", specialty: "Professor of Computer Science" },
+    { name: "Professor Philip Edema", specialty: "Professor of Philosophy" },
     { name: "Dr. Maria Ameh", specialty: "Clinical Psychology Practice" },
-    { name: "Dr. Lovelyn Ikejiaku", specialty: "Clinical Psychology" },
-    { name: "Professor Anthonia Ekanibe", specialty: "Educational Research" }
+    { name: "Dr. Lovelyn Ikejiaku", specialty: "Counselling Psychology" },
+    { name: "Professor Anthonia Ekanibe", specialty: "Counselling Psychology" }
   ]
 
   const peerReviewers = [
     { name: "Thaddius Ayogun Chinedu", specialty: "Social Sciences" },
     { name: "Dr. Emmanuel Omopo", specialty: "Clinical Psychology" },
-    { name: "Daniel Ojotule OFFOR", specialty: "Psychology & Behavioral Science" },
-    { name: "Hongjing Lin", specialty: "Research Methodology" },
+    { name: "Daniel Ojotule OFFOR", specialty: "Clinical and Behavioural Psychology" },
+    { name: "Hongjing Lin", specialty: "Clinical Psychology" },
     { name: "Rev. Fr. Barrister Sanctus Ejeh", specialty: "Law & Philosophy" },
-    { name: "Dr. Clementina Okeke", specialty: "Educational Psychology" },
-    { name: "Berna Simsek", specialty: "Clinical Research" }
+    { name: "Dr. Clementina Okeke", specialty: "Law" },
+    { name: "Berna Simsek", specialty: "Clinical Research" },
+    { name: "Obiageli Nwachukwu", specialty: "Medicine and Pharmacy" }
   ]
 
   return (
@@ -40,6 +42,7 @@ export default function EditorialBoardPage() {
             <h3 className="text-xl font-semibold text-gray-900">{chiefEditor.name}</h3>
             <p className="text-gray-600">{chiefEditor.title}</p>
             <p className="text-gray-500">{chiefEditor.affiliation}</p>
+            <p className="text-blue-600 mt-2">{chiefEditor.email}</p>
           </div>
         </div>
 
