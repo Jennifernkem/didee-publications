@@ -10,12 +10,23 @@ export default function EditorialBoardPage() {
     { name: "Professor Julius Akinsola", specialty: "Educational Sciences" },
     { name: "Professor Philip Edema", specialty: "Research Methodology" },
     { name: "Dr. Maria Ameh", specialty: "Clinical Psychology Practice" },
-    { name: "Dr. Lovelyn Ikejiaku", specialty: "Clinical Psychology" }
+    { name: "Dr. Lovelyn Ikejiaku", specialty: "Clinical Psychology" },
+    { name: "Professor Anthonia Ekanibe", specialty: "Educational Research" }
+  ]
+
+  const peerReviewers = [
+    { name: "Thaddius Ayogun Chinedu", specialty: "Social Sciences" },
+    { name: "Dr. Emmanuel Omopo", specialty: "Clinical Psychology" },
+    { name: "Daniel Ojotule OFFOR", specialty: "Psychology & Behavioral Science" },
+    { name: "Hongjing Lin", specialty: "Research Methodology" },
+    { name: "Rev. Fr. Barrister Sanctus Ejeh", specialty: "Law & Philosophy" },
+    { name: "Dr. Clementina Okeke", specialty: "Educational Psychology" },
+    { name: "Berna Simsek", specialty: "Clinical Research" }
   ]
 
   return (
     <div className="min-h-screen bg-gray-50 relative">
-      <div className="absolute inset-0 opacity-5">
+      <div className="absolute inset-0 opacity-20">
         <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="" className="w-full h-full object-cover" />
       </div>
       
@@ -33,13 +44,26 @@ export default function EditorialBoardPage() {
         </div>
 
         {/* Editorial Board Members */}
-        <div className="bg-white p-8 rounded-lg shadow-md">
-          <h2 className="text-2xl font-semibold mb-6 text-gray-800">Board Members</h2>
+        <div className="bg-white p-8 rounded-lg shadow-md mb-8">
+          <h2 className="text-2xl font-semibold mb-6 text-gray-800">Editorial Board</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {editorialBoard.map((member, index) => (
               <div key={index} className="p-4 border border-gray-200 rounded-lg">
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">{member.name}</h3>
                 <p className="text-gray-600">{member.specialty}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Peer Reviewers */}
+        <div className="bg-white p-8 rounded-lg shadow-md">
+          <h2 className="text-2xl font-semibold mb-6 text-gray-800">Peer Reviewers</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            {peerReviewers.map((reviewer, index) => (
+              <div key={index} className="p-4 border border-gray-200 rounded-lg">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">{reviewer.name}</h3>
+                <p className="text-gray-600">{reviewer.specialty}</p>
               </div>
             ))}
           </div>
