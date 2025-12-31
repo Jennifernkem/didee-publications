@@ -1,5 +1,12 @@
 export default function ArticlesPage() {
-  const articles = []
+  const articles: Array<{
+    id: string;
+    title: string;
+    author: string;
+    field: string;
+    publishedDate: string;
+    abstract: string;
+  }> = []
 
   return (
     <div className="min-h-screen bg-gray-50 relative">
