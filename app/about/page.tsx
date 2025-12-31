@@ -17,11 +17,38 @@ export default function About() {
         {/* Mission Card */}
         <div className="bg-white rounded-lg shadow-lg border p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-gray-900">Our Mission</h2>
-          <p className="text-lg text-gray-700 leading-relaxed">
+          <p className="text-lg text-gray-700 leading-relaxed mb-6">
             Didee Publications is a premier academic platform dedicated to maintaining the highest standards 
             of scholarly research. We connect researchers with expert peer reviewers and provide comprehensive 
             publishing services to ensure quality, credibility, and global reach for academic work.
           </p>
+        </div>
+
+        {/* Leadership Section */}
+        <div className="bg-white rounded-lg shadow-lg border p-8 mb-8">
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Our Leadership</h2>
+          <div className="flex items-start space-x-6">
+            <div className="w-24 h-24 bg-gradient-to-br from-blue-600 to-blue-800 rounded-full flex items-center justify-center">
+              <span className="text-white font-bold text-2xl">DO</span>
+            </div>
+            <div className="flex-1">
+              <h3 className="text-2xl font-semibold mb-2 text-gray-900">Daniel Offor Ojotule</h3>
+              <p className="text-lg text-blue-600 mb-4">Founder & Chief Executive Officer</p>
+              <p className="text-gray-700 leading-relaxed">
+                Didee Publications is led by its Founder and Chief Executive Officer, Offor Daniel Ojotule, 
+                whose extensive academic training in psychology, clinical psychology, behavioral science, 
+                philosophy, and theology informs the intellectual and ethical foundation of the company. 
+                He holds advanced degrees from leading institutions in the United Kingdom and the United States, 
+                as well as a Bachelor's degree from the University of Ibadan, Nigeria.
+              </p>
+              <p className="text-gray-700 leading-relaxed mt-4">
+                This multidisciplinary background shapes the editorial vision of Didee Publications, ensuring 
+                that every publication reflects depth, integrity, and a commitment to meaningful impact. 
+                Under his leadership, the company continues to grow as a trusted platform for authors, 
+                educators, thought leaders, and change-makers around the world.
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* Services Grid */}
@@ -102,22 +129,16 @@ export default function About() {
           </div>
         </div>
 
-        {/* Contact Section */}
-        <div className="bg-gradient-to-r from-gray-900 to-blue-900 text-white rounded-lg p-8">
-          <h2 className="text-3xl font-bold mb-6">Get In Touch</h2>
-          <div className="grid md:grid-cols-3 gap-6">
+        <div className="bg-white rounded-lg shadow-lg border p-8 mb-8">
+          <h2 className="text-3xl font-bold mb-6 text-gray-900">Get In Touch</h2>
+          <div className="grid md:grid-cols-2 gap-6">
             <div>
               <h4 className="font-semibold mb-3">General Inquiries</h4>
-              <p className="text-gray-300">info@didee-publications.com</p>
+              <p className="text-gray-700">info@didee-publications.com</p>
             </div>
             <div>
-              <h4 className="font-semibold mb-3">Payment Support</h4>
-              <p className="text-gray-300">support@didee-publications.com</p>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-3">Editorial Office</h4>
-              <p className="text-gray-300">123 Academic Drive</p>
-              <p className="text-gray-300">Research City, RC 12345</p>
+              <h4 className="font-semibold mb-3">Support</h4>
+              <p className="text-gray-700">support@didee-publications.com</p>
             </div>
           </div>
         </div>

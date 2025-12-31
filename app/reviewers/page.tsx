@@ -1,141 +1,57 @@
-export default function Reviewers() {
-  const reviewers = [
-    {
-      name: "Thaddius Ayogun",
-      field: "Social Sciences",
-      credentials: "MSc - Social Sciences",
-      experience: "8+ years in social research",
-      specialties: ["Social Theory", "Research Methods", "Community Studies"]
-    },
-    {
-      name: "Dr. Emmanuel",
-      field: "Clinical Psychology",
-      credentials: "PhD - Clinical Psychology",
-      experience: "9+ years in clinical practice",
-      specialties: ["Therapy", "Mental Health", "Behavioral Analysis"]
-    },
-    {
-      name: "Daniel Ojotule OFFOR",
-      field: "Clinical Psychology",
-      credentials: "MSc - Clinical Psychology",
-      experience: "10+ years in clinical research",
-      specialties: ["Cognitive Therapy", "Psychological Assessment", "Clinical Research"]
-    },
-    {
-      name: "Hongjing Lin",
-      field: "Clinical Psychology",
-      credentials: "MSc - Clinical Psychology",
-      experience: "8+ years in psychological research",
-      specialties: ["Cross-Cultural Psychology", "Clinical Interventions", "Research Design"]
-    },
-    {
-      name: "Rev. Fr. Barrister Sanctus Ejeh",
-      field: "Law and Art",
-      credentials: "LLB, BL - Law & Arts",
-      experience: "9+ years in legal practice",
-      specialties: ["Legal Research", "Art Law", "Ethics"]
-    },
-    {
-      name: "Dr. Clementina Okeke",
-      field: "Law",
-      credentials: "PhD - Law",
-      experience: "10+ years in legal academia",
-      specialties: ["Constitutional Law", "Legal Theory", "Jurisprudence"]
-    },
-    {
-      name: "Berna Simsek",
-      field: "Psychology",
-      credentials: "MSc - Psychology",
-      experience: "8+ years in psychological research",
-      specialties: ["Developmental Psychology", "Research Methods", "Statistical Analysis"]
-    },
-    {
-      name: "Obiageli Nwachukwu",
-      field: "Science and Engineering",
-      credentials: "MSc - Engineering Sciences",
-      experience: "9+ years in engineering research",
-      specialties: ["Applied Sciences", "Engineering Design", "Technical Research"]
-    }
-  ];
+export default function EditorialBoardPage() {
+  const chiefEditor = {
+    name: "Associate Professor Foluke Bosun-Arije",
+    title: "Chief Editor",
+    affiliation: "University of Doha for Science and Technology"
+  }
+
+  const editorialBoard = [
+    { name: "Professor Adebayo Oluwole", specialty: "Academic Research" },
+    { name: "Professor Julius Akinsola", specialty: "Educational Sciences" },
+    { name: "Professor Philip Edema", specialty: "Research Methodology" },
+    { name: "Dr. Maria Ameh", specialty: "Clinical Psychology Practice" },
+    { name: "Dr. Lovelyn Ikejiaku", specialty: "Clinical Psychology" }
+  ]
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="max-w-6xl mx-auto p-6">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-4">Our Expert Peer Reviewers</h1>
-          <p className="text-xl text-gray-600">
-            World-class academics and researchers ensuring the highest quality standards
-          </p>
-        </div>
+    <div className="min-h-screen bg-gray-50 relative">
+      <div className="absolute inset-0 opacity-5">
+        <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="" className="w-full h-full object-cover" />
+      </div>
+      
+      <div className="max-w-4xl mx-auto py-12 px-6 relative z-10">
+        <h1 className="text-4xl font-bold text-center mb-12">Editorial Board</h1>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {reviewers.map((reviewer, index) => (
-            <div key={index} className="bg-white p-6 rounded-lg shadow-sm border">
-              <div className="mb-4">
-                <h3 className="text-xl font-semibold text-gray-900">{reviewer.name}</h3>
-                <p className="text-blue-600 font-medium">{reviewer.field}</p>
-              </div>
-              
-              <div className="space-y-3 text-sm">
-                <div>
-                  <p className="font-medium text-gray-700">Credentials</p>
-                  <p className="text-gray-600">{reviewer.credentials}</p>
-                </div>
-                
-                <div>
-                  <p className="font-medium text-gray-700">Experience</p>
-                  <p className="text-gray-600">{reviewer.experience}</p>
-                </div>
-                
-                <div>
-                  <p className="font-medium text-gray-700">Specialties</p>
-                  <div className="flex flex-wrap gap-1 mt-1">
-                    {reviewer.specialties.map((specialty, i) => (
-                      <span key={i} className="bg-gray-100 text-gray-700 px-2 py-1 rounded text-xs">
-                        {specialty}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-        
-        <div className="mt-12 bg-white p-8 rounded-lg shadow-sm">
-          <h2 className="text-2xl font-semibold mb-4">Review Process</h2>
-          <div className="grid md:grid-cols-4 gap-6">
-            <div className="text-center">
-              <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                <span className="text-blue-600 font-bold">1</span>
-              </div>
-              <h3 className="font-semibold mb-2">Assignment</h3>
-              <p className="text-sm text-gray-600">Expert matched to your field</p>
-            </div>
-            <div className="text-center">
-              <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                <span className="text-blue-600 font-bold">2</span>
-              </div>
-              <h3 className="font-semibold mb-2">Review</h3>
-              <p className="text-sm text-gray-600">Thorough evaluation process</p>
-            </div>
-            <div className="text-center">
-              <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                <span className="text-blue-600 font-bold">3</span>
-              </div>
-              <h3 className="font-semibold mb-2">Feedback</h3>
-              <p className="text-sm text-gray-600">Detailed comments provided</p>
-            </div>
-            <div className="text-center">
-              <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
-                <span className="text-blue-600 font-bold">4</span>
-              </div>
-              <h3 className="font-semibold mb-2">Certification</h3>
-              <p className="text-sm text-gray-600">Official certificate issued</p>
-            </div>
+        {/* Chief Editor */}
+        <div className="bg-white p-8 rounded-lg shadow-md mb-8 border-l-4 border-blue-600">
+          <h2 className="text-2xl font-semibold mb-4 text-blue-700">Chief Editor</h2>
+          <div className="mb-4">
+            <h3 className="text-xl font-semibold text-gray-900">{chiefEditor.name}</h3>
+            <p className="text-gray-600">{chiefEditor.title}</p>
+            <p className="text-gray-500">{chiefEditor.affiliation}</p>
           </div>
+        </div>
+
+        {/* Editorial Board Members */}
+        <div className="bg-white p-8 rounded-lg shadow-md">
+          <h2 className="text-2xl font-semibold mb-6 text-gray-800">Board Members</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            {editorialBoard.map((member, index) => (
+              <div key={index} className="p-4 border border-gray-200 rounded-lg">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">{member.name}</h3>
+                <p className="text-gray-600">{member.specialty}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-8 text-center">
+          <p className="text-gray-600">
+            Our editorial board comprises distinguished academics and practitioners committed to maintaining 
+            the highest standards of scholarly excellence and integrity in academic publishing.
+          </p>
         </div>
       </div>
     </div>
-  );
+  )
 }

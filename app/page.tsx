@@ -6,7 +6,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-4">
-              <img src="/logo.png" alt="Didee Publications" className="w-12 h-12 object-contain" />
+              <img src="/Black Elegant Modern Name Initials Monogram Logo.png" alt="Didee Publications" className="w-12 h-12 object-contain" />
               <div>
                 <h1 className="text-2xl font-bold text-gray-900">Didee Publications</h1>
                 <p className="text-sm text-gray-600">International Journal Publishing</p>
@@ -16,7 +16,7 @@ export default function Home() {
               <a href="/" className="text-gray-700 hover:text-blue-600">Home</a>
               <a href="/about" className="text-gray-700 hover:text-blue-600">About</a>
               <a href="/articles" className="text-gray-700 hover:text-blue-600">Articles</a>
-              <a href="/reviewers" className="text-gray-700 hover:text-blue-600">Editorial Board</a>
+              <a href="/reviewers" className="text-gray-700 hover:text-blue-600">Peer Reviewers</a>
               <a href="/submit" className="text-gray-700 hover:text-blue-600">Submit Article</a>
             </nav>
           </div>
