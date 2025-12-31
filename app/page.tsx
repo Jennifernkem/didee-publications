@@ -5,11 +5,11 @@ export default function Home() {
       <header className="bg-white border-b shadow-sm">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-center py-4">
-            <div className="flex items-center space-x-4">
-              <img src="/Black Elegant Modern Name Initials Monogram Logo.png" alt="Didee Publications" className="w-12 h-12 object-contain" />
+            <div className="flex items-center space-x-3 md:space-x-4">
+              <img src="/Black Elegant Modern Name Initials Monogram Logo.png" alt="Didee Publications" className="w-10 h-10 md:w-12 md:h-12 object-contain" />
               <div>
-                <h1 className="text-2xl font-bold text-gray-900">Didee Publications</h1>
-                <p className="text-sm text-gray-600">International Journal Publishing</p>
+                <h1 className="text-xl md:text-2xl font-bold text-gray-900">Didee Publications</h1>
+                <p className="text-xs md:text-sm text-gray-600">International Journal Publishing</p>
               </div>
             </div>
             <nav className="hidden md:flex space-x-8">
@@ -19,25 +19,30 @@ export default function Home() {
               <a href="/reviewers" className="text-gray-700 hover:text-blue-600">Peer Reviewers</a>
               <a href="/submit" className="text-gray-700 hover:text-blue-600">Submit Article</a>
             </nav>
+            <button className="md:hidden p-2">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="relative py-20 bg-cover bg-center" style={{backgroundImage: "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')"}}>
+      <section className="relative py-12 md:py-20 bg-cover bg-center" style={{backgroundImage: "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')"}}>
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-5xl font-bold text-white mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 md:mb-6">
             Advance Your Research Journey
           </h2>
-          <p className="text-xl text-gray-200 mb-8 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-gray-200 mb-6 md:mb-8 max-w-3xl mx-auto px-4">
             Join thousands of researchers worldwide! Get expert review, valuable feedback, 
             and internationally recognized certification for your groundbreaking work.
           </p>
-          <div className="space-x-4">
-            <a href="/submit" className="bg-orange-500 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-orange-600 shadow-lg transition-all">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a href="/submit" className="w-full sm:w-auto bg-orange-500 text-white px-6 md:px-8 py-3 md:py-4 rounded-lg font-bold text-base md:text-lg hover:bg-orange-600 shadow-lg transition-all text-center">
               Submit Your Research
             </a>
-            <a href="/about" className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition-all">
+            <a href="/about" className="w-full sm:w-auto border-2 border-white text-white px-6 md:px-8 py-3 md:py-4 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition-all text-center">
               Learn More
             </a>
           </div>
@@ -45,24 +50,24 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-white">
+      <section className="py-12 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8 text-center">
-            <div className="bg-gray-50 p-6 rounded-lg border">
-              <div className="text-4xl font-bold text-blue-600 mb-2">500+</div>
-              <div className="text-gray-600 font-medium">Articles Reviewed</div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 text-center">
+            <div className="bg-gray-50 p-4 md:p-6 rounded-lg border">
+              <div className="text-2xl md:text-4xl font-bold text-blue-600 mb-2">500+</div>
+              <div className="text-sm md:text-base text-gray-600 font-medium">Articles Reviewed</div>
             </div>
-            <div className="bg-gray-50 p-6 rounded-lg border">
-              <div className="text-4xl font-bold text-green-600 mb-2">50+</div>
-              <div className="text-gray-600 font-medium">Expert Reviewers</div>
+            <div className="bg-gray-50 p-4 md:p-6 rounded-lg border">
+              <div className="text-2xl md:text-4xl font-bold text-green-600 mb-2">50+</div>
+              <div className="text-sm md:text-base text-gray-600 font-medium">Expert Reviewers</div>
             </div>
-            <div className="bg-gray-50 p-6 rounded-lg border">
-              <div className="text-4xl font-bold text-purple-600 mb-2">25+</div>
-              <div className="text-gray-600 font-medium">Research Fields</div>
+            <div className="bg-gray-50 p-4 md:p-6 rounded-lg border">
+              <div className="text-2xl md:text-4xl font-bold text-purple-600 mb-2">25+</div>
+              <div className="text-sm md:text-base text-gray-600 font-medium">Research Fields</div>
             </div>
-            <div className="bg-gray-50 p-6 rounded-lg border">
-              <div className="text-4xl font-bold text-orange-600 mb-2">95%</div>
-              <div className="text-gray-600 font-medium">Author Satisfaction</div>
+            <div className="bg-gray-50 p-4 md:p-6 rounded-lg border">
+              <div className="text-2xl md:text-4xl font-bold text-orange-600 mb-2">95%</div>
+              <div className="text-sm md:text-base text-gray-600 font-medium">Author Satisfaction</div>
             </div>
           </div>
         </div>
