@@ -28,7 +28,7 @@ export default function EditorialBoardPage() {
 
   return (
     <div className="min-h-screen bg-gray-50 relative">
-      <div className="absolute inset-0 opacity-20">
+      <div className="absolute inset-0 opacity-70">
         <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="" className="w-full h-full object-cover" />
       </div>
       

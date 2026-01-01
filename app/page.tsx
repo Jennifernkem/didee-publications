@@ -75,7 +75,7 @@ export default function Home() {
 
       {/* Services Section */}
       <section className="py-16 bg-gray-50 relative">
-        <div className="absolute inset-0 opacity-15">
+        <div className="absolute inset-0 opacity-60">
           <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="" className="w-full h-full object-cover" />
         </div>
         <div className="max-w-7xl mx-auto px-4 relative z-10">
@@ -121,7 +121,7 @@ export default function Home() {
 
       {/* Submission Info */}
       <section className="py-16 bg-white relative">
-        <div className="absolute inset-0 opacity-15">
+        <div className="absolute inset-0 opacity-50">
           <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="" className="w-full h-full object-cover" />
         </div>
         <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
