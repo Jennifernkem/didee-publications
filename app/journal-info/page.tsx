@@ -1,7 +1,11 @@
 export default function JournalInfo() {
   return (
-    <div className="min-h-screen bg-white">
-      <div className="max-w-4xl mx-auto px-4 py-12">
+    <div className="min-h-screen bg-white relative">
+      <div className="absolute inset-0 opacity-15">
+        <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="" className="w-full h-full object-cover" />
+      </div>
+      
+      <div className="max-w-4xl mx-auto px-4 py-12 relative z-10">
         <h1 className="text-4xl font-bold text-gray-900 mb-8">Journal Information</h1>
         
         <div className="grid md:grid-cols-2 gap-8 mb-12">

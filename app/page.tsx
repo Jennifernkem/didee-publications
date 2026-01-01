@@ -16,6 +16,7 @@ export default function Home() {
               <a href="/" className="text-gray-700 hover:text-blue-600">Home</a>
               <a href="/about" className="text-gray-700 hover:text-blue-600">About</a>
               <a href="/articles" className="text-gray-700 hover:text-blue-600">Articles</a>
+              <a href="/reviewers" className="text-gray-700 hover:text-blue-600">Peer Reviewers</a>
               <a href="/editorial-board" className="text-gray-700 hover:text-blue-600">Editorial Board</a>
               <a href="/journal-info" className="text-gray-700 hover:text-blue-600">Journal Info</a>
               <a href="/submit" className="text-gray-700 hover:text-blue-600">Submit Article</a>
@@ -76,8 +77,8 @@ export default function Home() {
 
       {/* Services Section */}
       <section className="py-16 bg-gray-50 relative">
-        <div className="absolute inset-0 opacity-60">
-          <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 opacity-30">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="" className="w-full h-full object-cover" />
         </div>
         <div className="max-w-7xl mx-auto px-4 relative z-10">
           <div className="text-center mb-12">
@@ -122,8 +123,8 @@ export default function Home() {
 
       {/* Submission Info */}
       <section className="py-16 bg-white relative">
-        <div className="absolute inset-0 opacity-50">
-          <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 opacity-20">
+          <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="" className="w-full h-full object-cover" />
         </div>
         <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
           <h3 className="text-3xl font-bold text-gray-900 mb-8">Ready to Submit?</h3>

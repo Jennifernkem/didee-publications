@@ -1,29 +1,27 @@
 export default function EditorialBoard() {
-  const editors = [
-    {
-      name: "Dr. Jennifer Nkemji",
-      title: "Editor-in-Chief",
-      affiliation: "University of Excellence",
-      expertise: "Clinical Psychology, Research Methodology",
-      email: "editor@didee-publications.com"
-    },
-    {
-      name: "Prof. Michael Anderson",
-      title: "Associate Editor",
-      affiliation: "International Research Institute",
-      expertise: "Social Sciences, Statistical Analysis"
-    },
-    {
-      name: "Dr. Sarah Williams",
-      title: "Section Editor",
-      affiliation: "Global University",
-      expertise: "Law and Ethics, Academic Writing"
-    }
-  ];
+  const chiefEditor = {
+    name: "Associate Professor Foluke Bosun-Arije",
+    title: "Chief Editor",
+    affiliation: "University of Doha for Science and Technology, Qatar",
+    email: "Folukestella.bosunarije@udst.edu.qa"
+  }
+
+  const editorialBoard = [
+    { name: "Professor Adebayo Oluwole", specialty: "Professor of Counselling Psychology and Positive Psychology" },
+    { name: "Professor Julius Akinsola", specialty: "Professor of Computer Science" },
+    { name: "Professor Philip Edema", specialty: "Professor of Philosophy" },
+    { name: "Dr. Maria Ameh", specialty: "Clinical Psychology Practice" },
+    { name: "Dr. Lovelyn Ikejiaku", specialty: "Counselling Psychology" },
+    { name: "Professor Anthonia Ekanibe", specialty: "Counselling Psychology" }
+  ]
 
   return (
-    <div className="min-h-screen bg-white">
-      <div className="max-w-4xl mx-auto px-4 py-12">
+    <div className="min-h-screen bg-white relative">
+      <div className="absolute inset-0 opacity-20">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="" className="w-full h-full object-cover" />
+      </div>
+      
+      <div className="max-w-4xl mx-auto px-4 py-12 relative z-10">
         <h1 className="text-4xl font-bold text-gray-900 mb-8">Editorial Board</h1>
         
         <div className="mb-8">
@@ -33,21 +31,24 @@ export default function EditorialBoard() {
           </p>
         </div>
 
+        {/* Chief Editor */}
+        <div className="bg-white/90 p-6 rounded-lg border-l-4 border-blue-600 mb-6 shadow-lg">
+          <h3 className="text-xl font-semibold text-gray-900 mb-2">{chiefEditor.name}</h3>
+          <p className="text-blue-600 font-medium mb-2">{chiefEditor.title}</p>
+          <p className="text-gray-700 mb-2">{chiefEditor.affiliation}</p>
+          <p className="text-sm text-gray-500">{chiefEditor.email}</p>
+        </div>
+
         <div className="space-y-6">
-          {editors.map((editor, index) => (
-            <div key={index} className="bg-gray-50 p-6 rounded-lg border">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">{editor.name}</h3>
-              <p className="text-blue-600 font-medium mb-2">{editor.title}</p>
-              <p className="text-gray-700 mb-2">{editor.affiliation}</p>
-              <p className="text-gray-600 mb-2">Expertise: {editor.expertise}</p>
-              {editor.email && (
-                <p className="text-sm text-gray-500">{editor.email}</p>
-              )}
+          {editorialBoard.map((member, index) => (
+            <div key={index} className="bg-white/90 p-6 rounded-lg border shadow-lg">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">{member.name}</h3>
+              <p className="text-gray-600">{member.specialty}</p>
             </div>
           ))}
         </div>
 
-        <div className="mt-12 bg-blue-50 p-6 rounded-lg">
+        <div className="mt-12 bg-blue-50/90 p-6 rounded-lg shadow-lg">
           <h3 className="text-xl font-semibold mb-4">Editorial Standards</h3>
           <ul className="space-y-2 text-gray-700">
             <li>• Double-blind peer review process</li>
