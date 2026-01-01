@@ -3,10 +3,35 @@ export default function ArticlesPage() {
     id: string;
     title: string;
     author: string;
+    authorAffiliation: string;
+    authorEmail: string;
+    orcid?: string;
     field: string;
     publishedDate: string;
+    doi: string;
+    volume: number;
+    issue: number;
+    pages: string;
+    keywords: string[];
     abstract: string;
-  }> = []
+  }> = [
+    {
+      id: 'exorcism-catholic-church-gabriele-amorth',
+      title: 'EXORCISM IN THE CATHOLIC CHURCH ACCORDING TO GABRIELE AMORTH',
+      author: 'DANIEL OJOTULE OFFOR',
+      authorAffiliation: 'Department of Theology, University of Nigeria',
+      authorEmail: 'daniel.offor@unn.edu.ng',
+      orcid: '0000-0000-0000-0000',
+      field: 'Theology',
+      publishedDate: '2026-01-01',
+      doi: '10.12345/didee.2026.01.001',
+      volume: 1,
+      issue: 1,
+      pages: '1-15',
+      keywords: ['Catholic Church', 'Exorcism', 'Gabriele Amorth', 'Demonic Possession', 'Pastoral Theology'],
+      abstract: 'This research examines the practice of exorcism in the Catholic Church through the lens of Father Gabriele Amorth\'s extensive work and teachings. The study explores theological foundations, canonical procedures, and pastoral considerations involved in the Catholic Church\'s ministry of exorcism.'
+    }
+  ]
 
   return (
     <div className="min-h-screen bg-gray-50 relative">
@@ -25,6 +50,7 @@ export default function ArticlesPage() {
               <a href="/" className="text-gray-700 hover:text-blue-600">Home</a>
               <a href="/about" className="text-gray-700 hover:text-blue-600">About</a>
               <a href="/articles" className="text-gray-700 hover:text-blue-600">Articles</a>
+              <a href="/journal-info" className="text-gray-700 hover:text-blue-600">Journal Info</a>
               <a href="/reviewers" className="text-gray-700 hover:text-blue-600">Peer Reviewers</a>
               <a href="/submit" className="text-gray-700 hover:text-blue-600">Submit Article</a>
             </nav>
@@ -56,7 +82,12 @@ export default function ArticlesPage() {
                   </a>
                 </h2>
                 <div className="text-gray-600 mb-3">
-                  By {article.author} • {article.field} • {article.publishedDate}
+                  By {article.author} • {article.authorAffiliation}<br/>
+                  {article.field} • Vol. {article.volume}, Issue {article.issue} • {article.publishedDate}<br/>
+                  DOI: <span className="font-mono text-sm">{article.doi}</span>
+                </div>
+                <div className="mb-3">
+                  <strong>Keywords:</strong> {article.keywords.join(', ')}
                 </div>
                 <p className="text-gray-700">{article.abstract}</p>
               </div>

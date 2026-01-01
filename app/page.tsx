@@ -16,7 +16,8 @@ export default function Home() {
               <a href="/" className="text-gray-700 hover:text-blue-600">Home</a>
               <a href="/about" className="text-gray-700 hover:text-blue-600">About</a>
               <a href="/articles" className="text-gray-700 hover:text-blue-600">Articles</a>
-              <a href="/reviewers" className="text-gray-700 hover:text-blue-600">Peer Reviewers</a>
+              <a href="/editorial-board" className="text-gray-700 hover:text-blue-600">Editorial Board</a>
+              <a href="/journal-info" className="text-gray-700 hover:text-blue-600">Journal Info</a>
               <a href="/submit" className="text-gray-700 hover:text-blue-600">Submit Article</a>
             </nav>
             <button className="md:hidden p-2">
