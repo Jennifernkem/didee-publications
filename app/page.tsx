@@ -40,7 +40,7 @@ export default function Home() {
             and internationally recognized certification for your groundbreaking work.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="/submit" className="w-full sm:w-auto bg-orange-500 text-white px-6 md:px-8 py-3 md:py-4 rounded-lg font-bold text-base md:text-lg hover:bg-orange-600 shadow-lg transition-all text-center">
+            <a href="/submit" className="w-full sm:w-auto bg-amber-600 text-white px-6 md:px-8 py-3 md:py-4 rounded-lg font-bold text-base md:text-lg hover:bg-amber-700 shadow-lg transition-all text-center">
               Submit Your Research
             </a>
             <a href="/about" className="w-full sm:w-auto border-2 border-white text-white px-6 md:px-8 py-3 md:py-4 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition-all text-center">
@@ -55,19 +55,19 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 text-center">
             <div className="bg-gray-50 p-4 md:p-6 rounded-lg border">
-              <div className="text-2xl md:text-4xl font-bold text-blue-600 mb-2">500+</div>
+              <div className="text-2xl md:text-4xl font-bold text-amber-600 mb-2">500+</div>
               <div className="text-sm md:text-base text-gray-600 font-medium">Articles Reviewed</div>
             </div>
             <div className="bg-gray-50 p-4 md:p-6 rounded-lg border">
-              <div className="text-2xl md:text-4xl font-bold text-green-600 mb-2">50+</div>
+              <div className="text-2xl md:text-4xl font-bold text-amber-700 mb-2">50+</div>
               <div className="text-sm md:text-base text-gray-600 font-medium">Expert Reviewers</div>
             </div>
             <div className="bg-gray-50 p-4 md:p-6 rounded-lg border">
-              <div className="text-2xl md:text-4xl font-bold text-purple-600 mb-2">25+</div>
+              <div className="text-2xl md:text-4xl font-bold text-amber-800 mb-2">25+</div>
               <div className="text-sm md:text-base text-gray-600 font-medium">Research Fields</div>
             </div>
             <div className="bg-gray-50 p-4 md:p-6 rounded-lg border">
-              <div className="text-2xl md:text-4xl font-bold text-orange-600 mb-2">95%</div>
+              <div className="text-2xl md:text-4xl font-bold text-amber-600 mb-2">95%</div>
               <div className="text-sm md:text-base text-gray-600 font-medium">Author Satisfaction</div>
             </div>
           </div>

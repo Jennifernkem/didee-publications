@@ -27,7 +27,7 @@ export default function PsychosocialArticle() {
     ],
     abstract: "Antisocial behaviours distort the normal activities within the school, work and societal settings by reducing the level of students' attention and concentration, makes organizational goals unattainable by reducing other workers' commitment to duty, increases the tendency for grooming youths that become thugs, armed robbers and bully of gullible others in the society. This study adopted descriptive survey design and data was collected using Google forms questionnaire. Four research hypotheses were tested at p<.05.",
     doi: "10.12345/didee.2024.003",
-    publishedDate: "January 25, 2024",
+    publishedDate: "January 1, 2026",
     volume: "1",
     issue: "2",
     pages: "26-40",

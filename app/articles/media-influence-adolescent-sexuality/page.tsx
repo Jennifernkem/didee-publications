@@ -27,7 +27,7 @@ export default function MediaInfluenceArticle() {
     ],
     abstract: "Sexuality is critical to the development of the adolescents and young adults as they exhibit certain sexual behaviors which tend towards expression of their sexual feelings. The negative effect of the media on sexuality is enormous that few studies have investigated the dynamics the media is taking to affect the adolescents and young adults. The study aims to examine the effects of media on the sexuality of adolescents and young adults as well as to investigate ways of promoting a positive media influence on adolescents' and young adults' sexuality.",
     doi: "10.12345/didee.2024.004",
-    publishedDate: "January 30, 2024",
+    publishedDate: "January 1, 2026",
     volume: "1",
     issue: "2",
     pages: "41-55",
