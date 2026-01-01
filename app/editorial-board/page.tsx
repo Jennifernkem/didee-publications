@@ -1,3 +1,5 @@
+import Navigation from '../../components/Navigation';
+
 export default function EditorialBoard() {
   const chiefEditor = {
     name: "Associate Professor Foluke Bosun-Arije",
@@ -17,7 +19,8 @@ export default function EditorialBoard() {
 
   return (
     <div className="min-h-screen bg-white relative">
-      <div className="absolute inset-0 opacity-20">
+      <Navigation />
+      <div className="absolute inset-0 opacity-20 top-20">
         <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="" className="w-full h-full object-cover" />
       </div>
       
