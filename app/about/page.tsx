@@ -5,18 +5,44 @@ export default function About() {
 
   return (
     <div className="min-h-screen bg-white">
+      {/* Header */}
+      <header className="bg-white border-b shadow-sm">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex justify-between items-center py-4">
+            <div className="flex items-center space-x-3 md:space-x-4">
+              <img src="/Black Elegant Modern Name Initials Monogram Logo.png" alt="Didee Publications" className="w-10 h-10 md:w-12 md:h-12 object-contain" />
+              <div>
+                <h1 className="text-xl md:text-2xl font-bold text-gray-900">Didee Publications</h1>
+                <p className="text-xs md:text-sm text-gray-600">International Journal Publishing</p>
+              </div>
+            </div>
+            <nav className="hidden md:flex space-x-8">
+              <a href="/" className="text-gray-700 hover:text-blue-600">Home</a>
+              <a href="/about" className="text-gray-700 hover:text-blue-600">About</a>
+              <a href="/articles" className="text-gray-700 hover:text-blue-600">Articles</a>
+              <a href="/reviewers" className="text-gray-700 hover:text-blue-600">Peer Reviewers</a>
+              <a href="/submit" className="text-gray-700 hover:text-blue-600">Submit Article</a>
+            </nav>
+            <button className="md:hidden p-2">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
       {/* Hero Section */}
       <section className="relative py-20 bg-cover bg-center" style={backgroundStyle}>
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h1 className="text-5xl font-bold text-white mb-6">About Didee Publications</h1>
-          <p className="text-xl text-gray-200">Empowering researchers worldwide through rigorous peer review and professional publishing</p>
+          <p className="text-xl text-gray-200 font-bold">Empowering researchers worldwide through rigorous peer review and professional publishing</p>
         </div>
       </section>
 
       <div className="max-w-6xl mx-auto p-6 -mt-8">
         {/* Mission Card */}
-        <div className="bg-white rounded-lg shadow-lg border p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Our Mission</h2>
+        <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg shadow-lg border-l-4 border-purple-500 p-8 mb-8">
+          <h2 className="text-3xl font-bold mb-6 text-purple-900">Our Mission</h2>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
             Didee Publications is a premier academic platform dedicated to maintaining the highest standards 
             of scholarly research. We connect researchers with expert peer reviewers and provide comprehensive 
@@ -25,8 +51,8 @@ export default function About() {
         </div>
 
         {/* Leadership Section */}
-        <div className="bg-white rounded-lg shadow-lg border p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Our Leadership</h2>
+        <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-lg shadow-lg border-l-4 border-orange-500 p-8 mb-8">
+          <h2 className="text-3xl font-bold mb-6 text-orange-900">Our Leadership</h2>
           <div className="flex items-start space-x-6">
             <div className="w-24 h-24 bg-gradient-to-br from-blue-600 to-blue-800 rounded-full flex items-center justify-center">
               <span className="text-white font-bold text-2xl">DO</span>
@@ -105,8 +131,8 @@ export default function About() {
         </div>
 
         {/* Standards Section */}
-        <div className="bg-white rounded-lg shadow-lg border p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Our Review Standards</h2>
+        <div className="bg-gradient-to-br from-teal-50 to-teal-100 rounded-lg shadow-lg border-l-4 border-teal-500 p-8 mb-8">
+          <h2 className="text-3xl font-bold mb-6 text-teal-900">Our Review Standards</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
               <h4 className="font-semibold mb-3 text-gray-800">Quality Criteria</h4>
@@ -129,8 +155,8 @@ export default function About() {
           </div>
         </div>
 
-        <div className="bg-white rounded-lg shadow-lg border p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Get In Touch</h2>
+        <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-lg shadow-lg border-l-4 border-indigo-500 p-8 mb-8">
+          <h2 className="text-3xl font-bold mb-6 text-indigo-900">Get In Touch</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div>
               <h4 className="font-semibold mb-3">General Inquiries</h4>

@@ -81,7 +81,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 relative z-10">
           <div className="text-center mb-12">
             <h3 className="text-4xl font-bold text-gray-900 mb-4">Our Services</h3>
-            <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+            <p className="text-gray-600 max-w-2xl mx-auto text-lg font-bold">
               Comprehensive peer review services designed to elevate the quality and impact of your research
             </p>
           </div>
