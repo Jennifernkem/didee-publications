@@ -4,7 +4,7 @@ export default function JournalInfo() {
   return (
     <div className="min-h-screen bg-white relative">
       <Navigation />
-      <div className="absolute inset-0 opacity-15 top-20">
+      <div className="absolute inset-0 opacity-30 top-20">
         <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="" className="w-full h-full object-cover" />
       </div>
       
