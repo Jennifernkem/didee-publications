@@ -144,8 +144,8 @@ export default function MediaInfluenceContent() {
           <div className="bg-gray-50 p-4 rounded-lg mb-6">
             <h4 className="text-lg font-semibold mb-3">Key Statistical Findings:</h4>
             <ul className="list-disc pl-6 space-y-2">
-              <li>Strong positive correlation (r = 0.67, p < 0.001) between social media use and early sexual initiation</li>
-              <li>Moderate correlation (r = 0.54, p < 0.01) between exposure to sexual content and risky sexual behaviors</li>
+              <li>Strong positive correlation (r = 0.67, p &lt; 0.001) between social media use and early sexual initiation</li>
+              <li>Moderate correlation (r = 0.54, p &lt; 0.01) between exposure to sexual content and risky sexual behaviors</li>
               <li>Significant association (OR = 2.34, 95% CI: 1.78-3.12) between heavy media use and multiple sexual partners</li>
               <li>Higher likelihood (OR = 1.89, 95% CI: 1.45-2.47) of unprotected sex among high media consumers</li>
               <li>Increased risk (RR = 1.76, 95% CI: 1.32-2.35) of teenage pregnancy in media-exposed groups</li>

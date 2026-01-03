@@ -99,7 +99,7 @@ export default function PsychosocialContent() {
 
           <h3 className="text-xl font-semibold mt-6 mb-3">Data Analysis</h3>
           <p className="mb-4">
-            Data analysis was conducted using SPSS version 26.0. Descriptive statistics were computed to summarize participant characteristics and variable distributions. Pearson correlation analysis was used to examine relationships between variables. Multiple regression analysis was employed to determine the relative contribution of each psychosocial factor to antisocial behavior. Four research hypotheses were tested at p < .05 significance level.
+            Data analysis was conducted using SPSS version 26.0. Descriptive statistics were computed to summarize participant characteristics and variable distributions. Pearson correlation analysis was used to examine relationships between variables. Multiple regression analysis was employed to determine the relative contribution of each psychosocial factor to antisocial behavior. Four research hypotheses were tested at p &lt; .05 significance level.
           </p>
 
           <h2 className="text-2xl font-bold mt-8 mb-4">Results</h2>
