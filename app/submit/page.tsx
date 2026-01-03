@@ -29,7 +29,7 @@ Field: ${field}
 Abstract:
 ${abstract}
 
-Please confirm payment and process this submission.`
+Please review and process this submission.`
     
     const mailtoLink = `mailto:support@didee-publications.com?subject=Article Submission - ${submissionId}&body=${encodeURIComponent(emailBody)}`
     
@@ -60,7 +60,7 @@ Please confirm payment and process this submission.`
               name="name"
               type="text" 
               required
-              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500"
               placeholder="Enter your full name"
             />
           </div>
@@ -71,7 +71,7 @@ Please confirm payment and process this submission.`
               name="email"
               type="email" 
               required
-              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500"
               placeholder="Enter your email"
             />
           </div>
@@ -82,23 +82,23 @@ Please confirm payment and process this submission.`
               name="title"
               type="text" 
               required
-              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500"
               placeholder="Enter your article title"
             />
           </div>
           
           <div className="mb-6">
             <label className="block text-sm font-medium mb-2 text-gray-700">Service Type</label>
-            <select name="service_type" required className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+            <select name="service_type" required className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500">
               <option value="">Select service...</option>
-              <option value="review_only">Peer Review & Certification - $100</option>
-              <option value="full_publishing">Full Publishing Services - $150</option>
+              <option value="review_only">Peer Review & Certification</option>
+              <option value="full_publishing">Full Publishing Services</option>
             </select>
           </div>
 
           <div className="mb-6">
             <label className="block text-sm font-medium mb-2 text-gray-700">Field of Study</label>
-            <select name="field" required className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+            <select name="field" required className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500">
               <option value="">Select field...</option>
               <option value="Social Sciences">Social Sciences</option>
               <option value="Clinical Psychology">Clinical Psychology</option>
@@ -115,7 +115,7 @@ Please confirm payment and process this submission.`
               type="file" 
               accept=".pdf"
               required
-              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500"
             />
           </div>
           
@@ -125,26 +125,22 @@ Please confirm payment and process this submission.`
               name="abstract"
               rows={4}
               required
-              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500"
               placeholder="Brief summary of your work..."
             />
           </div>
           
-          <div className="bg-blue-50 p-6 rounded-lg mb-6 border border-blue-200">
-            <h3 className="font-semibold mb-3 text-blue-900">Payment Instructions</h3>
-            <div className="text-sm space-y-2 text-blue-800">
-              <p><strong>Review Only:</strong> $100 USD</p>
-              <p><strong>Full Publishing:</strong> $150 USD</p>
-              <hr className="my-3"/>
-              <p><strong>Bank Account:</strong> 1234567890</p>
-              <p><strong>Account Name:</strong> Didee Publications Ltd</p>
-              <p><strong>Bank:</strong> First National Bank</p>
-              <p><strong>Routing:</strong> 021000021</p>
+          <div className="bg-amber-50 p-6 rounded-lg mb-6 border border-amber-200">
+            <h3 className="font-semibold mb-3 text-amber-900">Submission Process</h3>
+            <div className="text-sm space-y-2 text-amber-800">
+              <p><strong>Free Submission:</strong> No fees required</p>
+              <p><strong>Review Process:</strong> Expert peer review</p>
+              <p><strong>Timeline:</strong> 2-4 weeks for initial review</p>
             </div>
-            <div className="mt-4 p-3 bg-yellow-50 border border-yellow-200 rounded">
-              <p className="text-sm font-medium text-yellow-800">After payment:</p>
-              <p className="text-sm text-yellow-700">Send payment proof to: <strong>support@didee-publications.com</strong></p>
-              <p className="text-xs text-yellow-600 mt-1">Include your submission ID and selected service in the email</p>
+            <div className="mt-4 p-3 bg-green-50 border border-green-200 rounded">
+              <p className="text-sm font-medium text-green-800">After submission:</p>
+              <p className="text-sm text-green-700">You will receive confirmation at: <strong>support@didee-publications.com</strong></p>
+              <p className="text-xs text-green-600 mt-1">Include your submission ID in all correspondence</p>
             </div>
           </div>
 
@@ -156,9 +152,9 @@ Please confirm payment and process this submission.`
           
           <button 
             type="submit"
-            className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+            className="w-full bg-amber-600 text-white py-3 rounded-lg font-semibold hover:bg-amber-700 transition-colors"
           >
-            Submit Article via Email
+            Submit Article for Free
           </button>
           
           <p className="text-xs text-gray-500 text-center mt-3">

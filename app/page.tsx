@@ -88,8 +88,8 @@ export default function Home() {
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow border-l-4 border-blue-500">
-              <h4 className="text-2xl font-semibold mb-4 text-blue-700">Peer Review & Certification</h4>
+            <div className="bg-white p-8 rounded-lg shadow border-l-4 border-amber-500">
+              <h4 className="text-2xl font-semibold mb-4 text-amber-700">Peer Review & Certification</h4>
               <p className="text-gray-600 mb-4 text-lg">
                 Expert review with internationally recognized certification
               </p>
@@ -99,11 +99,11 @@ export default function Home() {
                 <li>• Official certification</li>
                 <li>• Quality assurance</li>
               </ul>
-              <p className="font-semibold text-blue-700">Fee: $100 USD</p>
+              <p className="font-semibold text-amber-700">Free Service</p>
             </div>
             
-            <div className="bg-white p-8 rounded-lg shadow border-l-4 border-green-500">
-              <h4 className="text-2xl font-semibold mb-4 text-green-700">Full Publishing Services</h4>
+            <div className="bg-white p-8 rounded-lg shadow border-l-4 border-amber-600">
+              <h4 className="text-2xl font-semibold mb-4 text-amber-800">Full Publishing Services</h4>
               <p className="text-gray-600 mb-4 text-lg">
                 Complete publishing with DOI, indexing, and global distribution
               </p>
@@ -114,7 +114,7 @@ export default function Home() {
                 <li>• Journal indexing</li>
                 <li>• Global distribution</li>
               </ul>
-              <p className="font-semibold text-green-700">Fee: $150 USD</p>
+              <p className="font-semibold text-amber-800">Free Service</p>
             </div>
           </div>
         </div>
@@ -127,10 +127,10 @@ export default function Home() {
         </div>
         <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
           <h3 className="text-3xl font-bold text-gray-900 mb-8">Ready to Submit?</h3>
-          <div className="bg-blue-50 border border-blue-200 rounded-lg p-8">
-            <h4 className="text-xl font-semibold mb-4">Submission Fee: $100 USD</h4>
+          <div className="bg-amber-50 border border-amber-200 rounded-lg p-8">
+            <h4 className="text-xl font-semibold mb-4">Free Submission Process</h4>
             <p className="text-gray-600 mb-6">
-              Our competitive fee covers comprehensive peer review, quality assurance, and certification services
+              Submit your research for free and receive comprehensive peer review and quality assurance services
             </p>
             <div className="grid md:grid-cols-2 gap-6 text-left">
               <div>
@@ -178,8 +178,8 @@ export default function Home() {
               <h5 className="font-semibold mb-4">Support</h5>
               <ul className="space-y-2 text-sm text-gray-400">
                 <li>info@didee-publications.com</li>
-                <li>payments@didee-publications.com</li>
                 <li>support@didee-publications.com</li>
+                <li>editorial@didee-publications.com</li>
               </ul>
             </div>
             <div>
