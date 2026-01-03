@@ -30,7 +30,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative py-12 md:py-20 bg-cover bg-center" style={{backgroundImage: "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')"}}>
+      <section className="relative py-12 md:py-20 bg-cover bg-center" style={{backgroundImage: "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1920&q=80')"}}>
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 md:mb-6">
             Advance Your Research Journey
@@ -99,7 +99,7 @@ export default function Home() {
                 <li>• Official certification</li>
                 <li>• Quality assurance</li>
               </ul>
-              <p className="font-semibold text-amber-700">Free Service</p>
+              <p className="font-semibold text-amber-700"></p>
             </div>
             
             <div className="bg-white p-8 rounded-lg shadow border-l-4 border-amber-600">
@@ -114,7 +114,7 @@ export default function Home() {
                 <li>• Journal indexing</li>
                 <li>• Global distribution</li>
               </ul>
-              <p className="font-semibold text-amber-800">Free Service</p>
+              <p className="font-semibold text-amber-800"></p>
             </div>
           </div>
         </div>
@@ -128,9 +128,9 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
           <h3 className="text-3xl font-bold text-gray-900 mb-8">Ready to Submit?</h3>
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-8">
-            <h4 className="text-xl font-semibold mb-4">Free Submission Process</h4>
+            <h4 className="text-xl font-semibold mb-4">Submission Process</h4>
             <p className="text-gray-600 mb-6">
-              Submit your research for free and receive comprehensive peer review and quality assurance services
+              Submit your research and receive comprehensive peer review and quality assurance services
             </p>
             <div className="grid md:grid-cols-2 gap-6 text-left">
               <div>
