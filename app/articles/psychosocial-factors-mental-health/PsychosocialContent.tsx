@@ -129,24 +129,34 @@ export default function PsychosocialContent() {
           <div className="bg-blue-50 p-4 rounded-lg mb-6">
             <h4 className="text-lg font-semibold mb-3">Key Correlation Findings:</h4>
             <ul className="list-disc pl-6 space-y-2">
-              <li>Self-esteem and antisocial behavior: r = -0.23, p < 0.01 (weak negative correlation)</li>
-              <li>Emotional intelligence and antisocial behavior: r = -0.31, p < 0.001 (moderate negative correlation)</li>
-              <li>Parental support and antisocial behavior: r = -0.28, p < 0.001 (weak to moderate negative correlation)</li>
-              <li>Peer influence and antisocial behavior: r = -0.19, p < 0.05 (weak negative correlation)</li>
-              <li>No significant gender differences in antisocial behavior: t(845) = 1.23, p > 0.05</li>
+              <li>
+  Self-esteem and antisocial behavior: r = -0.23, p &lt; 0.01 (weak negative correlation)
+</li>
+<li>
+  Emotional intelligence and antisocial behavior: r = -0.31, p &lt; 0.001 (moderate negative correlation)
+</li>
+<li>
+  Parental support and antisocial behavior: r = -0.28, p &lt; 0.001 (weak to moderate negative correlation)
+</li>
+<li>
+  Peer influence and antisocial behavior: r = -0.19, p &lt; 0.05 (weak negative correlation)
+</li>
             </ul>
           </div>
 
           <h3 className="text-xl font-semibold mt-6 mb-3">Regression Analysis</h3>
-          <p className="mb-4">
-            Multiple regression analysis revealed that the four psychosocial factors together explained 18.7% of the variance in antisocial behavior (R² = 0.187, F(4,842) = 48.52, p < 0.001). However, individual predictors showed varying levels of significance:
-          </p>
-          <ul className="list-disc pl-6 mb-4">
-            <li>Emotional intelligence: β = -0.24, t = -6.78, p < 0.001 (significant predictor)</li>
-            <li>Parental support: β = -0.19, t = -5.23, p < 0.001 (significant predictor)</li>
-            <li>Self-esteem: β = -0.12, t = -3.45, p < 0.01 (significant predictor)</li>
-            <li>Peer influence: β = -0.08, t = -2.11, p < 0.05 (marginally significant)</li>
-          </ul>
+
+<p className="mb-4">
+  Multiple regression analysis revealed that the four psychosocial factors together explained 18.7% of the variance in antisocial behavior (R² = 0.187, F(4,842) = 48.52, p &lt; 0.001). However, individual predictors showed varying levels of significance:
+</p>
+
+<ul className="list-disc pl-6 mb-4">
+  <li>Emotional intelligence: β = -0.24, t = -6.78, p &lt; 0.001 (significant predictor)</li>
+  <li>Parental support: β = -0.19, t = -5.23, p &lt; 0.001 (significant predictor)</li>
+  <li>Self-esteem: β = -0.12, t = -3.45, p &lt; 0.01 (significant predictor)</li>
+  <li>Peer influence: β = -0.08, t = -2.11, p &lt; 0.05 (marginally significant)</li>
+</ul>
+
 
           <h2 className="text-2xl font-bold mt-8 mb-4">Discussion</h2>
           
