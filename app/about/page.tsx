@@ -76,9 +76,7 @@ export default function About() {
                 Detailed feedback reports
               </li>
             </ul>
-            <div className="mt-6 p-4 bg-white rounded border">
-              <p className="font-semibold text-blue-900">Investment: $100 USD</p>
-            </div>
+            
           </div>
 
           <div className="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-lg border-l-4 border-green-500">
@@ -101,9 +99,7 @@ export default function About() {
                 Global distribution network
               </li>
             </ul>
-            <div className="mt-6 p-4 bg-white rounded border">
-              <p className="font-semibold text-green-900">Investment: $150 USD</p>
-            </div>
+            
           </div>
         </div>
 
