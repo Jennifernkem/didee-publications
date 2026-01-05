@@ -24,6 +24,7 @@ export const metadata: Metadata = {
     description: "International peer-reviewed journal for scholarly research",
     type: "website",
     locale: "en_US",
+    
   },
   other: {
     "DC.Title": "Didee Publications",
@@ -38,6 +39,9 @@ export const metadata: Metadata = {
     "citation_journal_title": "Didee Publications International Journal",
     "citation_issn": "2789-1234",
     "citation_publisher": "Didee Publications",
+  },
+  verification: {
+    google: "AIqS0o01saB52brCYz1wNGYEdIFSYhG8fIiyJsHvGNk", 
   },
 };
 
