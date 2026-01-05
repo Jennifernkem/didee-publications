@@ -57,6 +57,71 @@ export default function JournalInfo() {
             </ul>
           </div>
         </div>
+        <div className="mb-12">
+  <h3 className="text-2xl font-semibold mb-6">Academic Disciplines & Journals</h3>
+
+  <div className="grid md:grid-cols-2 gap-8 text-gray-700">
+
+    <div>
+      <h4 className="text-lg font-semibold mb-3">Management Sciences</h4>
+      <ul className="list-disc pl-5 space-y-1">
+        <li>International Journal of Banking and Finance Research</li>
+        <li>International Journal of Economics and Business Management</li>
+        <li>International Journal of Economics and Financial Management</li>
+        <li>International Journal of Social Sciences and Management Research</li>
+        <li>International Journal of Marketing and Communication Studies</li>
+        <li>Journal of Accounting and Financial Management</li>
+        <li>Journal of Business and African Economy</li>
+        <li>World Journal of Entrepreneurial Development Studies</li>
+        <li>World Journal of Finance and Investment Research</li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 className="text-lg font-semibold mb-3">Sciences</h4>
+      <ul className="list-disc pl-5 space-y-1">
+        <li>International Journal of Geography and Environmental Management</li>
+        <li>International Journal of Agriculture and Earth Science</li>
+        <li>International Journal of Applied Science and Mathematical Theory</li>
+        <li>International Journal of Chemistry and Chemical Processes</li>
+        <li>International Journal of Computer Science and Mathematical Theory</li>
+        <li>International Journal of Health and Pharmaceutical Research</li>
+        <li>International Journal of Medical Evaluation and Physical Report</li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+<div>
+  <h4 className="text-lg font-semibold mb-3 mt-8">Social Sciences and Education</h4>
+  <ul className="list-disc pl-5 space-y-1">
+    <li>Journal of Political Science and Leadership Research</li>
+    <li>International Journal of Social Sciences and Management Research</li>
+    <li>Journal of Public Administration and Social Welfare Research</li>
+  </ul>
+</div>
+
+<div>
+  <h4 className="text-lg font-semibold mb-3 mt-8">Humanities</h4>
+  <ul className="list-disc pl-5 space-y-1">
+    <li>Research Journal of Mass Communication and Information Technology</li>
+    <li>African Journal of History and Archaeology</li>
+    <li>International Journal of English Language and Communication Studies</li>
+    <li>International Journal of Religious and Cultural Practice</li>
+    <li>Journal of Humanities and Social Policy</li>
+    <li>Journal of Law and Global Policy</li>
+    <li>Journal of Hotel Management and Tourism Research</li>
+    <li>Research Journal of Humanities and Cultural Studies</li>
+  </ul>
+</div>
+
+<div>
+  <h4 className="text-lg font-semibold mb-3 mt-8">Engineering</h4>
+  <ul className="list-disc pl-5 space-y-1">
+    <li>International Journal of Engineering and Modern Technology</li>
+  </ul>
+</div>
+
 
         <div className="mb-8">
           <h3 className="text-2xl font-semibold mb-4">Publication Ethics</h3>
