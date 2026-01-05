@@ -24,7 +24,44 @@ export default function PhilosophyArticle() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
-      <PhilosophyContent />
+
+      <div className="max-w-4xl mx-auto px-4 py-12">
+        <article>
+          <header className="mb-10">
+
+            <h1 className="text-3xl font-bold text-gray-900 mb-4">
+              Existential Dialectics of Throwness and Nothingness in Heideggerian Philosophy
+            </h1>
+
+            <div className="mb-6">
+              <h3 className="text-lg font-semibold mb-2">Abstract</h3>
+              <p className="text-gray-700">
+                This paper explores Martin Heidegger’s concepts of throwness (Geworfenheit) and nothingness
+                as fundamental existential structures of Dasein. By examining their dialectical relationship,
+                the study situates these concepts within Heidegger’s broader ontological project and highlights
+                their relevance to contemporary philosophical inquiry.
+              </p>
+            </div>
+
+            {/* PDF DOWNLOAD BUTTON */}
+            <div className="mb-8">
+              <a
+                href="/articles/philosophy-ethics-modern-society.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-amber-600 text-white px-5 py-2 rounded-lg font-medium hover:bg-amber-700 transition"
+              >
+                Download Full Article (PDF)
+              </a>
+            </div>
+
+          </header>
+
+          {/* FULL ARTICLE CONTENT */}
+          <PhilosophyContent />
+        </article>
+      </div>
     </div>
   );
 }
+

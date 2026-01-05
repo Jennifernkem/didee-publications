@@ -68,6 +68,17 @@ export default function ExorcismArticle() {
               <h3 className="text-lg font-semibold mb-2">Abstract</h3>
               <p className="text-gray-700">{article.abstract}</p>
             </div>
+            <div className="mb-8">
+  <a
+    href="/articles/exorcism-catholic-church-gabriele-amorth.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center bg-amber-600 text-white px-5 py-2 rounded-lg font-medium hover:bg-amber-700 transition"
+  >
+    Download Full Article (PDF)
+  </a>
+</div>
+
             
             <div className="mb-6">
               <h3 className="text-lg font-semibold mb-2">Keywords</h3>
