@@ -24,7 +24,7 @@ export default function ExorcismArticle() {
   const article = {
     title: 'Exorcism in the Catholic Church According to Gabriele Amorth',
     authors: [
-      { name: 'Daniel Ojotule Offor', affiliation: 'Department of Theology, University of Nigeria', email: 'daniel.offor@unn.edu.ng', orcid: '0000-0000-0000-0000' }
+      { name: 'Daniel Ojotule Offor', affiliation: 'Department of Clinical Psychology, University of South Wales, United Kingdom', email: 'danielojotule81@gmail.com', orcid: '0000-0000-0000-0000' }
     ],
     abstract: `This research examines the practice of exorcism in the Catholic Church through the lens of Father Gabriele Amorth's extensive work and teachings. Father Amorth, who served as the Chief Exorcist of Rome for over 30 years, provided significant insights into the Church's approach to demonic possession and spiritual warfare. This study explores the theological foundations, canonical procedures, and pastoral considerations involved in the Catholic Church's ministry of exorcism.`,
     doi: '10.12345/didee.2024.001',

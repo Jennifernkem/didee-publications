@@ -16,7 +16,7 @@ export default function EditorialBoardPage() {
   ]
 
   const peerReviewers = [
-    { name: "Thaddius Ayogun Chinedu", specialty: "Social Sciences" },
+    { name: "Chinedu Thaddeus Ayogu", specialty: "Social Sciences" },
     { name: "Dr. Emmanuel Omopo", specialty: "Clinical Psychology" },
     { name: "Daniel Ojotule OFFOR", specialty: "Clinical and Behavioural Psychology" },
     { name: "Hongjing Lin", specialty: "Clinical Psychology" },
