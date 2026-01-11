@@ -23,7 +23,7 @@ export default function EditorialBoardPage() {
     { name: "Rev. Fr. Barrister Sanctus Ejeh", specialty: "Law & Philosophy" },
     { name: "Dr. Clementina Okeke", specialty: "Law" },
     { name: "Berna Simsek", specialty: "Clinical Research" },
-    { name: "Obiageli Nwachukwu", specialty: "Medicine and Pharmacy" }
+    { name: "Obiageli Nwachukwu", specialty: "Medicine and Pharmacy" },
     { name: "Ruth Jumoke Olagunju", specialty: "Education" }
   ]
 
