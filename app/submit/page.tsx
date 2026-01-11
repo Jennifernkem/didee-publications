@@ -1,167 +1,82 @@
-'use client'
-import { useState } from 'react'
+
+
+"use client";
+import { useState } from "react";
+import Navigation from "../../components/Navigation";
 
 export default function SubmitPage() {
+  const [fileName, setFileName] = useState("");
 
-  const [message, setMessage] = useState('')
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    
-    const formData = new FormData(e.currentTarget)
-    const name = formData.get('name')
-    const email = formData.get('email')
-    const title = formData.get('title')
-    const serviceType = formData.get('service_type')
-    const field = formData.get('field')
-    const abstract = formData.get('abstract')
-    
-    const submissionId = `SUB-${Date.now()}`
-    
-    const emailBody = `New Article Submission - ${submissionId}
-
-Author: ${name}
-Email: ${email}
-Title: ${title}
-Service: ${serviceType}
-Field: ${field}
-
-Abstract:
-${abstract}
-
-Please review and process this submission.`
-    
-    const mailtoLink = `mailto:support@didee-publications.com?subject=Article Submission - ${submissionId}&body=${encodeURIComponent(emailBody)}`
-    
-    window.open(mailtoLink)
-    
-    setMessage(`Success! Your submission ID is: ${submissionId}. An email has been opened for you to send. Please attach your PDF file to the email.`)
-    e.currentTarget.reset()
-  }
-
-  const backgroundStyle = {
-    backgroundImage: "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')"
-  }
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.files && e.target.files[0]) {
+      setFileName(e.target.files[0].name);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-white">
-      <section className="relative py-16 bg-cover bg-center" style={backgroundStyle}>
-        <div className="max-w-2xl mx-auto px-6 text-center">
-          <h1 className="text-4xl font-bold text-white mb-4">Submit Your Research</h1>
-          <p className="text-xl text-gray-200">Share your groundbreaking work with the academic community</p>
-        </div>
-      </section>
+      <Navigation />
+      <header className="bg-amber-600 py-16 px-6 text-center text-white">
+        <h1 className="text-4xl font-semibold mb-3">Submit Your Manuscript</h1>
+        <p className="text-lg opacity-90 max-w-2xl mx-auto">
+          Submit your research for peer review and publication in Didee Publications International Journal.
+        </p>
+      </header>
 
-      <div className="max-w-2xl mx-auto p-6 -mt-8">
-        <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-lg border">
-          <div className="mb-6">
-            <label className="block text-sm font-medium mb-2 text-gray-700">Your Name</label>
-            <input 
-              name="name"
-              type="text" 
-              required
-              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500"
-              placeholder="Enter your full name"
-            />
-          </div>
+      <main className="max-w-4xl mx-auto p-6 mt-10">
+        <label className="block font-medium text-gray-900 mb-2">Upload Manuscript (Word format)</label>
+        <input
+          type="file"
+          accept=".doc,.docx"
+          className="block w-full mb-6"
+          onChange={handleFileChange}
+        />
+        {fileName && (
+          <p className="text-sm text-gray-700 mb-4">Selected file: {fileName}</p>
+        )}
 
-          <div className="mb-6">
-            <label className="block text-sm font-medium mb-2 text-gray-700">Email Address</label>
-            <input 
-              name="email"
-              type="email" 
-              required
-              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500"
-              placeholder="Enter your email"
-            />
-          </div>
-          
-          <div className="mb-6">
-            <label className="block text-sm font-medium mb-2 text-gray-700">Article Title</label>
-            <input 
-              name="title"
-              type="text" 
-              required
-              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500"
-              placeholder="Enter your article title"
-            />
-          </div>
-          
-          <div className="mb-6">
-            <label className="block text-sm font-medium mb-2 text-gray-700">Service Type</label>
-            <select name="service_type" required className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500">
-              <option value="">Select service...</option>
-              <option value="review_only">Peer Review & Certification</option>
-              <option value="full_publishing">Full Publishing Services</option>
-            </select>
-          </div>
+        <label className="block font-medium text-gray-900 mb-2">Abstract (optional)</label>
+        <textarea
+          rows={4}
+          className="block w-full border border-gray-300 rounded p-3 mb-8"
+          placeholder="Enter the abstract of your manuscript (optional)"
+        ></textarea>
 
-          <div className="mb-6">
-            <label className="block text-sm font-medium mb-2 text-gray-700">Field of Study</label>
-            <select name="field" required className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500">
-              <option value="">Select field...</option>
-              <option value="Social Sciences">Social Sciences</option>
-              <option value="Clinical Psychology">Clinical Psychology</option>
-              <option value="Law and Art">Law and Art</option>
-              <option value="Science and Engineering">Science and Engineering</option>
-              <option value="Psychology">Psychology</option>
-            </select>
-          </div>
-          
-          <div className="mb-6">
-            <label className="block text-sm font-medium mb-2 text-gray-700">Upload Article (PDF)</label>
-            <input 
-              name="file"
-              type="file" 
-              accept=".pdf"
-              required
-              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500"
-            />
-          </div>
-          
-          <div className="mb-6">
-            <label className="block text-sm font-medium mb-2 text-gray-700">Abstract</label>
-            <textarea 
-              name="abstract"
-              rows={4}
-              required
-              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500"
-              placeholder="Brief summary of your work..."
-            />
-          </div>
-          
-          <div className="bg-amber-50 p-6 rounded-lg mb-6 border border-amber-200">
-            <h3 className="font-semibold mb-3 text-amber-900">Submission Process</h3>
-            <div className="text-sm space-y-2 text-amber-800">
-              <p><strong>Free Submission:</strong> No fees required</p>
-              <p><strong>Review Process:</strong> Expert peer review</p>
-              <p><strong>Timeline:</strong> 2-4 weeks for initial review</p>
-            </div>
-            <div className="mt-4 p-3 bg-green-50 border border-green-200 rounded">
-              <p className="text-sm font-medium text-green-800">After submission:</p>
-              <p className="text-sm text-green-700">You will receive confirmation at: <strong>support@didee-publications.com</strong></p>
-              <p className="text-xs text-green-600 mt-1">Include your submission ID in all correspondence</p>
-            </div>
-          </div>
-
-          {message && (
-            <div className={`p-4 rounded-lg mb-6 ${message.includes('Success') ? 'bg-green-50 text-green-800 border border-green-200' : 'bg-red-50 text-red-800 border border-red-200'}`}>
-              {message}
-            </div>
-          )}
-          
-          <button 
-            type="submit"
-            className="w-full bg-amber-600 text-white py-3 rounded-lg font-semibold hover:bg-amber-700 transition-colors"
-          >
-            Submit Article for Free
-          </button>
-          
-          <p className="text-xs text-gray-500 text-center mt-3">
-            This will open your email client. Please attach your PDF file and send the email to complete your submission.
+        {/* --- NEW SUBMISSION GUIDELINES SECTION --- */}
+        <div className="bg-gray-50 p-6 rounded-lg mb-6 border border-gray-200">
+          <h3 className="font-semibold mb-3 text-gray-900">Submission Guidelines</h3>
+          <ul className="list-disc pl-5 space-y-2 text-sm text-gray-700">
+            <li>Manuscripts must be submitted in Microsoft Word (.doc or .docx) format.</li>
+            <li>Font: Times New Roman, 12pt, with 1.5 line spacing.</li>
+            <li>Word count: 3,000–8,000 words depending on article type.</li>
+            <li>Referencing style: APA 7th Edition.</li>
+            <li>Article types accepted: Original Research, Review Articles, Case Studies, Short Communications, Theoretical Papers.</li>
+            <li>Manuscripts must be original and not under review elsewhere.</li>
+            <li>All submissions undergo double-blind peer review.</li>
+            <li>Plagiarism screening is mandatory for all manuscripts.</li>
+          </ul>
+          <p className="text-sm text-gray-700 mt-4">
+            For inquiries about submission requirements, contact:{" "}
+            <span className="font-medium">support@didee-publications.com</span>
           </p>
-        </form>
-      </div>
+        </div>
+        {/* --- END GUIDELINES SECTION --- */}
+
+        <div className="bg-amber-50 p-6 rounded-lg mb-6 border border-amber-200">
+          <h3 className="font-semibold mb-3 text-amber-900">Submission Process</h3>
+          <p className="text-sm text-amber-900">
+            After submitting, your manuscript will undergo an editorial check and peer review. Authors will be notified of acceptance, revision requests, or rejection via email.
+          </p>
+        </div>
+
+        <button className="w-full bg-amber-600 text-white py-3 rounded-lg font-medium hover:bg-amber-700 transition">
+          Submit Manuscript
+        </button>
+
+        <p className="text-center text-sm text-gray-600 mt-4">
+          Once submitted, our editorial team will contact you regarding next steps.
+        </p>
+      </main>
     </div>
   );
 }
