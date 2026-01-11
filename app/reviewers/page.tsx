@@ -24,6 +24,7 @@ export default function EditorialBoardPage() {
     { name: "Dr. Clementina Okeke", specialty: "Law" },
     { name: "Berna Simsek", specialty: "Clinical Research" },
     { name: "Obiageli Nwachukwu", specialty: "Medicine and Pharmacy" }
+    { name: "Ruth Jumoke Olagunju", specialty: "Education" }
   ]
 
   return (

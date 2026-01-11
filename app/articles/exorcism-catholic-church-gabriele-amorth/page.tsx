@@ -28,7 +28,7 @@ export default function ExorcismArticle() {
     ],
     abstract: `This research examines the practice of exorcism in the Catholic Church through the lens of Father Gabriele Amorth's extensive work and teachings. Father Amorth, who served as the Chief Exorcist of Rome for over 30 years, provided significant insights into the Church's approach to demonic possession and spiritual warfare. This study explores the theological foundations, canonical procedures, and pastoral considerations involved in the Catholic Church's ministry of exorcism.`,
     doi: '10.12345/didee.2024.001',
-    publishedDate: 'December 19, 2024',
+    publishedDate: 'January 5, 2026',
     volume: '1',
     issue: '1',
     pages: '1-15',

@@ -53,28 +53,42 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Periodical",
-              "name": "Didee Publications International Journal",
-              "issn": "2789-1234",
-              "publisher": {
-                "@type": "Organization",
-                "name": "Didee Publications",
-                "url": "https://didee-publications.com"
-              },
-              "description": "International peer-reviewed journal publishing high-quality research across multiple disciplines",
-              "url": "https://didee-publications.com",
-              "sameAs": [
-                "https://www.issn.org/services/online-services/access-to-the-ltwa/"
-              ]
-            })
-          }}
-        />
-      </head>
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Periodical",
+        "name": "Didee Publications International Journal",
+        "issn": "2789-1234",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Didee Publications",
+          "url": "https://didee-publications.com"
+        },
+        "description":
+          "International peer-reviewed journal publishing high-quality research across multiple disciplines",
+        "url": "https://didee-publications.com",
+        "sameAs": ["https://www.issn.org/services/online-services/access-to-the-ltwa/"]
+      })
+    }}
+  />
+
+  {/* Typography Pairing */}
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <style>{`
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Crimson Text', serif;
+    }
+  `}</style>
+</head>
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
