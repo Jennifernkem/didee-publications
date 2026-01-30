@@ -30,20 +30,27 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative py-12 md:py-20 bg-cover bg-center" style={{backgroundImage: "linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1920&q=80')"}}>
+      <section className="relative py-12 md:py-20 bg-cover bg-center sharp-bg" style={{
+        backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1920&q=80')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center center',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed',
+        imageRendering: 'crisp-edges'
+      }}>
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 md:mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 md:mb-6 drop-shadow-lg">
             Advance Your Research Journey
           </h2>
-          <p className="text-lg md:text-xl text-gray-200 mb-6 md:mb-8 max-w-3xl mx-auto px-4">
+          <p className="text-lg md:text-xl text-gray-200 mb-6 md:mb-8 max-w-3xl mx-auto px-4 drop-shadow-md">
             Join thousands of researchers worldwide! Get expert review, valuable feedback, 
             and internationally recognized certification for your groundbreaking work.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="/submit" className="w-full sm:w-auto bg-amber-600 text-white px-6 md:px-8 py-3 md:py-4 rounded-lg font-bold text-base md:text-lg hover:bg-amber-700 shadow-lg transition-all text-center">
+            <a href="/submit" className="w-full sm:w-auto bg-amber-600 text-white px-6 md:px-8 py-3 md:py-4 rounded-lg font-bold text-base md:text-lg hover:bg-amber-700 shadow-lg transition-all text-center hover:transform hover:scale-105">
               Submit Your Research
             </a>
-            <a href="/about" className="w-full sm:w-auto border-2 border-white text-white px-6 md:px-8 py-3 md:py-4 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition-all text-center">
+            <a href="/about" className="w-full sm:w-auto border-2 border-white text-white px-6 md:px-8 py-3 md:py-4 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition-all text-center hover:transform hover:scale-105">
               Learn More
             </a>
           </div>
@@ -54,19 +61,19 @@ export default function Home() {
       <section className="py-12 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 text-center">
-            <div className="bg-gray-50 p-4 md:p-6 rounded-lg border">
+            <div className="enhanced-card p-4 md:p-6">
               <div className="text-2xl md:text-4xl font-bold text-amber-600 mb-2">500+</div>
               <div className="text-sm md:text-base text-gray-600 font-medium">Articles Reviewed</div>
             </div>
-            <div className="bg-gray-50 p-4 md:p-6 rounded-lg border">
+            <div className="enhanced-card p-4 md:p-6">
               <div className="text-2xl md:text-4xl font-bold text-amber-700 mb-2">50+</div>
               <div className="text-sm md:text-base text-gray-600 font-medium">Expert Reviewers</div>
             </div>
-            <div className="bg-gray-50 p-4 md:p-6 rounded-lg border">
+            <div className="enhanced-card p-4 md:p-6">
               <div className="text-2xl md:text-4xl font-bold text-amber-800 mb-2">25+</div>
               <div className="text-sm md:text-base text-gray-600 font-medium">Research Fields</div>
             </div>
-            <div className="bg-gray-50 p-4 md:p-6 rounded-lg border">
+            <div className="enhanced-card p-4 md:p-6">
               <div className="text-2xl md:text-4xl font-bold text-amber-600 mb-2">95%</div>
               <div className="text-sm md:text-base text-gray-600 font-medium">Author Satisfaction</div>
             </div>
@@ -88,7 +95,7 @@ export default function Home() {
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow border-l-4 border-amber-500">
+            <div className="enhanced-card border-l-4 border-amber-500 p-8">
               <h4 className="text-2xl font-semibold mb-4 text-amber-700">Peer Review & Certification</h4>
               <p className="text-gray-600 mb-4 text-lg">
                 Expert review with internationally recognized certification
@@ -102,7 +109,7 @@ export default function Home() {
               <p className="font-semibold text-amber-700"></p>
             </div>
             
-            <div className="bg-white p-8 rounded-lg shadow border-l-4 border-amber-600">
+            <div className="enhanced-card border-l-4 border-amber-600 p-8">
               <h4 className="text-2xl font-semibold mb-4 text-amber-800">Full Publishing Services</h4>
               <p className="text-gray-600 mb-4 text-lg">
                 Complete publishing with DOI, indexing, and global distribution

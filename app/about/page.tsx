@@ -2,24 +2,56 @@ import Navigation from '../../components/Navigation';
 
 export default function About() {
   const backgroundStyle = {
-    backgroundImage: "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')"
+    backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')",
+    backgroundSize: 'cover',
+    backgroundPosition: 'center center',
+    backgroundRepeat: 'no-repeat',
+    backgroundAttachment: 'fixed',
+    imageRendering: 'crisp-edges'
   }
 
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
       {/* Hero Section */}
-      <section className="relative py-20 bg-cover bg-center" style={backgroundStyle}>
+      <section className="relative py-20 bg-cover bg-center sharp-bg" style={backgroundStyle}>
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-5xl font-bold text-white mb-6">About Didee Publications</h1>
-          <p className="text-xl text-gray-200 font-bold">Empowering researchers worldwide through rigorous peer review and professional publishing</p>
+          <h1 className="text-5xl font-bold text-white mb-6 drop-shadow-lg">About Didee Publications</h1>
+          <p className="text-xl text-gray-200 font-bold drop-shadow-md">Empowering researchers worldwide through rigorous peer review and professional publishing</p>
         </div>
       </section>
 
       <div className="max-w-6xl mx-auto p-6 -mt-8">
-        {/* Mission Card */}
-        <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-lg shadow-lg border-l-4 border-purple-500 p-8 mb-8">
-          <h2 className="text-3xl font-bold mb-6 text-purple-900">Our Mission</h2>
+        {/* Mission & Vision Cards */}
+        <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div className="enhanced-card p-8">
+            <div className="w-full h-48 bg-gradient-to-br from-purple-100 to-purple-200 rounded-lg mb-6 flex items-center justify-center">
+              <div className="text-6xl text-purple-600">🎯</div>
+            </div>
+            <h2 className="text-3xl font-bold mb-4 text-purple-900">Our Mission</h2>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              To provide compassionate, evidence-based academic publishing that integrates rigorous peer review 
+              with professional editorial services. We are committed to helping researchers, scholars, and 
+              institutions achieve lasting impact through high-quality publications and global reach.
+            </p>
+          </div>
+          
+          <div className="enhanced-card p-8">
+            <div className="w-full h-48 bg-gradient-to-br from-green-100 to-green-200 rounded-lg mb-6 flex items-center justify-center">
+              <div className="text-6xl text-green-600">🌟</div>
+            </div>
+            <h2 className="text-3xl font-bold mb-4 text-green-900">Our Vision</h2>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              To be a leading voice in academic publishing, bridging the gap between traditional scholarly 
+              communication and innovative digital platforms. We envision a world where quality research is 
+              accessible, culturally sensitive, and addresses global challenges across all disciplines.
+            </p>
+          </div>
+        </div>
+
+        {/* Original Mission Card - Enhanced */}
+        <div className="enhanced-card border-l-4 border-purple-500 p-8 mb-8">
+          <h2 className="text-3xl font-bold mb-6 text-purple-900">Our Commitment</h2>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
             Didee Publications is a premier academic platform dedicated to maintaining the highest standards 
             of scholarly research. We connect researchers with expert peer reviewers and provide comprehensive 
@@ -28,10 +60,10 @@ export default function About() {
         </div>
 
         {/* Leadership Section */}
-        <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-lg shadow-lg border-l-4 border-orange-500 p-8 mb-8">
+        <div className="enhanced-card border-l-4 border-orange-500 p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-orange-900">Our Leadership</h2>
           <div className="flex items-start space-x-6">
-            <div className="w-24 h-24 bg-gradient-to-br from-blue-600 to-blue-800 rounded-full flex items-center justify-center">
+            <div className="w-24 h-24 bg-gradient-to-br from-blue-600 to-blue-800 rounded-full flex items-center justify-center shadow-lg">
               <span className="text-white font-bold text-2xl">DO</span>
             </div>
             <div className="flex-1">
@@ -56,7 +88,7 @@ export default function About() {
 
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 gap-8 mb-12">
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-lg border-l-4 border-blue-500">
+          <div className="enhanced-card border-l-4 border-blue-500 p-8">
             <h3 className="text-2xl font-bold mb-4 text-blue-900">Peer Review & Certification</h3>
             <ul className="space-y-3 text-gray-700">
               <li className="flex items-start">
@@ -76,10 +108,9 @@ export default function About() {
                 Detailed feedback reports
               </li>
             </ul>
-            
           </div>
 
-          <div className="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-lg border-l-4 border-green-500">
+          <div className="enhanced-card border-l-4 border-green-500 p-8">
             <h3 className="text-2xl font-bold mb-4 text-green-900">Full Publishing Services</h3>
             <ul className="space-y-3 text-gray-700">
               <li className="flex items-start">
@@ -99,12 +130,11 @@ export default function About() {
                 Global distribution network
               </li>
             </ul>
-            
           </div>
         </div>
 
         {/* Standards Section */}
-        <div className="bg-gradient-to-br from-teal-50 to-teal-100 rounded-lg shadow-lg border-l-4 border-teal-500 p-8 mb-8">
+        <div className="enhanced-card border-l-4 border-teal-500 p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-teal-900">Our Review Standards</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
@@ -128,7 +158,7 @@ export default function About() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-lg shadow-lg border-l-4 border-indigo-500 p-8 mb-8">
+        <div className="enhanced-card border-l-4 border-indigo-500 p-8 mb-8">
           <h2 className="text-3xl font-bold mb-6 text-indigo-900">Get In Touch</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div>
