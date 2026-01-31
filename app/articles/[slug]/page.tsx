@@ -106,7 +106,7 @@ export default function ArticlePage({ params }: ArticleProps) {
             "@context": "https://schema.org",
             "@type": "ScholarlyArticle",
             "headline": article.title,
-            "author": article.authors.map(author => ({
+            "author": article.authors.map((author: any) => ({
               "@type": "Person",
               "name": author.name,
               "affiliation": author.affiliation
