@@ -133,7 +133,7 @@ export default function ArticlePage({ params }: ArticleProps) {
             <h1 className="text-3xl font-bold text-gray-900 mb-4">{article.title}</h1>
             
             <div className="mb-4">
-              {article.authors.map((author, index) => (
+              {article.authors.map((author: any, index) => (
                 <div key={index} className="text-gray-700">
                   <strong>{author.name}</strong> - {author.affiliation}
                 </div>
@@ -184,7 +184,7 @@ export default function ArticlePage({ params }: ArticleProps) {
           <footer className="mt-12 pt-8 border-t">
             <div className="bg-yellow-50 p-4 rounded-lg">
               <p className="text-sm text-gray-600">
-                <strong>Citation:</strong> {article.authors.map(a => a.name).join(", ")} ({new Date(article.publishedDate).getFullYear()}). 
+                <strong>Citation:</strong> {article.authors.map((a: any) => a.name).join(", ")} ({new Date(article.publishedDate).getFullYear()}). 
                 {article.title}. <em>Didee Publications International Journal</em>, {article.volume}({article.issue}), {article.pages}. 
                 DOI: {article.doi}
               </p>
