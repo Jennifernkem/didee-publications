@@ -25,12 +25,6 @@ export default function ArticlesPage() {
         id: 'exorcism-catholic-church-gabriele-amorth',
         title: 'EXORCISM IN THE CATHOLIC CHURCH ACCORDING TO GABRIELE AMORTH'
       }
-    ],
-    "Agriculture": [
-      // Placeholder for future agriculture articles
-    ],
-    "Engineering": [
-      // Placeholder for future engineering articles
     ]
   }
 
@@ -49,23 +43,21 @@ export default function ArticlesPage() {
         <h1 className="text-4xl font-bold text-center mb-12 text-white drop-shadow-lg">Published Articles</h1>
         
         {Object.entries(articlesByDomain).map(([domain, articles]) => (
-          articles.length > 0 && (
-            <div key={domain} className="mb-10">
-              <h2 className="text-2xl font-bold mb-6 text-white drop-shadow-md border-b-2 border-white/30 pb-2">{domain}</h2>
-              <div className="space-y-4">
-                {articles.map(article => (
-                  <div key={article.id} className="enhanced-card p-6">
-                    <h3 className="text-xl font-semibold">
-                      <a href={`/articles/${article.id}`} className="text-blue-600 hover:underline hover:text-blue-800 transition-colors">
-                        {article.title}
-                      </a>
-                    </h3>
-                  </div>
-                ))}
-              </div>
+          <div key={domain} className="mb-10">
+            <h2 className="text-2xl font-bold mb-6 text-white drop-shadow-md border-b-2 border-white/30 pb-2">{domain}</h2>
+            <div className="space-y-4">
+              {articles.map(article => (
+                <div key={article.id} className="enhanced-card p-6">
+                  <h3 className="text-xl font-semibold">
+                    <a href={`/articles/${article.id}`} className="text-blue-600 hover:underline hover:text-blue-800 transition-colors">
+                      {article.title}
+                    </a>
+                  </h3>
+                </div>
+              ))}
             </div>
-          )
-        ))}}
+          </div>
+        ))}
       </div>
     </div>
   )
