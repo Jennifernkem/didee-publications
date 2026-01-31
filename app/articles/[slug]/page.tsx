@@ -92,7 +92,7 @@ export default function ArticlePage({ params }: ArticleProps) {
         publishedDate: "January 1, 2024",
         volume: "1", issue: "3", pages: "56-70",
         keywords: ["Peer Influence", "Parental Support", "Anti-Social Behavior", "University Students"],
-        pdfUrl: "/articles/peer_Influence_and_parental_support.pdf"
+        pdfUrl: "/articles/peer-influence-parental-support.pdf"
       },
       'soil-microbiome-crop-breeding': {
         title: "Integrating Soil Microbiome Insights into Crop Breeding for Enhanced Agricultural Sustainability",
@@ -102,7 +102,7 @@ export default function ArticlePage({ params }: ArticleProps) {
         publishedDate: "January 1, 2024",
         volume: "1", issue: "3", pages: "71-85",
         keywords: ["Soil Microbiome", "Crop Breeding", "Agricultural Sustainability", "Biotechnology"],
-        pdfUrl: "/articles/Integrating_soil_microbiome_Insights.pdf"
+        pdfUrl: "/articles/soil-microbiome-crop-breeding.pdf"
       },
       'forensic-psychology-curtis-flowers': {
         title: "Forensic Psychological Analysis of Evidentiary Failures and Jury Bias in the Curtis Flowers Case",
@@ -112,7 +112,7 @@ export default function ArticlePage({ params }: ArticleProps) {
         publishedDate: "January 1, 2024",
         volume: "1", issue: "3", pages: "86-100",
         keywords: ["Forensic Psychology", "Jury Bias", "Legal Evidence", "Criminal Justice"],
-        pdfUrl: "/articles/forensic_psychological_analysis.pdf"
+        pdfUrl: "/articles/forensic-psychology-curtis-flowers.pdf"
       }
     };
     
