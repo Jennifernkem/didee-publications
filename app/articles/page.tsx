@@ -31,13 +31,11 @@ export default function ArticlesPage() {
   return (
     <div className="min-h-screen bg-gray-50 relative">
       <Navigation />
-      <div className="absolute inset-0 opacity-30 top-20 sharp-bg" style={{
+      <div className="absolute inset-0 opacity-30 top-20" style={{
         backgroundImage: "linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')",
         backgroundSize: 'cover',
         backgroundPosition: 'center center',
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed',
-        imageRendering: 'crisp-edges'
+        backgroundRepeat: 'no-repeat'
       }}></div>
       <div className="max-w-4xl mx-auto py-12 px-6 relative z-10">
         <h1 className="text-4xl font-bold text-center mb-12 text-white drop-shadow-lg">Published Articles</h1>
@@ -47,7 +45,7 @@ export default function ArticlesPage() {
             <h2 className="text-2xl font-bold mb-6 text-white drop-shadow-md border-b-2 border-white/30 pb-2">{domain}</h2>
             <div className="space-y-4">
               {articles.map(article => (
-                <div key={article.id} className="enhanced-card p-6">
+                <div key={article.id} className="bg-white p-6 rounded-lg shadow-md">
                   <h3 className="text-xl font-semibold">
                     <a href={`/articles/${article.id}`} className="text-blue-600 hover:underline hover:text-blue-800 transition-colors">
                       {article.title}
