@@ -41,34 +41,61 @@ export async function generateMetadata({ params }: ArticleProps): Promise<Metada
 }
 
 export default function ArticlePage({ params }: ArticleProps) {
-  // Sample article data - replace with database fetch
-  const article = {
-    title: "Sample Research Article: Advanced Methodologies in Clinical Psychology",
-    authors: [
-      { name: "Dr. John Smith", affiliation: "University of Research" },
-      { name: "Prof. Jane Doe", affiliation: "International Institute" }
-    ],
-    abstract: "This study presents advanced methodologies in clinical psychology research, demonstrating significant improvements in patient outcomes through innovative therapeutic approaches.",
-    doi: "10.12345/didee.2024.001",
-    publishedDate: "January 15, 2024",
-    volume: "1",
-    issue: "1",
-    pages: "1-10",
-    keywords: ["clinical psychology", "methodology", "therapeutic approaches", "patient outcomes"],
-    content: `
-      <h2>Introduction</h2>
-      <p>This research addresses critical gaps in current clinical psychology methodologies...</p>
-      
-      <h2>Methodology</h2>
-      <p>We employed a mixed-methods approach combining quantitative and qualitative analyses...</p>
-      
-      <h2>Results</h2>
-      <p>Our findings demonstrate significant improvements in patient outcomes...</p>
-      
-      <h2>Conclusion</h2>
-      <p>The proposed methodologies offer substantial benefits for clinical practice...</p>
-    `
+  // Real article data based on slug
+  const getArticleData = (slug: string) => {
+    const articles: Record<string, any> = {
+      'psychosocial-factors-mental-health': {
+        title: "Psychosocial Factors as Determinants of Anti-Social Behaviour Among Emerging Adults During COVID-19 in Nigeria",
+        authors: [{ name: "Daniel Ojotule Offor", affiliation: "University of South Wales" }],
+        abstract: "This study examines psychosocial factors influencing anti-social behavior among emerging adults during COVID-19 in Nigeria.",
+        doi: "10.12345/didee.2024.003",
+        publishedDate: "January 15, 2024",
+        volume: "1", issue: "2", pages: "26-40",
+        keywords: ["Antisocial Behaviour", "Self-Esteem", "Emotional Intelligence", "COVID-19"],
+        pdfUrl: "/articles/psychosocial-factors-mental-health.pdf"
+      },
+      'philosophy-ethics-modern-society': {
+        title: "Existential Dialectics of Throwness and Nothingness in Heideggerian Philosophy",
+        authors: [{ name: "Daniel Ojotule Offor", affiliation: "University of South Wales" }],
+        abstract: "This research exposes Heidegger's idea of nothingness as a response to Hegelianism and foundation for phenomenology and existentialism.",
+        doi: "10.12345/didee.2024.002",
+        publishedDate: "January 1, 2024",
+        volume: "1", issue: "2", pages: "11-25",
+        keywords: ["Dasein", "Existentiality", "Throwness", "Nothingness", "Heideggerian philosophy"],
+        pdfUrl: "/articles/philosophy-ethics-modern-society.pdf"
+      },
+      'media-influence-adolescent-sexuality': {
+        title: "The Media Influence on the Sexuality of Adolescents and Young Adults",
+        authors: [{ name: "Daniel Ojotule Offor", affiliation: "University of South Wales" }],
+        abstract: "Analysis of media's impact on adolescent sexual development and behavior.",
+        doi: "10.12345/didee.2024.004",
+        publishedDate: "January 1, 2024",
+        volume: "1", issue: "2", pages: "41-55",
+        keywords: ["Adolescents", "media", "sexuality", "sexual behavior"],
+        pdfUrl: "/articles/media-influence-adolescent-sexuality.pdf"
+      },
+      'exorcism-catholic-church-gabriele-amorth': {
+        title: "EXORCISM IN THE CATHOLIC CHURCH ACCORDING TO GABRIELE AMORTH",
+        authors: [{ name: "Daniel Ojotule Offor", affiliation: "University of Nigeria" }],
+        abstract: "Examination of exorcism practices in the Catholic Church through Father Gabriele Amorth's work.",
+        doi: "10.12345/didee.2024.001",
+        publishedDate: "January 1, 2024",
+        volume: "1", issue: "1", pages: "1-15",
+        keywords: ["Catholic Church", "Exorcism", "Gabriele Amorth", "Theology"],
+        pdfUrl: "/articles/exorcism-catholic-church-gabriele-amorth.pdf"
+      }
+    };
+    
+    return articles[slug] || {
+      title: "Article Not Found",
+      authors: [],
+      abstract: "This article could not be found.",
+      doi: "", publishedDate: "", volume: "", issue: "", pages: "",
+      keywords: [], pdfUrl: ""
+    };
   };
+
+  const article = getArticleData(params.slug);
 
   return (
     <div className="min-h-screen bg-white">
@@ -139,7 +166,20 @@ export default function ArticlePage({ params }: ArticleProps) {
             </div>
           </header>
           
-          <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: article.content }} />
+          <div className="prose max-w-none">
+            <div className="bg-blue-50 p-6 rounded-lg mb-6">
+              <h3 className="text-lg font-semibold mb-2">Full Article</h3>
+              <p className="text-gray-700 mb-4">Download the complete article as PDF:</p>
+              <a 
+                href={article.pdfUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors"
+              >
+                Download PDF
+              </a>
+            </div>
+          </div>
           
           <footer className="mt-12 pt-8 border-t">
             <div className="bg-yellow-50 p-4 rounded-lg">
