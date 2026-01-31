@@ -26,10 +26,10 @@ export default function SubmitPage() {
 
       {/* HEADER */}
       <header className="py-16 px-6 text-center">
-        <h1 className="text-4xl font-serif font-semibold mb-3 text-gray-900">
+        <h1 className="text-4xl font-serif font-semibold mb-3 text-white drop-shadow-lg">
           Submit Your Manuscript
         </h1>
-        <p className="text-lg max-w-2xl mx-auto text-gray-700 font-light">
+        <p className="text-lg max-w-2xl mx-auto text-white font-light drop-shadow-md">
           Submit your research for peer review and publication in Didee Publications International Journal.
         </p>
       </header>
