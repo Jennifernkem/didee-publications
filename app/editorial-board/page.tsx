@@ -4,8 +4,7 @@ export default function EditorialBoard() {
   const chiefEditor = {
     name: "Associate Professor Foluke Bosun-Arije",
     title: "Chief Editor",
-    affiliation: "University of Doha for Science and Technology, Qatar",
-    email: "Folukestella.bosunarije@udst.edu.qa"
+    affiliation: "University of Doha for Science and Technology, Qatar"
   }
 
   const editorialBoard = [
@@ -14,7 +13,8 @@ export default function EditorialBoard() {
     { name: "Professor Philip Edema", specialty: "Professor of Philosophy" },
     { name: "Dr. Maria Ameh", specialty: "Clinical Psychology Practice" },
     { name: "Dr. Lovelyn Ikejiaku", specialty: "Counselling Psychology" },
-    { name: "Professor Anthonia Ekanibe", specialty: "Counselling Psychology" }
+    { name: "Professor Anthonia Ekanibe", specialty: "Counselling Psychology" },
+    { name: "Onubi Ojodomoh Moses", specialty: "Agriculture (Stress physiology, Agro climatology, Sustainable Agriculture)" }
   ]
 
   return (
@@ -39,7 +39,6 @@ export default function EditorialBoard() {
           <h3 className="text-xl font-semibold text-gray-900 mb-2">{chiefEditor.name}</h3>
           <p className="text-blue-600 font-medium mb-2">{chiefEditor.title}</p>
           <p className="text-gray-700 mb-2">{chiefEditor.affiliation}</p>
-          <p className="text-sm text-gray-500">{chiefEditor.email}</p>
         </div>
 
         <div className="space-y-6">
@@ -49,6 +48,15 @@ export default function EditorialBoard() {
               <p className="text-gray-600">{member.specialty}</p>
             </div>
           ))}
+        </div>
+
+        {/* Editing and Formatting Team */}
+        <div className="mt-8 bg-white/90 p-6 rounded-lg border-l-4 border-green-600 shadow-lg">
+          <h3 className="text-xl font-semibold text-gray-900 mb-4">Editing and Formatting Team</h3>
+          <div className="bg-white/90 p-4 rounded-lg border">
+            <h4 className="text-lg font-semibold text-gray-900 mb-2">Gerald Okafor</h4>
+            <p className="text-gray-600">Editor and Formatter</p>
+          </div>
         </div>
 
         <div className="mt-12 bg-blue-50/90 p-6 rounded-lg shadow-lg">
