@@ -84,7 +84,7 @@ export default function ArticlePage({ params }: ArticleProps) {
         keywords: ["Catholic Church", "Exorcism", "Gabriele Amorth", "Theology"],
         pdfUrl: "/articles/exorcism-catholic-church-gabriele-amorth.pdf"
       },
-      'peer_Influence_and_parental_support': {
+      'peer-influence-parental-support': {
         title: "Peer Influence and Parental Support as Determinants of Anti-Social Behavior among Undergraduate Students in Selected Nigerian Universities",
         authors: [{ name: "Daniel Ojotule Offor", affiliation: "University of South Wales" }],
         abstract: "Study examining peer influence and parental support factors in anti-social behavior among Nigerian university students.",
@@ -94,7 +94,7 @@ export default function ArticlePage({ params }: ArticleProps) {
         keywords: ["Peer Influence", "Parental Support", "Anti-Social Behavior", "University Students"],
         pdfUrl: "/articles/peer_Influence_and_parental_support.pdf"
       },
-      'Integrating_soil_microbiome_Insights': {
+      'soil-microbiome-crop-breeding': {
         title: "Integrating Soil Microbiome Insights into Crop Breeding for Enhanced Agricultural Sustainability",
         authors: [{ name: "Daniel Ojotule Offor", affiliation: "Agricultural Research Institute" }],
         abstract: "Research on integrating soil microbiome knowledge into modern crop breeding techniques for sustainable agriculture.",
@@ -104,7 +104,7 @@ export default function ArticlePage({ params }: ArticleProps) {
         keywords: ["Soil Microbiome", "Crop Breeding", "Agricultural Sustainability", "Biotechnology"],
         pdfUrl: "/articles/Integrating_soil_microbiome_Insights.pdf"
       },
-      'forensic_psychological_analysis': {
+      'forensic-psychology-curtis-flowers': {
         title: "Forensic Psychological Analysis of Evidentiary Failures and Jury Bias in the Curtis Flowers Case",
         authors: [{ name: "Daniel Ojotule Offor", affiliation: "University of South Wales" }],
         abstract: "Forensic psychological examination of evidentiary issues and jury bias in the Curtis Flowers legal case.",
@@ -128,7 +128,7 @@ export default function ArticlePage({ params }: ArticleProps) {
   const article = getArticleData(params.slug);
 
   return (
-    <div className="min-h-screen bg-white" style={{
+    <div className="min-h-screen" style={{
       backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/images/Individual-article.jpg')",
       backgroundSize: 'cover',
       backgroundPosition: 'center center',

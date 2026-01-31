@@ -8,7 +8,7 @@ export default function ArticlesPage() {
         title: 'Psychosocial Factors as Determinants of Anti-Social Behaviour Among Emerging Adults During COVID-19 in Nigeria'
       },
       {
-        id: 'peer_Influence_and_parental_support',
+        id: 'peer-influence-parental-support',
         title: 'Peer Influence and Parental Support as Determinants of Anti-Social Behavior among Undergraduate Students in Selected Nigerian Universities'
       }
     ],
@@ -32,13 +32,13 @@ export default function ArticlesPage() {
     ],
     "Agriculture": [
       {
-        id: 'Integrating_soil_microbiome_Insights',
+        id: 'soil-microbiome-crop-breeding',
         title: 'Integrating Soil Microbiome Insights into Crop Breeding for Enhanced Agricultural Sustainability'
       }
     ],
     "Law": [
       {
-        id: 'forensic_psychological_analysis',
+        id: 'forensic-psychology-curtis-flowers',
         title: 'Forensic Psychological Analysis of Evidentiary Failures and Jury Bias in the Curtis Flowers Case'
       }
     ]
