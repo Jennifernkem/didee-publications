@@ -133,7 +133,7 @@ export default function ArticlePage({ params }: ArticleProps) {
             <h1 className="text-3xl font-bold text-gray-900 mb-4">{article.title}</h1>
             
             <div className="mb-4">
-              {article.authors.map((author: any, index) => (
+              {article.authors.map((author: any, index: number) => (
                 <div key={index} className="text-gray-700">
                   <strong>{author.name}</strong> - {author.affiliation}
                 </div>
@@ -157,7 +157,7 @@ export default function ArticlePage({ params }: ArticleProps) {
             <div className="mb-6">
               <h3 className="text-lg font-semibold mb-2">Keywords</h3>
               <div className="flex flex-wrap gap-2">
-                {article.keywords.map((keyword, index) => (
+                {article.keywords.map((keyword: string, index: number) => (
                   <span key={index} className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">
                     {keyword}
                   </span>
