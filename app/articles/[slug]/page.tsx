@@ -83,6 +83,36 @@ export default function ArticlePage({ params }: ArticleProps) {
         volume: "1", issue: "1", pages: "1-15",
         keywords: ["Catholic Church", "Exorcism", "Gabriele Amorth", "Theology"],
         pdfUrl: "/articles/exorcism-catholic-church-gabriele-amorth.pdf"
+      },
+      'peer_Influence_and_parental_support': {
+        title: "Peer Influence and Parental Support as Determinants of Anti-Social Behavior among Undergraduate Students in Selected Nigerian Universities",
+        authors: [{ name: "Daniel Ojotule Offor", affiliation: "University of South Wales" }],
+        abstract: "Study examining peer influence and parental support factors in anti-social behavior among Nigerian university students.",
+        doi: "10.12345/didee.2024.005",
+        publishedDate: "January 1, 2024",
+        volume: "1", issue: "3", pages: "56-70",
+        keywords: ["Peer Influence", "Parental Support", "Anti-Social Behavior", "University Students"],
+        pdfUrl: "/articles/peer_Influence_and_parental_support.pdf"
+      },
+      'Integrating_soil_microbiome_Insights': {
+        title: "Integrating Soil Microbiome Insights into Crop Breeding for Enhanced Agricultural Sustainability",
+        authors: [{ name: "Daniel Ojotule Offor", affiliation: "Agricultural Research Institute" }],
+        abstract: "Research on integrating soil microbiome knowledge into modern crop breeding techniques for sustainable agriculture.",
+        doi: "10.12345/didee.2024.006",
+        publishedDate: "January 1, 2024",
+        volume: "1", issue: "3", pages: "71-85",
+        keywords: ["Soil Microbiome", "Crop Breeding", "Agricultural Sustainability", "Biotechnology"],
+        pdfUrl: "/articles/Integrating_soil_microbiome_Insights.pdf"
+      },
+      'forensic_psychological_analysis': {
+        title: "Forensic Psychological Analysis of Evidentiary Failures and Jury Bias in the Curtis Flowers Case",
+        authors: [{ name: "Daniel Ojotule Offor", affiliation: "University of South Wales" }],
+        abstract: "Forensic psychological examination of evidentiary issues and jury bias in the Curtis Flowers legal case.",
+        doi: "10.12345/didee.2024.007",
+        publishedDate: "January 1, 2024",
+        volume: "1", issue: "3", pages: "86-100",
+        keywords: ["Forensic Psychology", "Jury Bias", "Legal Evidence", "Criminal Justice"],
+        pdfUrl: "/articles/forensic_psychological_analysis.pdf"
       }
     };
     
@@ -98,7 +128,13 @@ export default function ArticlePage({ params }: ArticleProps) {
   const article = getArticleData(params.slug);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white" style={{
+      backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/images/hero-bg.jpg')",
+      backgroundSize: 'cover',
+      backgroundPosition: 'center center',
+      backgroundRepeat: 'no-repeat',
+      backgroundAttachment: 'fixed'
+    }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -127,7 +163,7 @@ export default function ArticlePage({ params }: ArticleProps) {
         }}
       />
       
-      <div className="max-w-4xl mx-auto px-4 py-12">
+      <div className="max-w-4xl mx-auto px-4 py-12 bg-white/95 rounded-lg shadow-lg backdrop-blur-sm">
         <article>
           <header className="mb-8">
             <h1 className="text-3xl font-bold text-gray-900 mb-4">{article.title}</h1>

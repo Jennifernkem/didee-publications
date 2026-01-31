@@ -8,22 +8,14 @@ export default function ArticlesPage() {
         title: 'Psychosocial Factors as Determinants of Anti-Social Behaviour Among Emerging Adults During COVID-19 in Nigeria'
       },
       {
-        id: 'trauma-manifestations-nonverbal',
-        title: 'Trauma Manifestations and Nonverbal Expressions: A Clinical Study'
-      },
-      {
-        id: 'substance-abuse-nigerian-youth',
-        title: 'Substance Abuse Among Nigerian Youth: Psychological Factors and Interventions'
+        id: 'peer_Influence_and_parental_support',
+        title: 'Peer Influence and Parental Support as Determinants of Anti-Social Behavior among Undergraduate Students in Selected Nigerian Universities'
       }
     ],
     "Philosophy": [
       {
         id: 'philosophy-ethics-modern-society',
         title: 'Existential Dialectics of Throwness and Nothingness in Heideggerian Philosophy'
-      },
-      {
-        id: 'childhood-trauma-effects',
-        title: 'Childhood Trauma and Its Long-term Psychological Effects'
       }
     ],
     "Media Studies": [
@@ -37,20 +29,34 @@ export default function ArticlesPage() {
         id: 'exorcism-catholic-church-gabriele-amorth',
         title: 'EXORCISM IN THE CATHOLIC CHURCH ACCORDING TO GABRIELE AMORTH'
       }
+    ],
+    "Agriculture": [
+      {
+        id: 'Integrating_soil_microbiome_Insights',
+        title: 'Integrating Soil Microbiome Insights into Crop Breeding for Enhanced Agricultural Sustainability'
+      }
+    ],
+    "Law": [
+      {
+        id: 'forensic_psychological_analysis',
+        title: 'Forensic Psychological Analysis of Evidentiary Failures and Jury Bias in the Curtis Flowers Case'
+      }
     ]
   }
 
   return (
     <div className="min-h-screen bg-gray-50 relative" style={{
-      backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/images/hero-bg.png')",
+      backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/images/hero-bg.jpg')",
       backgroundSize: 'cover',
       backgroundPosition: 'center center',
       backgroundRepeat: 'no-repeat',
       backgroundAttachment: 'fixed'
     }}>
       <Navigation />
-      <div className="max-w-4xl mx-auto py-12 px-6 relative z-10">
-        <h1 className="text-4xl font-bold text-center mb-12 text-white drop-shadow-lg">Published Articles</h1>
+      <div className="max-w-6xl mx-auto py-12 px-6 relative z-10 grid md:grid-cols-3 gap-8">
+        {/* Left side - Articles */}
+        <div className="md:col-span-2">
+          <h1 className="text-4xl font-bold text-center mb-12 text-white drop-shadow-lg">Published Articles</h1>
         
         {Object.entries(articlesByDomain).map(([domain, articles]) => (
           <div key={domain} className="mb-10">
@@ -68,6 +74,22 @@ export default function ArticlesPage() {
             </div>
           </div>
         ))}
+        </div>
+
+        {/* Right side - Image */}
+        <div className="bg-white/90 rounded-xl p-6 backdrop-blur-sm h-fit sticky top-6">
+          <img 
+            src="/images/article-side.jpg" 
+            alt="Academic research" 
+            className="w-full h-64 object-cover rounded-lg shadow-md mb-4"
+          />
+          <h3 className="text-lg font-semibold text-gray-800 mb-2">Research Excellence</h3>
+          <p className="text-sm text-gray-600 mb-4">Explore our collection of peer-reviewed articles across multiple disciplines.</p>
+          <div className="text-xs text-gray-500">
+            <p><strong>Total Articles:</strong> 7</p>
+            <p><strong>Domains:</strong> Psychology, Philosophy, Media Studies, Theology, Agriculture, Law</p>
+          </div>
+        </div>
       </div>
     </div>
   )

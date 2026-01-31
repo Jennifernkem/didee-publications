@@ -15,7 +15,7 @@ export default function SubmitPage() {
     <div
       className="min-h-screen w-full"
       style={{
-        backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/images/hero-bg.png')",
+        backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/images/hero-bg.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat',
@@ -34,7 +34,9 @@ export default function SubmitPage() {
         </p>
       </header>
 
-      <main className="max-w-4xl mx-auto p-6 bg-white/85 shadow-sm rounded-xl border border-gray-200 backdrop-blur-sm">
+      <main className="max-w-6xl mx-auto p-6 grid md:grid-cols-2 gap-8 items-start">
+        {/* Left side - Form */}
+        <div className="bg-white/85 shadow-sm rounded-xl border border-gray-200 backdrop-blur-sm p-6">
         {/* UPLOAD */}
         <label className="block font-medium text-gray-900 mb-2">
           Upload Manuscript (Word format)
@@ -102,6 +104,20 @@ export default function SubmitPage() {
         <p className="text-center text-xs text-gray-600 mt-3">
           Please attach your manuscript before sending the email.
         </p>
+        </div>
+
+        {/* Right side - Image */}
+        <div className="bg-white/85 rounded-xl p-6 backdrop-blur-sm">
+          <img 
+            src="/images/submit-side.jpg" 
+            alt="Research submission" 
+            className="w-full h-96 object-cover rounded-lg shadow-md"
+          />
+          <div className="mt-4 text-center">
+            <h3 className="text-lg font-semibold text-gray-800 mb-2">Join Our Research Community</h3>
+            <p className="text-sm text-gray-600">Submit your manuscript and contribute to advancing knowledge in your field.</p>
+          </div>
+        </div>
       </main>
 
       <div className="h-10" />
