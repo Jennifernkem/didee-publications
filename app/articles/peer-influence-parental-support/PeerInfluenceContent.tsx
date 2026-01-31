@@ -112,7 +112,7 @@ export default function PeerInfluenceContent() {
           </p>
           
           <p className="mb-4">
-            Statistical analyses included descriptive statistics, correlation analysis, and multiple regression analysis using SPSS version 26. The significance level was set at p < 0.05 for all statistical tests.
+            Statistical analyses included descriptive statistics, correlation analysis, and multiple regression analysis using SPSS version 26. The significance level was set at p &lt; 0.05 for all statistical tests.
           </p>
 
           <h2 className="text-2xl font-bold mt-8 mb-4">Results</h2>
@@ -137,21 +137,21 @@ export default function PeerInfluenceContent() {
           </p>
           
           <ul className="list-disc pl-6 mb-4">
-            <li>Strong positive correlation between peer influence and anti-social behavior (r = 0.68, p < 0.001)</li>
-            <li>Moderate negative correlation between parental support and anti-social behavior (r = -0.52, p < 0.001)</li>
-            <li>Weak negative correlation between peer influence and parental support (r = -0.31, p < 0.01)</li>
+            <li>Strong positive correlation between peer influence and anti-social behavior (r = 0.68, p &lt; 0.001)</li>
+            <li>Moderate negative correlation between parental support and anti-social behavior (r = -0.52, p &lt; 0.001)</li>
+            <li>Weak negative correlation between peer influence and parental support (r = -0.31, p &lt; 0.01)</li>
           </ul>
 
           <h3 className="text-xl font-semibold mt-6 mb-3">Multiple Regression Analysis</h3>
           <p className="mb-4">
-            Multiple regression analysis was conducted to examine the predictive power of peer influence and parental support on anti-social behavior. The model was statistically significant (F(2,447) = 156.8, p < 0.001) and explained 58.3% of the variance in anti-social behavior.
+            Multiple regression analysis was conducted to examine the predictive power of peer influence and parental support on anti-social behavior. The model was statistically significant (F(2,447) = 156.8, p &lt; 0.001) and explained 58.3% of the variance in anti-social behavior.
           </p>
           
           <div className="bg-amber-50 p-4 rounded-lg mb-6">
             <h4 className="text-lg font-semibold mb-3">Regression Coefficients:</h4>
             <ul className="list-disc pl-6 space-y-1">
-              <li>Peer Influence: β = 0.61, t = 14.2, p < 0.001</li>
-              <li>Parental Support: β = -0.28, t = -6.7, p < 0.001</li>
+              <li>Peer Influence: β = 0.61, t = 14.2, p &lt; 0.001</li>
+              <li>Parental Support: β = -0.28, t = -6.7, p &lt; 0.001</li>
             </ul>
           </div>
 
