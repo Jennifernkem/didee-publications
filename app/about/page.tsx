@@ -1,20 +1,20 @@
 import Navigation from '../../components/Navigation';
 
 export default function About() {
-  const backgroundStyle = {
+  const backgroundStyle: React.CSSProperties = {
     backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')",
     backgroundSize: 'cover',
     backgroundPosition: 'center center',
     backgroundRepeat: 'no-repeat',
     backgroundAttachment: 'fixed',
-    imageRendering: 'crisp-edges'
+    imageRendering: 'crisp-edges' as any
   }
 
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
       {/* Hero Section */}
-      <section className="relative py-20 bg-cover bg-center sharp-bg" style={backgroundStyle}>
+      <section className="relative py-20 bg-cover bg-center" style={backgroundStyle}>
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h1 className="text-5xl font-bold text-white mb-6 drop-shadow-lg">About Didee Publications</h1>
           <p className="text-xl text-gray-200 font-bold drop-shadow-md">Empowering researchers worldwide through rigorous peer review and professional publishing</p>
