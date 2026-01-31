@@ -6,12 +6,24 @@ export default function ArticlesPage() {
       {
         id: 'psychosocial-factors-mental-health',
         title: 'Psychosocial Factors as Determinants of Anti-Social Behaviour Among Emerging Adults During COVID-19 in Nigeria'
+      },
+      {
+        id: 'trauma-manifestations-nonverbal',
+        title: 'Trauma Manifestations and Nonverbal Expressions: A Clinical Study'
+      },
+      {
+        id: 'substance-abuse-nigerian-youth',
+        title: 'Substance Abuse Among Nigerian Youth: Psychological Factors and Interventions'
       }
     ],
     "Philosophy": [
       {
         id: 'philosophy-ethics-modern-society',
         title: 'Existential Dialectics of Throwness and Nothingness in Heideggerian Philosophy'
+      },
+      {
+        id: 'childhood-trauma-effects',
+        title: 'Childhood Trauma and Its Long-term Psychological Effects'
       }
     ],
     "Media Studies": [
@@ -29,14 +41,14 @@ export default function ArticlesPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 relative">
+    <div className="min-h-screen bg-gray-50 relative" style={{
+      backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/images/hero-bg.jpg')",
+      backgroundSize: 'cover',
+      backgroundPosition: 'center center',
+      backgroundRepeat: 'no-repeat',
+      backgroundAttachment: 'fixed'
+    }}>
       <Navigation />
-      <div className="absolute inset-0 opacity-30 top-20" style={{
-        backgroundImage: "linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center center',
-        backgroundRepeat: 'no-repeat'
-      }}></div>
       <div className="max-w-4xl mx-auto py-12 px-6 relative z-10">
         <h1 className="text-4xl font-bold text-center mb-12 text-white drop-shadow-lg">Published Articles</h1>
         

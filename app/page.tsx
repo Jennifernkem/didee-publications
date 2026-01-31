@@ -1,6 +1,12 @@
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white" style={{
+      backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/images/hero-bg.jpg')",
+      backgroundSize: 'cover',
+      backgroundPosition: 'center center',
+      backgroundRepeat: 'no-repeat',
+      backgroundAttachment: 'fixed'
+    }}>
       {/* Header */}
       <header className="bg-white border-b shadow-sm">
         <div className="max-w-7xl mx-auto px-4">
@@ -82,14 +88,11 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-16 bg-gray-50 relative">
-        <div className="absolute inset-0 opacity-30">
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="" className="w-full h-full object-cover" />
-        </div>
+      <section className="py-16 bg-black/20 relative">
         <div className="max-w-7xl mx-auto px-4 relative z-10">
           <div className="text-center mb-12">
-            <h3 className="text-4xl font-bold text-gray-900 mb-4">Our Services</h3>
-            <p className="text-gray-600 max-w-2xl mx-auto text-lg font-bold">
+            <h3 className="text-4xl font-bold text-white mb-4">Our Services</h3>
+            <p className="text-white max-w-2xl mx-auto text-lg font-bold">
               Comprehensive peer review services designed to elevate the quality and impact of your research
             </p>
           </div>
@@ -128,12 +131,9 @@ export default function Home() {
       </section>
 
       {/* Submission Info */}
-      <section className="py-16 bg-white relative">
-        <div className="absolute inset-0 opacity-20">
-          <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="" className="w-full h-full object-cover" />
-        </div>
+      <section className="py-16 bg-black/20 relative">
         <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
-          <h3 className="text-3xl font-bold text-gray-900 mb-8">Ready to Submit?</h3>
+          <h3 className="text-3xl font-bold text-white mb-8">Ready to Submit?</h3>
           <div className="bg-amber-50 border border-amber-200 rounded-lg p-8">
             <h4 className="text-xl font-semibold mb-4">Submission Process</h4>
             <p className="text-gray-600 mb-6">

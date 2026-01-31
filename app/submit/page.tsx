@@ -15,10 +15,11 @@ export default function SubmitPage() {
     <div
       className="min-h-screen w-full"
       style={{
-        backgroundImage: "url('/textures/typewriter-paper.png')",
-        backgroundAttachment: "fixed",
-        backgroundRepeat: "repeat",
-        backgroundSize: "auto",
+        backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/images/hero-bg.jpg')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center center',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed'
       }}
     >
       <Navigation />
