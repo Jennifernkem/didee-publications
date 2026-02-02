@@ -64,7 +64,7 @@ export default function About() {
               <span className="text-white font-bold text-2xl">DO</span>
             </div>
             <div className="flex-1">
-              <h3 className="text-2xl font-semibold mb-2 text-gray-900">Daniel Ojotule Offor</h3>
+              <h3 className="text-2xl font-semibold mb-2 text-gray-900 whitespace-nowrap">Daniel Ojotule Offor</h3>
               <p className="text-lg text-blue-600 mb-4">Founder & Chief Executive Officer</p>
               <p className="text-gray-700 leading-relaxed">
                 Didee Publications is led by its Founder and Chief Executive Officer, Daniel Ojotule Offor, 

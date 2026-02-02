@@ -69,7 +69,6 @@ export default function EditorialBoardPage() {
             <h3 className="text-xl font-semibold text-gray-900">{chiefEditor.name}</h3>
             <p className="text-gray-600">{chiefEditor.title}</p>
             <p className="text-gray-500">{chiefEditor.affiliation}</p>
-            <p className="text-blue-600 mt-2">{chiefEditor.email}</p>
           </div>
         </div>
 
