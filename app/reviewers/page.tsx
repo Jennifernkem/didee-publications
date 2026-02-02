@@ -2,8 +2,7 @@ export default function EditorialBoardPage() {
   const chiefEditor = {
     name: "Associate Professor Foluke Bosun-Arije",
     title: "Chief Editor",
-    affiliation: "University of Doha for Science and Technology, Qatar",
-    email: "Folukestella.bosunarije@udst.edu.qa"
+    affiliation: "University of Doha for Science and Technology, Qatar"
   }
 
   const editorialBoard = [

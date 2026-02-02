@@ -25,7 +25,7 @@ export default function ForensicArticle() {
     title: "Forensic Psychological Analysis of Evidentiary Failures and Jury Bias in the Curtis Flowers Case",
     authors: [
       { name: "Daniel Ojotule Offor", affiliation: "Department of Clinical Psychology, University of South Wales, United Kingdom", email: "danielojotule81@gmail.com" },
-      { name: "Oluwaseun Emmanuel Omopo", affiliation: "Department of Counselling and Human Development Studies, University of Ibadan", email: "" }
+      { name: "Oluwaseun Emmanuel Omopo", affiliation: "Department of Counselling and Human Development Studies, University of Ibadan" }
     ],
     abstract: "This study provides a forensic psychological examination of evidentiary issues and jury bias in the Curtis Flowers legal case, analyzing the psychological factors that contributed to multiple trials and convictions. The research examines the intersection of racial bias, prosecutorial misconduct, and jury decision-making processes in capital punishment cases.",
     doi: "10.12345/didee.2026.007",
@@ -47,9 +47,9 @@ export default function ForensicArticle() {
             
             <div className="mb-4">
               {article.authors.map((author, index) => (
-                <div key={index} className="text-gray-700">
+                <div key={index} className="text-gray-700 mb-3">
                   <strong>{author.name}</strong><br/>
-                  <span className="text-sm">{author.email}</span><br/>
+                  {author.email && <><span className="text-sm text-blue-600">{author.email}</span><br/></>}
                   <span className="text-sm italic">{author.affiliation}</span>
                 </div>
               ))}
