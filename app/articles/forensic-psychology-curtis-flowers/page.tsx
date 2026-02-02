@@ -7,15 +7,15 @@ export const metadata: Metadata = {
   description: "A forensic psychological examination of evidentiary issues and jury bias in the Curtis Flowers legal case.",
   other: {
     "citation_title": "Forensic Psychological Analysis of Evidentiary Failures and Jury Bias in the Curtis Flowers Case",
-    "citation_author": "Daniel Ojotule Offor",
-    "citation_publication_date": "2024-01-30",
+    "citation_author": "Daniel Ojotule Offor, Oluwaseun Emmanuel Omopo",
+    "citation_publication_date": "2026-01-30",
     "citation_journal_title": "Didee Publications International Journal",
     "citation_issn": "2789-1234",
     "citation_volume": "1",
     "citation_issue": "3",
     "citation_firstpage": "86",
     "citation_lastpage": "100",
-    "citation_doi": "10.12345/didee.2024.007",
+    "citation_doi": "10.12345/didee.2026.007",
     "citation_pdf_url": "https://didee-publications.com/articles/forensic-psychology-curtis-flowers.pdf",
   }
 };
@@ -24,10 +24,11 @@ export default function ForensicArticle() {
   const article = {
     title: "Forensic Psychological Analysis of Evidentiary Failures and Jury Bias in the Curtis Flowers Case",
     authors: [
-      { name: "Daniel Ojotule Offor", affiliation: "Clinical Psychology Department, University of South Wales, United Kingdom", email: "danielojotule81@gmail.com" }
+      { name: "Daniel Ojotule Offor", affiliation: "Clinical Psychology Department, University of South Wales, United Kingdom", email: "danielojotule81@gmail.com" },
+      { name: "Oluwaseun Emmanuel Omopo", affiliation: "Clinical Psychology Department", email: "" }
     ],
     abstract: "This study provides a forensic psychological examination of evidentiary issues and jury bias in the Curtis Flowers legal case, analyzing the psychological factors that contributed to multiple trials and convictions. The research examines the intersection of racial bias, prosecutorial misconduct, and jury decision-making processes in capital punishment cases.",
-    doi: "10.12345/didee.2024.007",
+    doi: "10.12345/didee.2026.007",
     publishedDate: "January 1, 2026",
     volume: "1",
     issue: "3",
@@ -96,7 +97,7 @@ export default function ForensicArticle() {
           <footer className="mt-12 pt-8 border-t">
             <div className="bg-yellow-50 p-4 rounded-lg">
               <p className="text-sm text-gray-600">
-                <strong>Citation:</strong> Offor, D. O. (2024). Forensic Psychological Analysis of Evidentiary Failures and Jury Bias in the Curtis Flowers Case. <em>Didee Publications International Journal</em>, 1(3), 86-100. DOI: 10.12345/didee.2024.007
+                <strong>Citation:</strong> Offor, D. O. (2026). Forensic Psychological Analysis of Evidentiary Failures and Jury Bias in the Curtis Flowers Case. <em>Didee Publications International Journal</em>, 1(3), 86-100. DOI: 10.12345/didee.2026.007
               </p>
             </div>
           </footer>

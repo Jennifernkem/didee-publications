@@ -8,14 +8,14 @@ export const metadata: Metadata = {
   other: {
     "citation_title": "The Media Influence on the Sexuality of Adolescents and Young Adults",
     "citation_author": "Daniel Ojotule Offor",
-    "citation_publication_date": "2024-01-30",
+    "citation_publication_date": "2026-01-30",
     "citation_journal_title": "Didee Publications International Journal",
     "citation_issn": "2789-1234",
     "citation_volume": "1",
     "citation_issue": "2",
     "citation_firstpage": "41",
     "citation_lastpage": "55",
-    "citation_doi": "10.12345/didee.2024.004",
+    "citation_doi": "10.12345/didee.2026.004",
     "citation_pdf_url": "https://didee-publications.com/articles/media-influence-adolescent-sexuality.pdf",
   }
 };
@@ -27,7 +27,7 @@ export default function MediaInfluenceArticle() {
       { name: "Daniel Ojotule Offor", affiliation: "Clinical Psychology Department, University of South Wales, United Kingdom", email: "danielojotule81@gmail.com" }
     ],
     abstract: "Sexuality is critical to the development of the adolescents and young adults as they exhibit certain sexual behaviors which tend towards expression of their sexual feelings. The negative effect of the media on sexuality is enormous that few studies have investigated the dynamics the media is taking to affect the adolescents and young adults. The study aims to examine the effects of media on the sexuality of adolescents and young adults as well as to investigate ways of promoting a positive media influence on adolescents' and young adults' sexuality.",
-    doi: "10.12345/didee.2024.004",
+    doi: "10.12345/didee.2026.004",
     publishedDate: "January 1, 2026",
     volume: "1",
     issue: "2",
@@ -96,7 +96,7 @@ export default function MediaInfluenceArticle() {
           <footer className="mt-12 pt-8 border-t">
             <div className="bg-yellow-50 p-4 rounded-lg">
               <p className="text-sm text-gray-600">
-                <strong>Citation:</strong> Offor, D. O. (2024). The Media Influence on the Sexuality of Adolescents and Young Adults. <em>Didee Publications International Journal</em>, 1(2), 41-55. DOI: 10.12345/didee.2024.004
+                <strong>Citation:</strong> Offor, D. O. (2026). The Media Influence on the Sexuality of Adolescents and Young Adults. <em>Didee Publications International Journal</em>, 1(2), 41-55. DOI: 10.12345/didee.2026.004
               </p>
             </div>
           </footer>

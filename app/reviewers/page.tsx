@@ -24,7 +24,8 @@ export default function EditorialBoardPage() {
     { name: "Dr. Clementina Okeke", specialty: "Law" },
     { name: "Berna Simsek", specialty: "Clinical Research" },
     { name: "Obiageli Nwachukwu", specialty: "Medicine and Pharmacy" },
-    { name: "Ruth Jumoke Olagunju", specialty: "Education" }
+    { name: "Ruth Jumoke Olagunju", specialty: "Education" },
+    { name: "Onubi Ojodomoh Moses", specialty: "Agriculture (Stress physiology, Agro climatology, Sustainable Agriculture)" }
   ]
 
   return (
@@ -87,7 +88,7 @@ export default function EditorialBoardPage() {
         </div>
 
         {/* Peer Reviewers */}
-        <div className="bg-white p-8 rounded-lg shadow-md">
+        <div className="bg-white p-8 rounded-lg shadow-md mb-8">
           <h2 className="text-2xl font-semibold mb-6 text-gray-800">Peer Reviewers</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {peerReviewers.map((reviewer, index) => (
@@ -96,6 +97,21 @@ export default function EditorialBoardPage() {
                 <p className="text-gray-600">{reviewer.specialty}</p>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* Editing and Formatting Team */}
+        <div className="bg-white p-8 rounded-lg shadow-md">
+          <h2 className="text-2xl font-semibold mb-6 text-gray-800">Editing and Formatting Team</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="p-4 border border-gray-200 rounded-lg">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Gerald Okafor</h3>
+              <p className="text-gray-600">Editor and Formatter</p>
+            </div>
+            <div className="p-4 border border-gray-200 rounded-lg">
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Adekola Adebayo Boluwatife</h3>
+              <p className="text-gray-600">Editor and Formatter</p>
+            </div>
           </div>
         </div>
 

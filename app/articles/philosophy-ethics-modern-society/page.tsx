@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "citation_issue": "2",
     "citation_firstpage": "11",
     "citation_lastpage": "25",
-    "citation_doi": "10.12345/didee.2024.002",
+    "citation_doi": "10.12345/didee.2026.002",
     "citation_pdf_url": "https://didee-publications.com/articles/philosophy-ethics-modern-society.pdf",
   }
 };

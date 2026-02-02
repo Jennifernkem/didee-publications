@@ -27,13 +27,13 @@ export default function ArticlesPage() {
     "Theology": [
       {
         id: 'exorcism-catholic-church-gabriele-amorth',
-        title: 'EXORCISM IN THE CATHOLIC CHURCH ACCORDING TO GABRIELE AMORTH'
+        title: 'Exorcism in the Catholic Church According to Gabriele Amorth'
       }
     ],
     "Agriculture": [
       {
         id: 'soil-microbiome-crop-breeding',
-        title: 'Integrating Soil Microbiome Insights into Crop Breeding for Enhanced Agricultural Sustainability'
+        title: 'Integrating soil microbiome insights into crop breeding for enhanced stress resilience'
       }
     ],
     "Law": [

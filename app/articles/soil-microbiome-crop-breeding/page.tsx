@@ -3,31 +3,39 @@ import Navigation from '../../../components/Navigation';
 import SoilMicrobiomeContent from './SoilMicrobiomeContent';
 
 export const metadata: Metadata = {
-  title: "Integrating Soil Microbiome Insights into Crop Breeding for Enhanced Agricultural Sustainability | Didee Publications",
+  title: "Integrating soil microbiome insights into crop breeding for enhanced stress resilience | Didee Publications",
   description: "Research on integrating soil microbiome knowledge into modern crop breeding techniques for sustainable agriculture.",
   other: {
-    "citation_title": "Integrating Soil Microbiome Insights into Crop Breeding for Enhanced Agricultural Sustainability",
-    "citation_author": "Daniel Ojotule Offor",
-    "citation_publication_date": "2024-01-30",
+    "citation_title": "Integrating soil microbiome insights into crop breeding for enhanced stress resilience",
+    "citation_author": "Moses O. Onubi, Inioluwa O. Fasina, Kehinde Isa, Tolulope D. David, Oluwafunmilayo A. Adewuyi, Rasheedat O. Oguntola, Adeola S. Ogunsanmi, Anuoluwapo J. Olabisi, Winner N. Bakati",
+    "citation_publication_date": "2026-01-30",
     "citation_journal_title": "Didee Publications International Journal",
     "citation_issn": "2789-1234",
     "citation_volume": "1",
     "citation_issue": "3",
     "citation_firstpage": "71",
     "citation_lastpage": "85",
-    "citation_doi": "10.12345/didee.2024.006",
+    "citation_doi": "10.12345/didee.2026.006",
     "citation_pdf_url": "https://didee-publications.com/articles/soil-microbiome-crop-breeding.pdf",
   }
 };
 
 export default function SoilMicrobiomeArticle() {
   const article = {
-    title: "Integrating Soil Microbiome Insights into Crop Breeding for Enhanced Agricultural Sustainability",
+    title: "Integrating soil microbiome insights into crop breeding for enhanced stress resilience",
     authors: [
-      { name: "Daniel Ojotule Offor", affiliation: "Agricultural Research Institute, University of South Wales", email: "danielojotule81@gmail.com" }
+      { name: "Moses O. Onubi", affiliation: "Agricultural Research Institute", email: "" },
+      { name: "Inioluwa O. Fasina", affiliation: "Agricultural Research Institute", email: "" },
+      { name: "Kehinde Isa", affiliation: "Agricultural Research Institute", email: "" },
+      { name: "Tolulope D. David", affiliation: "Agricultural Research Institute", email: "" },
+      { name: "Oluwafunmilayo A. Adewuyi", affiliation: "Agricultural Research Institute", email: "" },
+      { name: "Rasheedat O. Oguntola", affiliation: "Agricultural Research Institute", email: "" },
+      { name: "Adeola S. Ogunsanmi", affiliation: "Agricultural Research Institute", email: "" },
+      { name: "Anuoluwapo J. Olabisi", affiliation: "Agricultural Research Institute", email: "" },
+      { name: "Winner N. Bakati", affiliation: "Agricultural Research Institute", email: "" }
     ],
     abstract: "This research explores the integration of soil microbiome knowledge into modern crop breeding techniques to enhance agricultural sustainability. The study examines how understanding soil microbial communities can inform breeding strategies that promote plant-microbe interactions, improve nutrient uptake, and increase crop resilience to environmental stresses.",
-    doi: "10.12345/didee.2024.006",
+    doi: "10.12345/didee.2026.006",
     publishedDate: "January 1, 2026",
     volume: "1",
     issue: "3",
@@ -96,7 +104,7 @@ export default function SoilMicrobiomeArticle() {
           <footer className="mt-12 pt-8 border-t">
             <div className="bg-yellow-50 p-4 rounded-lg">
               <p className="text-sm text-gray-600">
-                <strong>Citation:</strong> Offor, D. O. (2024). Integrating Soil Microbiome Insights into Crop Breeding for Enhanced Agricultural Sustainability. <em>Didee Publications International Journal</em>, 1(3), 71-85. DOI: 10.12345/didee.2024.006
+                <strong>Citation:</strong> Onubi, M. O., et al. (2026). Integrating soil microbiome insights into crop breeding for enhanced stress resilience. <em>Didee Publications International Journal</em>, 1(3), 71-85. DOI: 10.12345/didee.2026.006
               </p>
             </div>
           </footer>

@@ -8,14 +8,14 @@ export const metadata: Metadata = {
   other: {
     "citation_title": "Exorcism in the Catholic Church According to Gabriele Amorth",
     "citation_author": "Daniel Ojotule Offor",
-    "citation_publication_date": "2024-12-19",
+    "citation_publication_date": "2026-12-19",
     "citation_journal_title": "Didee Publications International Journal",
     "citation_issn": "2789-1234",
     "citation_volume": "1",
     "citation_issue": "1",
     "citation_firstpage": "1",
     "citation_lastpage": "15",
-    "citation_doi": "10.12345/didee.2024.001",
+    "citation_doi": "10.12345/didee.2026.001",
     "citation_pdf_url": "https://didee-publications.com/articles/exorcism-catholic-church-gabriele-amorth.pdf",
   }
 };
@@ -27,7 +27,7 @@ export default function ExorcismArticle() {
       { name: 'Daniel Ojotule Offor', affiliation: 'Department of Clinical Psychology, University of South Wales, United Kingdom', email: 'danielojotule81@gmail.com', orcid: '0000-0000-0000-0000' }
     ],
     abstract: `This research examines the practice of exorcism in the Catholic Church through the lens of Father Gabriele Amorth's extensive work and teachings. Father Amorth, who served as the Chief Exorcist of Rome for over 30 years, provided significant insights into the Church's approach to demonic possession and spiritual warfare. This study explores the theological foundations, canonical procedures, and pastoral considerations involved in the Catholic Church's ministry of exorcism.`,
-    doi: '10.12345/didee.2024.001',
+    doi: '10.12345/didee.2026.001',
     publishedDate: 'January 5, 2026',
     volume: '1',
     issue: '1',
@@ -97,7 +97,7 @@ export default function ExorcismArticle() {
           <footer className="mt-12 pt-8 border-t">
             <div className="bg-yellow-50 p-4 rounded-lg">
               <p className="text-sm text-gray-600">
-                <strong>Citation:</strong> Offor, D. O. (2024). Exorcism in the Catholic Church According to Gabriele Amorth. <em>Didee Publications International Journal</em>, 1(1), 1-15. DOI: 10.12345/didee.2024.001
+                <strong>Citation:</strong> Offor, D. O. (2026). Exorcism in the Catholic Church According to Gabriele Amorth. <em>Didee Publications International Journal</em>, 1(1), 1-15. DOI: 10.12345/didee.2026.001
               </p>
             </div>
           </footer>

@@ -8,14 +8,14 @@ export const metadata: Metadata = {
   other: {
     "citation_title": "Peer Influence and Parental Support as Determinants of Anti-Social Behavior among Undergraduate Students in Selected Nigerian Universities",
     "citation_author": "Daniel Ojotule Offor",
-    "citation_publication_date": "2024-01-30",
+    "citation_publication_date": "2026-01-30",
     "citation_journal_title": "Didee Publications International Journal",
     "citation_issn": "2789-1234",
     "citation_volume": "1",
     "citation_issue": "3",
     "citation_firstpage": "56",
     "citation_lastpage": "70",
-    "citation_doi": "10.12345/didee.2024.005",
+    "citation_doi": "10.12345/didee.2026.005",
     "citation_pdf_url": "https://didee-publications.com/articles/peer-influence-parental-support.pdf",
   }
 };
@@ -27,7 +27,7 @@ export default function PeerInfluenceArticle() {
       { name: "Daniel Ojotule Offor", affiliation: "Clinical Psychology Department, University of South Wales, United Kingdom", email: "danielojotule81@gmail.com" }
     ],
     abstract: "This study examines the relationship between peer influence, parental support, and anti-social behavior among undergraduate students in selected Nigerian universities. Using a quantitative research approach, the study investigates how these psychosocial factors contribute to the development and maintenance of anti-social behaviors in the university environment.",
-    doi: "10.12345/didee.2024.005",
+    doi: "10.12345/didee.2026.005",
     publishedDate: "January 1, 2026",
     volume: "1",
     issue: "3",
@@ -96,7 +96,7 @@ export default function PeerInfluenceArticle() {
           <footer className="mt-12 pt-8 border-t">
             <div className="bg-yellow-50 p-4 rounded-lg">
               <p className="text-sm text-gray-600">
-                <strong>Citation:</strong> Offor, D. O. (2024). Peer Influence and Parental Support as Determinants of Anti-Social Behavior among Undergraduate Students in Selected Nigerian Universities. <em>Didee Publications International Journal</em>, 1(3), 56-70. DOI: 10.12345/didee.2024.005
+                <strong>Citation:</strong> Offor, D. O. (2026). Peer Influence and Parental Support as Determinants of Anti-Social Behavior among Undergraduate Students in Selected Nigerian Universities. <em>Didee Publications International Journal</em>, 1(3), 56-70. DOI: 10.12345/didee.2026.005
               </p>
             </div>
           </footer>

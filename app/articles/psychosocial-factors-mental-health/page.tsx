@@ -8,14 +8,14 @@ export const metadata: Metadata = {
   other: {
     "citation_title": "Psychosocial Factors as Determinants of Anti-Social Behaviour Among Emerging Adults During COVID-19 in Nigeria",
     "citation_author": "Daniel Ojotule Offor",
-    "citation_publication_date": "2024-01-25",
+    "citation_publication_date": "2026-01-25",
     "citation_journal_title": "Didee Publications International Journal",
     "citation_issn": "2789-1234",
     "citation_volume": "1",
     "citation_issue": "2",
     "citation_firstpage": "26",
     "citation_lastpage": "40",
-    "citation_doi": "10.12345/didee.2024.003",
+    "citation_doi": "10.12345/didee.2026.003",
     "citation_pdf_url": "https://didee-publications.com/articles/psychosocial-factors-mental-health.pdf",
   }
 };
@@ -27,7 +27,7 @@ export default function PsychosocialArticle() {
       { name: "Daniel Ojotule Offor", affiliation: "Clinical Psychology Department, University of South Wales, United Kingdom", email: "danielojotule81@gmail.com" }
     ],
     abstract: "Antisocial behaviours distort the normal activities within the school, work and societal settings by reducing the level of students' attention and concentration, makes organizational goals unattainable by reducing other workers' commitment to duty, increases the tendency for grooming youths that become thugs, armed robbers and bully of gullible others in the society. This study adopted descriptive survey design and data was collected using Google forms questionnaire. Four research hypotheses were tested at p<.05.",
-    doi: "10.12345/didee.2024.003",
+    doi: "10.12345/didee.2026.003",
     publishedDate: "January 1, 2026",
     volume: "1",
     issue: "2",
@@ -96,7 +96,7 @@ export default function PsychosocialArticle() {
           <footer className="mt-12 pt-8 border-t">
             <div className="bg-yellow-50 p-4 rounded-lg">
               <p className="text-sm text-gray-600">
-                <strong>Citation:</strong> Offor, D. O. (2024). Psychosocial Factors as Determinants of Anti-Social Behaviour Among Emerging Adults During COVID-19 in Nigeria. <em>Didee Publications International Journal</em>, 1(2), 26-40. DOI: 10.12345/didee.2024.003
+                <strong>Citation:</strong> Offor, D. O. (2026). Psychosocial Factors as Determinants of Anti-Social Behaviour Among Emerging Adults During COVID-19 in Nigeria. <em>Didee Publications International Journal</em>, 1(2), 26-40. DOI: 10.12345/didee.2026.003
               </p>
             </div>
           </footer>
