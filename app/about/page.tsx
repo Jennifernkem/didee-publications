@@ -64,10 +64,10 @@ export default function About() {
               <span className="text-white font-bold text-2xl">DO</span>
             </div>
             <div className="flex-1">
-              <h3 className="text-2xl font-semibold mb-2 text-gray-900">Daniel Ojotule Offor</h3>
+              <h3 className="text-2xl font-semibold mb-2 text-gray-900" style={{wordBreak: 'keep-all', whiteSpace: 'nowrap'}}>Daniel Ojotule Offor</h3>
               <p className="text-lg text-blue-600 mb-4">Founder & Chief Executive Officer</p>
               <p className="text-gray-700 leading-relaxed">
-                Didee Publications is led by its Founder and Chief Executive Officer, Daniel&nbsp;Ojotule&nbsp;Offor, 
+                Didee Publications is led by its Founder and Chief Executive Officer, <span style={{wordBreak: 'keep-all', whiteSpace: 'nowrap'}}>Daniel Ojotule Offor</span>, 
                 whose extensive academic training in psychology, clinical psychology, behavioral science, 
                 philosophy, and theology informs the intellectual and ethical foundation of the company. 
                 He holds advanced degrees from leading institutions in the United Kingdom and the United States, 
