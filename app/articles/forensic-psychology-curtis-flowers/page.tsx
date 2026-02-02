@@ -24,8 +24,8 @@ export default function ForensicArticle() {
   const article = {
     title: "Forensic Psychological Analysis of Evidentiary Failures and Jury Bias in the Curtis Flowers Case",
     authors: [
-      { name: "Daniel Ojotule Offor", affiliation: "Clinical Psychology Department, University of South Wales, United Kingdom", email: "danielojotule81@gmail.com" },
-      { name: "Oluwaseun Emmanuel Omopo", affiliation: "Clinical Psychology Department", email: "" }
+      { name: "Daniel Ojotule Offor", affiliation: "Department of Clinical Psychology, University of South Wales, United Kingdom", email: "danielojotule81@gmail.com" },
+      { name: "Oluwaseun Emmanuel Omopo", affiliation: "Department of Counselling and Human Development Studies, University of Ibadan", email: "" }
     ],
     abstract: "This study provides a forensic psychological examination of evidentiary issues and jury bias in the Curtis Flowers legal case, analyzing the psychological factors that contributed to multiple trials and convictions. The research examines the intersection of racial bias, prosecutorial misconduct, and jury decision-making processes in capital punishment cases.",
     doi: "10.12345/didee.2026.007",

@@ -24,15 +24,15 @@ export default function SoilMicrobiomeArticle() {
   const article = {
     title: "Integrating soil microbiome insights into crop breeding for enhanced stress resilience",
     authors: [
-      { name: "Moses O. Onubi", affiliation: "Agricultural Research Institute", email: "" },
-      { name: "Inioluwa O. Fasina", affiliation: "Agricultural Research Institute", email: "" },
-      { name: "Kehinde Isa", affiliation: "Agricultural Research Institute", email: "" },
-      { name: "Tolulope D. David", affiliation: "Agricultural Research Institute", email: "" },
-      { name: "Oluwafunmilayo A. Adewuyi", affiliation: "Agricultural Research Institute", email: "" },
-      { name: "Rasheedat O. Oguntola", affiliation: "Agricultural Research Institute", email: "" },
-      { name: "Adeola S. Ogunsanmi", affiliation: "Agricultural Research Institute", email: "" },
-      { name: "Anuoluwapo J. Olabisi", affiliation: "Agricultural Research Institute", email: "" },
-      { name: "Winner N. Bakati", affiliation: "Agricultural Research Institute", email: "" }
+      { name: "Moses O. Onubi", affiliation: "Department of Agronomy, University of Ibadan, Ibadan, Oyo State, 200284, Nigeria", email: "" },
+      { name: "Inioluwa O. Fasina", affiliation: "Department of Agronomy, University of Ibadan, Ibadan, Oyo State, 200284, Nigeria", email: "" },
+      { name: "Kehinde Isa", affiliation: "Department of Crop Protection and Biology, Ibadan, Oyo state, 200284, Nigeria", email: "" },
+      { name: "Tolulope D. David", affiliation: "Department of Agricultural Extension, Ibadan, Oyo state, 200284, Nigeria", email: "" },
+      { name: "Oluwafunmilayo A. Adewuyi", affiliation: "Department of Agronomy, University of Ibadan, Ibadan, Oyo State, 200284, Nigeria", email: "" },
+      { name: "Rasheedat O. Oguntola", affiliation: "Department of Agronomy, University of Ibadan, Ibadan, Oyo State, 200284, Nigeria", email: "" },
+      { name: "Adeola S. Ogunsanmi", affiliation: "Department of Agronomy, University of Ibadan, Ibadan, Oyo State, 200284, Nigeria", email: "" },
+      { name: "Anuoluwapo J. Olabisi", affiliation: "Department of Agricultural Extension, Ibadan, Oyo state, 200284, Nigeria", email: "" },
+      { name: "Winner N. Bakati", affiliation: "Department of Agronomy, University of Ibadan, Ibadan, Oyo State, 200284, Nigeria", email: "" }
     ],
     abstract: "This research explores the integration of soil microbiome knowledge into modern crop breeding techniques to enhance agricultural sustainability. The study examines how understanding soil microbial communities can inform breeding strategies that promote plant-microbe interactions, improve nutrient uptake, and increase crop resilience to environmental stresses.",
     doi: "10.12345/didee.2026.006",
