@@ -35,7 +35,6 @@ export default function SoilMicrobiomeArticle() {
       { name: "Winner N. Bakati", affiliation: "Department of Agronomy, University of Ibadan, Ibadan, Oyo State, 200284, Nigeria" }
     ],
     abstract: "This research explores the integration of soil microbiome knowledge into modern crop breeding techniques to enhance agricultural sustainability. The study examines how understanding soil microbial communities can inform breeding strategies that promote plant-microbe interactions, improve nutrient uptake, and increase crop resilience to environmental stresses.",
-    doi: "10.12345/didee.2026.006",
     publishedDate: "January 1, 2026",
     volume: "1",
     issue: "3",
@@ -63,7 +62,6 @@ export default function SoilMicrobiomeArticle() {
             
             <div className="bg-gray-50 p-4 rounded-lg mb-6">
               <div className="grid md:grid-cols-2 gap-4 text-sm">
-                <div><strong>DOI:</strong> {article.doi}</div>
                 <div><strong>Published:</strong> {article.publishedDate}</div>
                 <div><strong>Volume:</strong> {article.volume}, Issue: {article.issue}</div>
                 <div><strong>Pages:</strong> {article.pages}</div>

@@ -27,7 +27,6 @@ export default function MediaInfluenceArticle() {
       { name: "Daniel Ojotule Offor", affiliation: "Clinical Psychology Department, University of South Wales, United Kingdom", email: "danielojotule81@gmail.com" }
     ],
     abstract: "Sexuality is critical to the development of the adolescents and young adults as they exhibit certain sexual behaviors which tend towards expression of their sexual feelings. The negative effect of the media on sexuality is enormous that few studies have investigated the dynamics the media is taking to affect the adolescents and young adults. The study aims to examine the effects of media on the sexuality of adolescents and young adults as well as to investigate ways of promoting a positive media influence on adolescents' and young adults' sexuality.",
-    doi: "10.12345/didee.2026.004",
     publishedDate: "January 1, 2026",
     volume: "1",
     issue: "2",
@@ -56,7 +55,6 @@ export default function MediaInfluenceArticle() {
             
             <div className="bg-gray-50 p-4 rounded-lg mb-6">
               <div className="grid md:grid-cols-2 gap-4 text-sm">
-                <div><strong>DOI:</strong> {article.doi}</div>
                 <div><strong>Published:</strong> {article.publishedDate}</div>
                 <div><strong>Volume:</strong> {article.volume}, Issue: {article.issue}</div>
                 <div><strong>Pages:</strong> {article.pages}</div>

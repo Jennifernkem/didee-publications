@@ -28,7 +28,6 @@ export default function ForensicArticle() {
       { name: "Oluwaseun Emmanuel Omopo", affiliation: "Department of Counselling and Human Development Studies, University of Ibadan" }
     ],
     abstract: "This study provides a forensic psychological examination of evidentiary issues and jury bias in the Curtis Flowers legal case, analyzing the psychological factors that contributed to multiple trials and convictions. The research examines the intersection of racial bias, prosecutorial misconduct, and jury decision-making processes in capital punishment cases.",
-    doi: "10.12345/didee.2026.007",
     publishedDate: "January 1, 2026",
     volume: "1",
     issue: "3",
@@ -57,7 +56,6 @@ export default function ForensicArticle() {
             
             <div className="bg-gray-50 p-4 rounded-lg mb-6">
               <div className="grid md:grid-cols-2 gap-4 text-sm">
-                <div><strong>DOI:</strong> {article.doi}</div>
                 <div><strong>Published:</strong> {article.publishedDate}</div>
                 <div><strong>Volume:</strong> {article.volume}, Issue: {article.issue}</div>
                 <div><strong>Pages:</strong> {article.pages}</div>

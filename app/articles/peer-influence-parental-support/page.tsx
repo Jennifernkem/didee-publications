@@ -27,7 +27,6 @@ export default function PeerInfluenceArticle() {
       { name: "Daniel Ojotule Offor", affiliation: "Clinical Psychology Department, University of South Wales, United Kingdom", email: "danielojotule81@gmail.com" }
     ],
     abstract: "This study examines the relationship between peer influence, parental support, and anti-social behavior among undergraduate students in selected Nigerian universities. Using a quantitative research approach, the study investigates how these psychosocial factors contribute to the development and maintenance of anti-social behaviors in the university environment.",
-    doi: "10.12345/didee.2026.005",
     publishedDate: "January 1, 2026",
     volume: "1",
     issue: "3",
@@ -56,7 +55,6 @@ export default function PeerInfluenceArticle() {
             
             <div className="bg-gray-50 p-4 rounded-lg mb-6">
               <div className="grid md:grid-cols-2 gap-4 text-sm">
-                <div><strong>DOI:</strong> {article.doi}</div>
                 <div><strong>Published:</strong> {article.publishedDate}</div>
                 <div><strong>Volume:</strong> {article.volume}, Issue: {article.issue}</div>
                 <div><strong>Pages:</strong> {article.pages}</div>
