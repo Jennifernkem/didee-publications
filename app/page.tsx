@@ -1,4 +1,47 @@
 export default function Home() {
+  const articlesByDomain = {
+    "Psychology": [
+      {
+        id: 'psychosocial-factors-mental-health',
+        title: 'Psychosocial Factors as Determinants of Anti-Social Behaviour Among Emerging Adults During COVID-19 in Nigeria'
+      },
+      {
+        id: 'peer-influence-parental-support',
+        title: 'Peer Influence and Parental Support as Determinants of Anti-Social Behavior among Undergraduate Students in Selected Nigerian Universities'
+      }
+    ],
+    "Philosophy": [
+      {
+        id: 'philosophy-ethics-modern-society',
+        title: 'Existential Dialectics of Throwness and Nothingness in Heideggerian Philosophy'
+      }
+    ],
+    "Media Studies": [
+      {
+        id: 'media-influence-adolescent-sexuality',
+        title: 'The Media Influence on the Sexuality of Adolescents and Young Adults'
+      }
+    ],
+    "Theology": [
+      {
+        id: 'exorcism-catholic-church-gabriele-amorth',
+        title: 'Exorcism in the Catholic Church According to Gabriele Amorth'
+      }
+    ],
+    "Agriculture": [
+      {
+        id: 'soil-microbiome-crop-breeding',
+        title: 'Integrating soil microbiome insights into crop breeding for enhanced stress resilience'
+      }
+    ],
+    "Law": [
+      {
+        id: 'forensic-psychology-curtis-flowers',
+        title: 'Forensic Psychological Analysis of Evidentiary Failures and Jury Bias in the Curtis Flowers Case'
+      }
+    ]
+  }
+
   return (
     <div className="min-h-screen bg-white" style={{
       backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/images/hero-bg.jpg')",
@@ -127,6 +170,30 @@ export default function Home() {
               <p className="font-semibold text-amber-800"></p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Articles Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <h3 className="text-4xl font-bold text-center mb-12 text-gray-900">Published Articles</h3>
+          
+          {Object.entries(articlesByDomain).map(([domain, articles]) => (
+            <div key={domain} className="mb-10">
+              <h4 className="text-2xl font-bold mb-6 text-gray-800 border-b-2 border-amber-600 pb-2">{domain}</h4>
+              <div className="space-y-4">
+                {articles.map(article => (
+                  <div key={article.id} className="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <h5 className="text-xl font-semibold">
+                      <a href={`/articles/${article.id}`} className="text-blue-600 hover:underline hover:text-blue-800 transition-colors">
+                        {article.title}
+                      </a>
+                    </h5>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
