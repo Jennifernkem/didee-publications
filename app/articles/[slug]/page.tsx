@@ -4,6 +4,18 @@ interface ArticleProps {
   params: { slug: string };
 }
 
+export function generateStaticParams() {
+  return [
+    { slug: 'psychosocial-factors-mental-health' },
+    { slug: 'philosophy-ethics-modern-society' },
+    { slug: 'media-influence-adolescent-sexuality' },
+    { slug: 'exorcism-catholic-church-gabriele-amorth' },
+    { slug: 'peer-influence-parental-support' },
+    { slug: 'soil-microbiome-crop-breeding' },
+    { slug: 'forensic-psychology-curtis-flowers' }
+  ];
+}
+
 export async function generateMetadata({ params }: ArticleProps): Promise<Metadata> {
   // In production, fetch article data from database
   const article = {
