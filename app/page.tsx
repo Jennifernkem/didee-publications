@@ -89,7 +89,7 @@ export default function Home() {
       }}>
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 md:mb-6 drop-shadow-lg">
-            DIDEE Publications Journal
+            Didee Publications Journal
           </h2>
           <p className="text-lg md:text-xl text-gray-200 mb-6 md:mb-8 max-w-3xl mx-auto px-4 drop-shadow-md">
             Join thousands of researchers worldwide! Get expert review, valuable feedback, 
