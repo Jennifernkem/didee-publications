@@ -57,7 +57,7 @@ export default function Home() {
             <div className="flex items-center space-x-3 md:space-x-4">
               <img src="/Black Elegant Modern Name Initials Monogram Logo.png" alt="Didee Publications" className="w-10 h-10 md:w-12 md:h-12 object-contain" />
               <div>
-                <h1 className="text-xl md:text-2xl font-bold text-gray-900">Didee Publications</h1>
+                <h1 className="text-xl md:text-2xl font-bold text-gray-900">Didee Publications Journal</h1>
                 <p className="text-xs md:text-sm text-gray-600">International Journal Publishing</p>
               </div>
             </div>
@@ -89,7 +89,7 @@ export default function Home() {
       }}>
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 md:mb-6 drop-shadow-lg">
-            Advance Your Research Journey
+            DIDEE Publications Journal
           </h2>
           <p className="text-lg md:text-xl text-gray-200 mb-6 md:mb-8 max-w-3xl mx-auto px-4 drop-shadow-md">
             Join thousands of researchers worldwide! Get expert review, valuable feedback, 
