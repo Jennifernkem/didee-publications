@@ -12,7 +12,14 @@ export function generateStaticParams() {
     { slug: 'exorcism-catholic-church-gabriele-amorth' },
     { slug: 'peer-influence-parental-support' },
     { slug: 'soil-microbiome-crop-breeding' },
-    { slug: 'forensic-psychology-curtis-flowers' }
+    { slug: 'forensic-psychology-curtis-flowers' },
+    { slug: 'principals-perceptions' },
+    { slug: 'the-roles-contextual' },
+    { slug: 'youth-empowerment-pathway' },
+    { slug: 'Influence-of-school-locations' },
+    { slug: 'enhancing-quality-assurance-in-biology-education' },
+    { slug: 'counsellors-perception-of-peer-mentoring' },
+    { slug: 'the-impact-exorcism-practices' }
   ];
 }
 
@@ -125,6 +132,76 @@ export default function ArticlePage({ params }: ArticleProps) {
         volume: "1", issue: "3", pages: "86-100",
         keywords: ["Forensic Psychology", "Jury Bias", "Legal Evidence", "Criminal Justice"],
         pdfUrl: "/articles/forensic-psychology-curtis-flowers.pdf"
+      },
+      'principals-perceptions': {
+        title: "Principals' Perceptions of Conditions of Service as Human Resource Management Challenges in Secondary Schools in Enugu State",
+        authors: [{ name: "Chima, Emmanuel Ibe", affiliation: "Department of Educational Management, Faculty of Education" }],
+        abstract: "Study on principals' perceptions of service conditions and HR management challenges in secondary schools.",
+        doi: "10.12345/didee.2024.008",
+        publishedDate: "January 1, 2024",
+        volume: "1", issue: "4", pages: "101-115",
+        keywords: ["Educational Management", "Human Resources", "Secondary Schools", "Enugu State"],
+        pdfUrl: "/articles/principals-perceptions.pdf"
+      },
+      'the-impact-exorcism-practices': {
+        title: "The Impact of Exorcism Practices on Mental Health Outcomes",
+        authors: [{ name: "Daniel Ojotule Offor", affiliation: "Department of Clinical Psychology, University of South Wales" }],
+        abstract: "Examination of the psychological impact of exorcism practices on mental health outcomes.",
+        doi: "10.12345/didee.2024.009",
+        publishedDate: "January 1, 2024",
+        volume: "1", issue: "4", pages: "116-130",
+        keywords: ["Exorcism", "Mental Health", "Clinical Psychology", "Theology"],
+        pdfUrl: "/articles/the-impact-exorcism-practices.pdf"
+      },
+      'the-roles-contextual': {
+        title: "The Roles of Contextual Instructional Models in Addressing Misconceptions Held by Secondary School Physics Students",
+        authors: [{ name: "Kingsley T. Onah", affiliation: "Department of Science Education" }],
+        abstract: "Research on contextual instructional models for addressing physics misconceptions in secondary schools.",
+        doi: "10.12345/didee.2024.010",
+        publishedDate: "January 1, 2024",
+        volume: "1", issue: "4", pages: "131-145",
+        keywords: ["Physics Education", "Instructional Models", "Misconceptions", "Secondary Schools"],
+        pdfUrl: "/articles/the-roles-contextual.pdf"
+      },
+      'youth-empowerment-pathway': {
+        title: "Youth Empowerment: A Pathway to Unlocking Employability and Entrepreneurial Skills in Enugu State, Nigeria",
+        authors: [{ name: "Odenigbo Veronica Ngozi", affiliation: "Department of Science Education, Enugu State University of Science and Technology" }, { name: "Ukwuaba Loretta Chika", affiliation: "" }],
+        abstract: "Study on youth empowerment strategies for developing employability and entrepreneurial skills.",
+        doi: "10.12345/didee.2024.011",
+        publishedDate: "January 1, 2024",
+        volume: "1", issue: "4", pages: "146-160",
+        keywords: ["Youth Empowerment", "Employability", "Entrepreneurship", "Enugu State"],
+        pdfUrl: "/articles/youth-empowerment-pathway.pdf"
+      },
+      'Influence-of-school-locations': {
+        title: "Influence of School Location on the Effectiveness of Multimedia Instruction in Christian Religious Studies in Edo State, Nigeria",
+        authors: [{ name: "Alexandre Onyekachi Ugwu", affiliation: "" }],
+        abstract: "Analysis of how school location affects multimedia instruction effectiveness in religious studies.",
+        doi: "10.12345/didee.2024.012",
+        publishedDate: "January 1, 2024",
+        volume: "1", issue: "4", pages: "161-175",
+        keywords: ["School Location", "Multimedia Instruction", "Religious Studies", "Edo State"],
+        pdfUrl: "/articles/Influence-of-school-locations.pdf"
+      },
+      'enhancing-quality-assurance-in-biology-education': {
+        title: "Enhancing Quality Assurance in Biology Education Programme: Strategies for Effective Implementation of NCCE Benchmark in Colleges of Education",
+        authors: [{ name: "Abigail C. Obodo", affiliation: "Department of Science Education, Enugu State University of Science and Technology" }, { name: "Kingsley T. Onah", affiliation: "Department of Science Education, Enugu State University of Science and Technology" }, { name: "Jacinta L. Ogbonna", affiliation: "Department of Biology Education, Federal College of Education Technical" }],
+        abstract: "Strategies for implementing quality assurance in biology education programs in colleges of education.",
+        doi: "10.12345/didee.2024.013",
+        publishedDate: "January 1, 2024",
+        volume: "1", issue: "4", pages: "176-190",
+        keywords: ["Quality Assurance", "Biology Education", "NCCE", "Colleges of Education"],
+        pdfUrl: "/articles/enhancing-quality-assurance-in-biology-education.pdf"
+      },
+      'counsellors-perception-of-peer-mentoring': {
+        title: "Counsellors Perception of Peer Mentoring on Students' Academic Performance in Secondary Schools in Enugu State",
+        authors: [{ name: "Ikeji Maureen Chinyeaka", affiliation: "Department of Guidance and Counselling, Faculty of Education, Peaceland University" }],
+        abstract: "Study on counsellors' perceptions of peer mentoring impact on academic performance in secondary schools.",
+        doi: "10.12345/didee.2024.014",
+        publishedDate: "January 1, 2024",
+        volume: "1", issue: "4", pages: "191-205",
+        keywords: ["Peer Mentoring", "Academic Performance", "Counselling", "Secondary Schools"],
+        pdfUrl: "/articles/counsellors-perception-of-peer-mentoring.pdf"
       }
     };
     

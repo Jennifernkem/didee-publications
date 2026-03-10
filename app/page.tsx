@@ -10,6 +10,32 @@ export default function Home() {
         title: 'Peer Influence and Parental Support as Determinants of Anti-Social Behavior among Undergraduate Students in Selected Nigerian Universities'
       }
     ],
+    "Education": [
+      {
+        id: 'principals-perceptions',
+        title: "Principals' Perceptions of Conditions of Service as Human Resource Management Challenges in Secondary Schools in Enugu State"
+      },
+      {
+        id: 'the-roles-contextual',
+        title: 'The Roles of Contextual Instructional Models in Addressing Misconceptions Held by Secondary School Physics Students'
+      },
+      {
+        id: 'youth-empowerment-pathway',
+        title: 'Youth Empowerment: A Pathway to Unlocking Employability and Entrepreneurial Skills in Enugu State, Nigeria'
+      },
+      {
+        id: 'Influence-of-school-locations',
+        title: 'Influence of School Location on the Effectiveness of Multimedia Instruction in Christian Religious Studies in Edo State, Nigeria'
+      },
+      {
+        id: 'enhancing-quality-assurance-in-biology-education',
+        title: 'Enhancing Quality Assurance in Biology Education Programme: Strategies for Effective Implementation of NCCE Benchmark in Colleges of Education'
+      },
+      {
+        id: 'counsellors-perception-of-peer-mentoring',
+        title: "Counsellors Perception of Peer Mentoring on Students' Academic Performance in Secondary Schools in Enugu State"
+      }
+    ],
     "Philosophy": [
       {
         id: 'philosophy-ethics-modern-society',
@@ -26,6 +52,10 @@ export default function Home() {
       {
         id: 'exorcism-catholic-church-gabriele-amorth',
         title: 'Exorcism in the Catholic Church According to Gabriele Amorth'
+      },
+      {
+        id: 'the-impact-exorcism-practices',
+        title: 'The Impact of Exorcism Practices on Mental Health Outcomes'
       }
     ],
     "Agriculture": [
