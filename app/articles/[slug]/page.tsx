@@ -16,7 +16,7 @@ export function generateStaticParams() {
     { slug: 'principals-perceptions' },
     { slug: 'the-roles-contextual' },
     { slug: 'youth-empowerment-pathway' },
-    { slug: 'Influence-of-school-locations' },
+    { slug: 'influence-of-school-locations' },
     { slug: 'enhancing-quality-assurance-in-biology-education' },
     { slug: 'counsellors-perception-of-peer-mentoring' },
     { slug: 'the-impact-exorcism-practices' }
@@ -173,7 +173,7 @@ export default function ArticlePage({ params }: ArticleProps) {
         keywords: ["Youth Empowerment", "Employability", "Entrepreneurship", "Enugu State"],
         pdfUrl: "/articles/youth-empowerment-pathway.pdf"
       },
-      'Influence-of-school-locations': {
+      'influence-of-school-locations': {
         title: "Influence of School Location on the Effectiveness of Multimedia Instruction in Christian Religious Studies in Edo State, Nigeria",
         authors: [{ name: "Alexandre Onyekachi Ugwu", affiliation: "" }],
         abstract: "Analysis of how school location affects multimedia instruction effectiveness in religious studies.",

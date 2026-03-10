@@ -26,7 +26,7 @@ export default function ArticlesPage() {
         title: 'Youth Empowerment: A Pathway to Unlocking Employability and Entrepreneurial Skills in Enugu State, Nigeria'
       },
       {
-        id: 'Influence-of-school-locations',
+        id: 'influence-of-school-locations',
         title: 'Influence of School Location on the Effectiveness of Multimedia Instruction in Christian Religious Studies in Edo State, Nigeria'
       },
       {
