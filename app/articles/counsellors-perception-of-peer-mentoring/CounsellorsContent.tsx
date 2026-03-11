@@ -50,7 +50,7 @@ export default function CounsellorsContent() {
           The results show that male and female guidance counsellors perceived that online peer mentoring to a great extent influenced students' academic performance in secondary school in Enugu State. Male guidance counsellors had mean scores ranging from 2.00 to 3.50, while female guidance counsellors had mean scores that ranged from 2.00 to 3.48. The respondents had cluster means of 3.00 and 2.97, with corresponding standard deviations of .89 and .90 respectively.
         </p>
         <p className="mb-4">
-          The findings revealed that there was no significant difference in the mean scores of male and female guidance counsellors' perception on their perception of online peer mentoring on students' academic performance in secondary school in Enugu State, with t(46) = .178, P = .859 (P > 0.05).
+          The findings revealed that there was no significant difference in the mean scores of male and female guidance counsellors' perception on their perception of online peer mentoring on students' academic performance in secondary school in Enugu State, with t(46) = .178, P = .859 (P &gt; 0.05).
         </p>
       </section>
 
