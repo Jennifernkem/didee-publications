@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Navigation from '../../../components/Navigation';
 
 export const metadata: Metadata = {
   title: "The Impact of Exorcism Practices on Mental Health Outcomes | Didee Publications",
@@ -10,7 +11,7 @@ export default function ImpactExorcismArticle() {
     title: "The Impact of Exorcism Practices on Mental Health Outcomes",
     authors: [{ name: "Daniel Ojotule Offor", affiliation: "Department of Clinical Psychology, University of South Wales" }],
     abstract: "Examination of the psychological impact of exorcism practices on mental health outcomes.",
-    publishedDate: "January 1, 2024",
+    publishedDate: 'March 1, 2026',
     volume: "1", issue: "4", pages: "116-130",
     keywords: ["Exorcism", "Mental Health", "Clinical Psychology", "Theology"],
     pdfUrl: "/articles/the-impact-exorcism-practices.pdf"
@@ -18,6 +19,7 @@ export default function ImpactExorcismArticle() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Navigation />
       <div className="max-w-4xl mx-auto px-4 py-12">
         <article>
           <header className="mb-8">

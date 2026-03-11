@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Navigation from '../../../components/Navigation';
 
 export const metadata: Metadata = {
   title: "Youth Empowerment: A Pathway to Unlocking Employability | Didee Publications",
@@ -13,7 +14,7 @@ export default function YouthEmpowermentArticle() {
       { name: "Ukwuaba Loretta Chika", affiliation: "" }
     ],
     abstract: "Study on youth empowerment strategies for developing employability and entrepreneurial skills.",
-    publishedDate: "January 1, 2024",
+    publishedDate: 'March 1, 2026',
     volume: "1", issue: "4", pages: "146-160",
     keywords: ["Youth Empowerment", "Employability", "Entrepreneurship", "Enugu State"],
     pdfUrl: "/articles/youth-empowerment-pathway.pdf"
@@ -21,6 +22,7 @@ export default function YouthEmpowermentArticle() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Navigation />
       <div className="max-w-4xl mx-auto px-4 py-12">
         <article>
           <header className="mb-8">

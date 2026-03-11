@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Navigation from '../../../components/Navigation';
 
 export const metadata: Metadata = {
   title: "Influence of School Location on Multimedia Instruction | Didee Publications",
@@ -10,7 +11,7 @@ export default function InfluenceSchoolLocationsArticle() {
     title: "Influence of School Location on the Effectiveness of Multimedia Instruction in Christian Religious Studies in Edo State, Nigeria",
     authors: [{ name: "Alexandre Onyekachi Ugwu", affiliation: "" }],
     abstract: "Analysis of how school location affects multimedia instruction effectiveness in religious studies.",
-    publishedDate: "January 1, 2024",
+    publishedDate: 'March 1, 2026',
     volume: "1", issue: "4", pages: "161-175",
     keywords: ["School Location", "Multimedia Instruction", "Religious Studies", "Edo State"],
     pdfUrl: "/articles/Influence-of-school-locations.pdf"
@@ -18,6 +19,7 @@ export default function InfluenceSchoolLocationsArticle() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Navigation />
       <div className="max-w-4xl mx-auto px-4 py-12">
         <article>
           <header className="mb-8">

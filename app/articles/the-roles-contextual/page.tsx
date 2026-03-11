@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Navigation from '../../../components/Navigation';
 
 export const metadata: Metadata = {
   title: "The Roles of Contextual Instructional Models | Didee Publications",
@@ -10,7 +11,7 @@ export default function RolesContextualArticle() {
     title: "The Roles of Contextual Instructional Models in Addressing Misconceptions Held by Secondary School Physics Students",
     authors: [{ name: "Kingsley T. Onah", affiliation: "Department of Science Education" }],
     abstract: "Research on contextual instructional models for addressing physics misconceptions in secondary schools.",
-    publishedDate: "January 1, 2024",
+    publishedDate: 'March 1, 2026',
     volume: "1", issue: "4", pages: "131-145",
     keywords: ["Physics Education", "Instructional Models", "Misconceptions", "Secondary Schools"],
     pdfUrl: "/articles/the-roles-contextual.pdf"
@@ -18,6 +19,7 @@ export default function RolesContextualArticle() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Navigation />
       <div className="max-w-4xl mx-auto px-4 py-12">
         <article>
           <header className="mb-8">

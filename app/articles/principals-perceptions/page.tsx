@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Navigation from '../../../components/Navigation';
 
 export const metadata: Metadata = {
   title: "Principals' Perceptions of Conditions of Service | Didee Publications",
@@ -10,7 +11,7 @@ export default function PrincipalsPerceptionsArticle() {
     title: "Principals' Perceptions of Conditions of Service as Human Resource Management Challenges in Secondary Schools in Enugu State",
     authors: [{ name: "Chima, Emmanuel Ibe", affiliation: "Department of Educational Management, Faculty of Education" }],
     abstract: "Study on principals' perceptions of service conditions and HR management challenges in secondary schools.",
-    publishedDate: "January 1, 2024",
+    publishedDate: 'March 1, 2026',
     volume: "1", issue: "4", pages: "101-115",
     keywords: ["Educational Management", "Human Resources", "Secondary Schools", "Enugu State"],
     pdfUrl: "/articles/principals-perceptions.pdf"
@@ -18,6 +19,7 @@ export default function PrincipalsPerceptionsArticle() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Navigation />
       <div className="max-w-4xl mx-auto px-4 py-12">
         <article>
           <header className="mb-8">

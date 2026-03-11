@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Navigation from '../../../components/Navigation';
 
 export const metadata: Metadata = {
   title: "Counsellors Perception of Peer Mentoring | Didee Publications",
@@ -10,7 +11,7 @@ export default function CounsellorsPerceptionArticle() {
     title: "Counsellors Perception of Peer Mentoring on Students' Academic Performance in Secondary Schools in Enugu State",
     authors: [{ name: "Ikeji Maureen Chinyeaka", affiliation: "Department of Guidance and Counselling, Faculty of Education, Peaceland University" }],
     abstract: "Study on counsellors' perceptions of peer mentoring impact on academic performance in secondary schools.",
-    publishedDate: "January 1, 2024",
+    publishedDate: 'March 1, 2026',
     volume: "1", issue: "4", pages: "191-205",
     keywords: ["Peer Mentoring", "Academic Performance", "Counselling", "Secondary Schools"],
     pdfUrl: "/articles/counsellors-perception-of-peer-mentoring.pdf"
@@ -18,6 +19,7 @@ export default function CounsellorsPerceptionArticle() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Navigation />
       <div className="max-w-4xl mx-auto px-4 py-12">
         <article>
           <header className="mb-8">

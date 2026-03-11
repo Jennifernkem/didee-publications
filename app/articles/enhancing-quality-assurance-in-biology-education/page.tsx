@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Navigation from '../../../components/Navigation';
 
 export const metadata: Metadata = {
   title: "Enhancing Quality Assurance in Biology Education | Didee Publications",
@@ -14,7 +15,7 @@ export default function QualityAssuranceArticle() {
       { name: "Jacinta L. Ogbonna", affiliation: "Department of Biology Education, Federal College of Education Technical" }
     ],
     abstract: "Strategies for implementing quality assurance in biology education programs in colleges of education.",
-    publishedDate: "January 1, 2024",
+    publishedDate: 'March 1, 2026',
     volume: "1", issue: "4", pages: "176-190",
     keywords: ["Quality Assurance", "Biology Education", "NCCE", "Colleges of Education"],
     pdfUrl: "/articles/enhancing-quality-assurance-in-biology-education.pdf"
@@ -22,6 +23,7 @@ export default function QualityAssuranceArticle() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Navigation />
       <div className="max-w-4xl mx-auto px-4 py-12">
         <article>
           <header className="mb-8">
