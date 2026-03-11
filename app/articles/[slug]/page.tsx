@@ -4,6 +4,10 @@ interface ArticleProps {
   params: { slug: string };
 }
 
+export const dynamicParams = false;
+
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return [
     { slug: 'psychosocial-factors-mental-health' },
