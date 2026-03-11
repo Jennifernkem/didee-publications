@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Navigation from '../../../components/Navigation';
+import YouthEmpowermentContent from './YouthEmpowermentContent';
 
 export const metadata: Metadata = {
   title: "Youth Empowerment: A Pathway to Unlocking Employability | Didee Publications",
@@ -10,10 +11,10 @@ export default function YouthEmpowermentArticle() {
   const article = {
     title: "Youth Empowerment: A Pathway to Unlocking Employability and Entrepreneurial Skills in Enugu State, Nigeria",
     authors: [
-      { name: "Odenigbo Veronica Ngozi", affiliation: "Department of Science Education, Enugu State University of Science and Technology" },
+      { name: "Odenigbo Veronica Ngozi", affiliation: "Department of Science Education, Enugu State University of Science and Technology", email: "odenigbo.veronica@esut.edu.ng" },
       { name: "Ukwuaba Loretta Chika", affiliation: "" }
     ],
-    abstract: "Study on youth empowerment strategies for developing employability and entrepreneurial skills.",
+    abstract: "This study examines youth empowerment as a pathway to unlocking entrepreneurial skills and employability in Enugu State, Nigeria. Using a descriptive survey design with 103 youths (42 males and 61 females), the study investigated the effects of youth joblessness and empowerment on society. Findings indicated that jobless youths tend to join bad gangs for money, while empowered youths support themselves, their communities, and the nation in bringing human, economic, and social development. Results showed that youth joblessness leads to increased poverty, social unrest, poor healthcare, inability to acquire skills, brain drain, low self-esteem, political hooliganism, and criminality. Conversely, youth empowerment improves entrepreneurial skills development, increases vocational training opportunities, reduces poverty, fosters creativity, brings economic growth, improves employment and job creation, and develops effective leaders. The study recommends that government establish skill acquisition centers with good facilities and qualified facilitators.",
     publishedDate: 'March 1, 2026',
     volume: "1", issue: "4", pages: "146-160",
     keywords: ["Youth Empowerment", "Employability", "Entrepreneurship", "Enugu State"],
@@ -33,6 +34,14 @@ export default function YouthEmpowermentArticle() {
                 <div key={index} className="text-gray-700 mb-2">
                   <strong>{author.name}</strong><br/>
                   {author.affiliation && <span className="text-sm italic">{author.affiliation}</span>}
+                  {author.email && (
+                    <>
+                      <br/>
+                      <a href={`mailto:${author.email}`} className="text-blue-600 hover:underline text-sm">
+                        {author.email}
+                      </a>
+                    </>
+                  )}
                 </div>
               ))}
             </div>
@@ -68,6 +77,10 @@ export default function YouthEmpowermentArticle() {
               </div>
             </div>
           </header>
+          
+          <div className="prose max-w-none">
+            <YouthEmpowermentContent />
+          </div>
         </article>
       </div>
     </div>

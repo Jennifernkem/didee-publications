@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Navigation from '../../../components/Navigation';
+import ExorcismContent from './ExorcismContent';
 
 export const metadata: Metadata = {
   title: "The Impact of Exorcism Practices on Mental Health Outcomes | Didee Publications",
@@ -9,8 +10,8 @@ export const metadata: Metadata = {
 export default function ImpactExorcismArticle() {
   const article = {
     title: "The Impact of Exorcism Practices on Mental Health Outcomes",
-    authors: [{ name: "Daniel Ojotule Offor", affiliation: "Department of Clinical Psychology, University of South Wales" }],
-    abstract: "Examination of the psychological impact of exorcism practices on mental health outcomes.",
+    authors: [{ name: "Daniel Ojotule Offor", affiliation: "Department of Clinical Psychology, University of South Wales", email: "danielojotule81@gmail.com" }],
+    abstract: "This article reviews clinical evidence, case reports, and anthropological literature on the psychological consequences of exorcism practices. While believers view exorcism as legitimate spiritual intervention, mental health professionals observe that individuals subjected to exorcism often present with severe psychiatric symptoms. Findings show exorcism produces mixed results: it may provide psychological healing and social support when carried out non-coercively with psychotherapy, but negative outcomes include delayed evidence-based treatment, worsened symptoms through trauma, physical injury, and death. The study concludes that exorcism cannot replace psychiatric treatment due to lack of standardized clinical oversight, symptom exacerbation in vulnerable individuals, and scientific ineffectiveness compared to psychotherapy.",
     publishedDate: 'March 1, 2026',
     volume: "1", issue: "4", pages: "116-130",
     keywords: ["Exorcism", "Mental Health", "Clinical Psychology", "Theology"],
@@ -29,7 +30,12 @@ export default function ImpactExorcismArticle() {
               {article.authors.map((author, index) => (
                 <div key={index} className="text-gray-700">
                   <strong>{author.name}</strong><br/>
-                  <span className="text-sm italic">{author.affiliation}</span>
+                  <span className="text-sm italic">{author.affiliation}</span><br/>
+                  {author.email && (
+                    <a href={`mailto:${author.email}`} className="text-blue-600 hover:underline text-sm">
+                      {author.email}
+                    </a>
+                  )}
                 </div>
               ))}
             </div>
@@ -65,6 +71,10 @@ export default function ImpactExorcismArticle() {
               </div>
             </div>
           </header>
+          
+          <div className="prose max-w-none">
+            <ExorcismContent />
+          </div>
         </article>
       </div>
     </div>

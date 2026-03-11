@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Navigation from '../../../components/Navigation';
+import ContextualContent from './ContextualContent';
 
 export const metadata: Metadata = {
   title: "The Roles of Contextual Instructional Models | Didee Publications",
@@ -9,8 +10,8 @@ export const metadata: Metadata = {
 export default function RolesContextualArticle() {
   const article = {
     title: "The Roles of Contextual Instructional Models in Addressing Misconceptions Held by Secondary School Physics Students",
-    authors: [{ name: "Kingsley T. Onah", affiliation: "Department of Science Education" }],
-    abstract: "Research on contextual instructional models for addressing physics misconceptions in secondary schools.",
+    authors: [{ name: "Kingsley T. Onah", affiliation: "Department of Science Education, Enugu State University of Science and Technology", email: "" }],
+    abstract: "This study examines the pivotal role of contextual models in addressing and demystifying common misconceptions in secondary school physics. Physics concepts, often abstract, stem from misconceptions that conflict with students' intuitive understandings rooted in everyday experiences, leading to persistent low achievement. Contextual models, by embedding scientific principles within relatable real-world scenarios, facilitate deeper and more accurate conceptual understanding. They help students bridge the gap between pre-existing notions and scientific explanations by demonstrating practical application and relevance of physics. This approach fosters cognitive conflict, prompting students to critically evaluate existing ideas and reconstruct knowledge based on scientific principles, ultimately enhancing conceptual clarity, promoting critical thinking, and improving students' ability to apply physics effectively.",
     publishedDate: 'March 1, 2026',
     volume: "1", issue: "4", pages: "131-145",
     keywords: ["Physics Education", "Instructional Models", "Misconceptions", "Secondary Schools"],
@@ -65,6 +66,10 @@ export default function RolesContextualArticle() {
               </div>
             </div>
           </header>
+          
+          <div className="prose max-w-none">
+            <ContextualContent />
+          </div>
         </article>
       </div>
     </div>

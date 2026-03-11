@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Navigation from '../../../components/Navigation';
+import PrincipalsContent from './PrincipalsContent';
 
 export const metadata: Metadata = {
   title: "Principals' Perceptions of Conditions of Service | Didee Publications",
@@ -9,8 +10,8 @@ export const metadata: Metadata = {
 export default function PrincipalsPerceptionsArticle() {
   const article = {
     title: "Principals' Perceptions of Conditions of Service as Human Resource Management Challenges in Secondary Schools in Enugu State",
-    authors: [{ name: "Chima, Emmanuel Ibe", affiliation: "Department of Educational Management, Faculty of Education" }],
-    abstract: "Study on principals' perceptions of service conditions and HR management challenges in secondary schools.",
+    authors: [{ name: "Chima, Emmanuel Ibe", affiliation: "Department of Educational Management, Faculty of Education", email: "chima.ibe@esut.edu.ng" }],
+    abstract: "This study ascertains principals' perception of conditions of service as human resource management challenges in secondary schools in Enugu State. Using a descriptive survey design, all 297 public secondary school principals (244 female and 53 male) were studied. Results revealed that conditions of service including poor teaching environment, lack of teaching aids, poor salaries, late payment, lack of promotion, poor reward system, and inadequate staff welfare are perceived as significant HRM challenges. The study found no significant difference between male and female principals' perceptions. The researcher recommends reviewing conditions of service for secondary school staff to ensure effective human resource management.",
     publishedDate: 'March 1, 2026',
     volume: "1", issue: "4", pages: "101-115",
     keywords: ["Educational Management", "Human Resources", "Secondary Schools", "Enugu State"],
@@ -29,7 +30,12 @@ export default function PrincipalsPerceptionsArticle() {
               {article.authors.map((author, index) => (
                 <div key={index} className="text-gray-700">
                   <strong>{author.name}</strong><br/>
-                  <span className="text-sm italic">{author.affiliation}</span>
+                  <span className="text-sm italic">{author.affiliation}</span><br/>
+                  {author.email && (
+                    <a href={`mailto:${author.email}`} className="text-blue-600 hover:underline text-sm">
+                      {author.email}
+                    </a>
+                  )}
                 </div>
               ))}
             </div>
@@ -65,6 +71,10 @@ export default function PrincipalsPerceptionsArticle() {
               </div>
             </div>
           </header>
+          
+          <div className="prose max-w-none">
+            <PrincipalsContent />
+          </div>
         </article>
       </div>
     </div>

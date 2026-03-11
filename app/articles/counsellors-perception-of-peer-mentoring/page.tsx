@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Navigation from '../../../components/Navigation';
+import CounsellorsContent from './CounsellorsContent';
 
 export const metadata: Metadata = {
   title: "Counsellors Perception of Peer Mentoring | Didee Publications",
@@ -9,11 +10,11 @@ export const metadata: Metadata = {
 export default function CounsellorsPerceptionArticle() {
   const article = {
     title: "Counsellors Perception of Peer Mentoring on Students' Academic Performance in Secondary Schools in Enugu State",
-    authors: [{ name: "Ikeji Maureen Chinyeaka", affiliation: "Department of Guidance and Counselling, Faculty of Education, Peaceland University" }],
-    abstract: "Study on counsellors' perceptions of peer mentoring impact on academic performance in secondary schools.",
+    authors: [{ name: "Ikeji Maureen Chinyeaka", affiliation: "Department of Guidance and Counselling, Faculty of Education, Peaceland University", email: "maureenchikeji@gmail.com" }],
+    abstract: "The purpose of this study was to determine counsellors' perception of online peer mentoring on students' academic performance in secondary school in Enugu State. Descriptive survey research design was utilized. The population comprised all 55 secondary school Guidance counsellors in the 298 public secondary schools in Enugu State. Based on the findings, it was concluded that male and female guidance counsellors perceived that online peer mentoring influenced students' academic performance in secondary school in Enugu State to a great extent.",
     publishedDate: 'March 1, 2026',
     volume: "1", issue: "4", pages: "191-205",
-    keywords: ["Peer Mentoring", "Academic Performance", "Counselling", "Secondary Schools"],
+    keywords: ["Counsellors", "Peer Mentoring", "Students", "Academic Performance", "Secondary Schools"],
     pdfUrl: "/articles/counsellors-perception-of-peer-mentoring.pdf"
   };
 
@@ -29,6 +30,7 @@ export default function CounsellorsPerceptionArticle() {
               {article.authors.map((author, index) => (
                 <div key={index} className="text-gray-700">
                   <strong>{author.name}</strong><br/>
+                  <span className="text-sm">{author.email}</span><br/>
                   <span className="text-sm italic">{author.affiliation}</span>
                 </div>
               ))}
@@ -65,6 +67,8 @@ export default function CounsellorsPerceptionArticle() {
               </div>
             </div>
           </header>
+          
+          <CounsellorsContent />
         </article>
       </div>
     </div>

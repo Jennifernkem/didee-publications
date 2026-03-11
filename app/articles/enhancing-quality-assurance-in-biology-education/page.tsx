@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Navigation from '../../../components/Navigation';
+import BiologyQualityContent from './BiologyQualityContent';
 
 export const metadata: Metadata = {
   title: "Enhancing Quality Assurance in Biology Education | Didee Publications",
@@ -14,7 +15,7 @@ export default function QualityAssuranceArticle() {
       { name: "Kingsley T. Onah", affiliation: "Department of Science Education, Enugu State University of Science and Technology" },
       { name: "Jacinta L. Ogbonna", affiliation: "Department of Biology Education, Federal College of Education Technical" }
     ],
-    abstract: "Strategies for implementing quality assurance in biology education programs in colleges of education.",
+    abstract: "This study investigated the extent of implementation of NCCE benchmark in Biology Education Programme in Colleges of Education in Ebonyi State, Nigeria. Using a descriptive survey research design, 394 respondents (86 academic staff and 308 students) were sampled from two Colleges of Education. A structured questionnaire validated by three experts with reliability index of 0.85 was used for data collection. Data were analyzed using mean, standard deviation, and t-test at 0.05 significance level. Findings revealed that both academic staff (x̄ = 2.77) and students (x̄ = 2.78) agreed to a high extent that colleges comply with NCCE benchmark for Biology Education Programme, though benchmarks are primarily observed during accreditation. Challenges hindering effective implementation include insufficient laboratory space and equipment, shortage of qualified lecturers, failure to update curriculum, and insufficient assessment tools. The study concludes that while there is general compliance with NCCE benchmarks, challenges remain in fully implementing quality assurance measures. Recommendations include encouraging compliance, government recruitment of lecturers, teaching safety practices, reviewing programs to include adequate laboratory instructions, and making laboratory safety a compulsory course.",
     publishedDate: 'March 1, 2026',
     volume: "1", issue: "4", pages: "176-190",
     keywords: ["Quality Assurance", "Biology Education", "NCCE", "Colleges of Education"],
@@ -69,6 +70,10 @@ export default function QualityAssuranceArticle() {
               </div>
             </div>
           </header>
+          
+          <div className="prose max-w-none">
+            <BiologyQualityContent />
+          </div>
         </article>
       </div>
     </div>
