@@ -21,7 +21,24 @@ export function generateStaticParams() {
     { slug: 'influence-of-school-locations' },
     { slug: 'enhancing-quality-assurance-in-biology-education' },
     { slug: 'counsellors-perception-of-peer-mentoring' },
-    { slug: 'the-impact-exorcism-practices' }
+    { slug: 'the-impact-exorcism-practices' },
+    { slug: 'academic-motivation-personality-type' },
+    { slug: 'comparative-study-of-constraints' },
+    { slug: 'cultural-soundscape' },
+    { slug: 'effects-of-projected-nonprojected' },
+    { slug: 'efficacy-of-multimedia-instruction' },
+    { slug: 'environmental-sanitation' },
+    { slug: 'improved-drought-and-heat-tolerance' },
+    { slug: 'influence-of-gender' },
+    { slug: 'influence-of-library-environment' },
+    { slug: 'integrating-emerging-technologies' },
+    { slug: 'justice-and-rights' },
+    { slug: 'management-of-sports-facilities' },
+    { slug: 'principals-adoption-of-artificial-intelligence' },
+    { slug: 'psychological-factors-affecting-students-wellbeing' },
+    { slug: 'utilization-of-active-listening-skills' },
+    { slug: 'utilization-of-online-learning-platforms' },
+    { slug: 'utilization-of-sports-facilities' }
   ];
 }
 
