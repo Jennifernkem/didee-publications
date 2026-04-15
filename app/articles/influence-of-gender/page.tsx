@@ -44,7 +44,7 @@ export default function GenderInfluenceArticle() {
             </div>
 
             <div className="bg-gray-50 p-4 rounded-lg mb-6">
-              <div className="grid md:grid-cols-2 gap-4 text-sm">
+              <div className="grid md:grid-cols-2 gap-4 text-sm text-gray-700">
                 <div><strong>Published:</strong> {article.publishedDate}</div>
                 <div><strong>Volume:</strong> {article.volume}, Issue: {article.issue}</div>
                 <div><strong>Pages:</strong> {article.pages}</div>

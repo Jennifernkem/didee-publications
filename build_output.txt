@@ -1,0 +1,74 @@
+
+> didee-publications@0.1.0 build
+> next build
+
+▲ Next.js 16.1.0 (Turbopack)
+- Environments: .env.local
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 12.8s
+  Running TypeScript ...
+  Collecting page data using 7 workers ...
+  Generating static pages using 7 workers (0/42) ...
+  Generating static pages using 7 workers (10/42) 
+  Generating static pages using 7 workers (20/42) 
+  Generating static pages using 7 workers (31/42) 
+✓ Generating static pages using 7 workers (42/42) in 1592.3ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /about
+├ ○ /articles
+├ ● /articles/[slug]
+│ ├ /articles/psychosocial-factors-mental-health
+│ ├ /articles/philosophy-ethics-modern-society
+│ ├ /articles/media-influence-adolescent-sexuality
+│ └ [+28 more paths]
+├ ○ /articles/academic-motivation-personality-type
+├ ○ /articles/comparative-study-of-constraints
+├ ○ /articles/counsellors-perception-of-peer-mentoring
+├ ○ /articles/cultural-soundscape
+├ ○ /articles/effects-of-projected-nonprojected
+├ ○ /articles/efficacy-of-multimedia-instruction
+├ ○ /articles/enhancing-quality-assurance-in-biology-education
+├ ○ /articles/environmental-sanitation
+├ ○ /articles/exorcism-catholic-church-gabriele-amorth
+├ ○ /articles/forensic-psychology-curtis-flowers
+├ ○ /articles/improved-drought-and-heat-tolerance
+├ ○ /articles/influence-of-gender
+├ ○ /articles/influence-of-library-environment
+├ ○ /articles/influence-of-school-locations
+├ ○ /articles/integrating-emerging-technologies
+├ ○ /articles/justice-and-rights
+├ ○ /articles/management-of-sports-facilities
+├ ○ /articles/media-influence-adolescent-sexuality
+├ ○ /articles/peer-influence-parental-support
+├ ○ /articles/philosophy-ethics-modern-society
+├ ○ /articles/principals-adoption-of-artificial-intelligence
+├ ○ /articles/principals-perceptions
+├ ○ /articles/psychological-factors-affecting-students-wellbeing
+├ ○ /articles/psychosocial-factors-mental-health
+├ ○ /articles/soil-microbiome-crop-breeding
+├ ○ /articles/the-impact-exorcism-practices
+├ ○ /articles/the-roles-contextual
+├ ○ /articles/utilization-of-active-listening-skills
+├ ○ /articles/utilization-of-online-learning-platforms
+├ ○ /articles/utilization-of-sports-facilities
+├ ○ /articles/youth-empowerment-pathway
+├ ○ /editorial-board
+├ ○ /editorial-policies
+├ ○ /journal-info
+├ ○ /reviewers
+└ ○ /submit
+
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+
+npm notice
+npm notice New minor version of npm available! 11.7.0 -> 11.12.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.12.1
+npm notice To update run: npm install -g npm@11.12.1
+npm notice
