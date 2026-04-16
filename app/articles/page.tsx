@@ -1,6 +1,11 @@
+'use client';
+
+import { useState, useMemo } from 'react';
 import Navigation from '../../components/Navigation';
 
 export default function ArticlesPage() {
+  const [searchQuery, setSearchQuery] = useState('');
+
   const articlesByDomain = {
     "Psychology": [
       {
@@ -142,6 +147,28 @@ export default function ArticlesPage() {
     ]
   }
 
+  // Filter articles based on search query
+  const filteredArticlesByDomain = useMemo(() => {
+    if (!searchQuery.trim()) return articlesByDomain;
+    
+    const filtered: { [key: string]: typeof articlesByDomain[keyof typeof articlesByDomain] } = {};
+    
+    Object.entries(articlesByDomain).forEach(([domain, articles]) => {
+      const filteredArticles = articles.filter(article => 
+        article.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        domain.toLowerCase().includes(searchQuery.toLowerCase())
+      );
+      
+      if (filteredArticles.length > 0) {
+        filtered[domain] = filteredArticles;
+      }
+    });
+    
+    return filtered;
+  }, [searchQuery, articlesByDomain]);
+
+  const totalArticles = Object.values(filteredArticlesByDomain).reduce((sum, articles) => sum + articles.length, 0);
+
   return (
     <div className="min-h-screen bg-gray-50 relative" style={{
       backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/images/hero-bg.jpg')",
@@ -154,9 +181,49 @@ export default function ArticlesPage() {
       <div className="max-w-6xl mx-auto py-12 px-6 relative z-10 grid md:grid-cols-3 gap-8">
         {/* Left side - Articles */}
         <div className="md:col-span-2">
-          <h1 className="text-4xl font-bold text-center mb-12 text-white drop-shadow-lg">Published Articles</h1>
+          <h1 className="text-4xl font-bold text-center mb-8 text-white drop-shadow-lg">Published Articles</h1>
+          
+          {/* Search Bar */}
+          <div className="mb-8">
+            <div className="relative max-w-md mx-auto">
+              <input
+                type="text"
+                placeholder="Search articles by title or domain..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full px-4 py-3 pl-10 pr-4 text-gray-700 bg-white border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              />
+              <div className="absolute inset-y-0 left-0 flex items-center pl-3">
+                <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </div>
+            </div>
+            {searchQuery && (
+              <p className="text-center text-white/80 mt-2 text-sm">
+                Found {totalArticles} article{totalArticles !== 1 ? 's' : ''} matching "{searchQuery}"
+              </p>
+            )}
+          </div>
         
-        {Object.entries(articlesByDomain).map(([domain, articles]) => (
+        {Object.keys(filteredArticlesByDomain).length === 0 ? (
+          <div className="text-center py-12">
+            <div className="bg-white/90 rounded-lg p-8 backdrop-blur-sm">
+              <svg className="w-16 h-16 text-gray-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.172 16.172a4 4 0 015.656 0M9 12h6m-6-4h6m2 5.291A7.962 7.962 0 0112 15c-2.34 0-4.29-1.009-5.824-2.562M15 6.75a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <h3 className="text-xl font-semibold text-gray-700 mb-2">No articles found</h3>
+              <p className="text-gray-500">Try adjusting your search terms or browse all articles.</p>
+              <button
+                onClick={() => setSearchQuery('')}
+                className="mt-4 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+              >
+                Clear Search
+              </button>
+            </div>
+          </div>
+        ) : (
+          Object.entries(filteredArticlesByDomain).map(([domain, articles]) => (
           <div key={domain} className="mb-10">
             <h2 className="text-2xl font-bold mb-6 text-white drop-shadow-md border-b-2 border-white/30 pb-2">{domain}</h2>
             <div className="space-y-4">
@@ -171,7 +238,8 @@ export default function ArticlesPage() {
               ))}
             </div>
           </div>
-        ))}
+        ))
+        )}
         </div>
 
         {/* Right side - Image */}
@@ -184,7 +252,7 @@ export default function ArticlesPage() {
           <h3 className="text-lg font-semibold text-gray-800 mb-2">Research Excellence</h3>
           <p className="text-sm text-gray-600 mb-4">Explore our collection of peer-reviewed articles across multiple disciplines.</p>
           <div className="text-xs text-gray-500">
-            <p><strong>Total Articles:</strong> 31</p>
+            <p><strong>Total Articles:</strong> {searchQuery ? totalArticles : 31}</p>
             <p><strong>Domains:</strong> Psychology, Education, Philosophy, Media Studies, Theology, Agriculture, Law</p>
           </div>
         </div>
