@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Static Pages -->
+  <url><loc>https://didee-publications.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://didee-publications.com/articles/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://didee-publications.com/about/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://didee-publications.com/editorial-board/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://didee-publications.com/editorial-policies/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://didee-publications.com/journal-info/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://didee-publications.com/reviewers/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://didee-publications.com/submit/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- Article Pages -->
+  <url><loc>https://didee-publications.com/articles/psychosocial-factors-mental-health/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://didee-publications.com/articles/philosophy-ethics-modern-society/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://didee-publications.com/articles/media-influence-adolescent-sexuality/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://didee-publications.com/articles/exorcism-catholic-church-gabriele-amorth/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://didee-publications.com/articles/peer-influence-parental-support/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://didee-publications.com/articles/soil-microbiome-crop-breeding/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://didee-publications.com/articles/forensic-psychology-curtis-flowers/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://didee-publications.com/articles/principals-perceptions/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://didee-publications.com/articles/the-roles-contextual/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://didee-publications.com/articles/youth-empowerment-pathway/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://didee-publications.com/articles/influence-of-school-locations/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://didee-publications.com/articles/enhancing-quality-assurance-in-biology-education/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://didee-publications.com/articles/counsellors-perception-of-peer-mentoring/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://didee-publications.com/articles/the-impact-exorcism-practices/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://didee-publications.com/articles/academic-motivation-personality-type/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://didee-publications.com/articles/comparative-study-of-constraints/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://didee-publications.com/articles/cultural-soundscape/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://didee-publications.com/articles/effects-of-projected-nonprojected/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://didee-publications.com/articles/efficacy-of-multimedia-instruction/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://didee-publications.com/articles/environmental-sanitation/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://didee-publications.com/articles/improved-drought-and-heat-tolerance/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://didee-publications.com/articles/influence-of-gender/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://didee-publications.com/articles/influence-of-library-environment/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://didee-publications.com/articles/integrating-emerging-technologies/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://didee-publications.com/articles/justice-and-rights/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://didee-publications.com/articles/management-of-sports-facilities/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://didee-publications.com/articles/principals-adoption-of-artificial-intelligence/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://didee-publications.com/articles/psychological-factors-affecting-students-wellbeing/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://didee-publications.com/articles/utilization-of-active-listening-skills/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://didee-publications.com/articles/utilization-of-online-learning-platforms/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://didee-publications.com/articles/utilization-of-sports-facilities/</loc><changefreq>yearly</changefreq><priority>0.8</priority></url>
+
+</urlset>
