@@ -12,21 +12,21 @@ export default function JournalInfo() {
         <h1 className="text-4xl font-bold text-gray-900 mb-8">Journal Information</h1>
         
         <div className="grid md:grid-cols-2 gap-8 mb-12">
-          <div className="bg-gray-50 p-6 rounded-lg">
-            <h3 className="text-xl font-semibold mb-4">Publication Details</h3>
-            <div className="space-y-3">
-              <div><strong>Journal Title:</strong> Didee Publications International Journal</div>
-              <div><strong>ISSN (Online):</strong> 2789-1234</div>
-              <div><strong>Publisher:</strong> Didee Publications</div>
-              <div><strong>Frequency:</strong> Quarterly</div>
-              <div><strong>Language:</strong> English</div>
-              <div><strong>Founded:</strong> 2024</div>
+          <div className="bg-white border border-gray-200 shadow-md p-6 rounded-lg">
+            <h3 className="text-xl font-bold text-gray-900 mb-4">Publication Details</h3>
+            <div className="space-y-3 text-gray-800 font-medium">
+              <div><span className="font-bold text-gray-900">Journal Title:</span> Didee Publications International Journal</div>
+              <div><span className="font-bold text-gray-900">ISSN (Online):</span> 3121-7974</div>
+              <div><span className="font-bold text-gray-900">Publisher:</span> Didee Publications</div>
+              <div><span className="font-bold text-gray-900">Frequency:</span> Quarterly</div>
+              <div><span className="font-bold text-gray-900">Language:</span> English</div>
+              <div><span className="font-bold text-gray-900">Founded:</span> 2024</div>
             </div>
           </div>
           
-          <div className="bg-blue-50 p-6 rounded-lg">
-            <h3 className="text-xl font-semibold mb-4">Indexing & Abstracting</h3>
-            <div className="space-y-2">
+          <div className="bg-blue-50 border border-blue-200 shadow-md p-6 rounded-lg">
+            <h3 className="text-xl font-bold text-gray-900 mb-4">Indexing & Abstracting</h3>
+            <div className="space-y-2 text-gray-800 font-medium">
               <div>• Google Scholar</div>
               <div>• CrossRef (DOI Assignment)</div>
               <div>• DOAJ (Directory of Open Access Journals)</div>
@@ -37,19 +37,19 @@ export default function JournalInfo() {
         </div>
 
         <div className="mb-8">
-          <h3 className="text-2xl font-semibold mb-4">Scope & Coverage</h3>
-          <p className="text-gray-700 mb-4">
+          <h3 className="text-2xl font-bold text-gray-900 mb-4">Scope & Coverage</h3>
+          <p className="text-gray-800 font-medium mb-4">
             Didee Publications International Journal publishes high-quality, peer-reviewed research 
             across multiple disciplines including:
           </p>
           <div className="grid md:grid-cols-2 gap-4">
-            <ul className="space-y-2 text-gray-700">
+            <ul className="space-y-2 text-gray-800 font-medium">
               <li>• Clinical Psychology</li>
               <li>• Social Sciences</li>
               <li>• Educational Research</li>
               <li>• Law and Ethics</li>
             </ul>
-            <ul className="space-y-2 text-gray-700">
+            <ul className="space-y-2 text-gray-800 font-medium">
               <li>• Health Sciences</li>
               <li>• Engineering</li>
               <li>• Environmental Studies</li>
@@ -58,12 +58,12 @@ export default function JournalInfo() {
           </div>
         </div>
         <div className="mb-12">
-  <h3 className="text-2xl font-semibold mb-6">Academic Disciplines & Journals</h3>
+  <h3 className="text-2xl font-bold text-gray-900 mb-6">Academic Disciplines & Journals</h3>
 
-  <div className="grid md:grid-cols-2 gap-8 text-gray-700">
+  <div className="grid md:grid-cols-2 gap-8 text-gray-800 font-medium">
 
     <div>
-      <h4 className="text-lg font-semibold mb-3">Management Sciences</h4>
+      <h4 className="text-lg font-bold text-gray-900 mb-3">Management Sciences</h4>
       <ul className="list-disc pl-5 space-y-1">
         <li>International Journal of Banking and Finance Research</li>
         <li>International Journal of Economics and Business Management</li>
@@ -78,7 +78,7 @@ export default function JournalInfo() {
     </div>
 
     <div>
-      <h4 className="text-lg font-semibold mb-3">Sciences</h4>
+      <h4 className="text-lg font-bold text-gray-900 mb-3">Sciences</h4>
       <ul className="list-disc pl-5 space-y-1">
         <li>International Journal of Geography and Environmental Management</li>
         <li>International Journal of Agriculture and Earth Science</li>
@@ -93,8 +93,8 @@ export default function JournalInfo() {
   </div>
 </div>
 <div>
-  <h4 className="text-lg font-semibold mb-3 mt-8">Social Sciences and Education</h4>
-  <ul className="list-disc pl-5 space-y-1">
+  <h4 className="text-lg font-bold text-gray-900 mb-3 mt-8">Social Sciences and Education</h4>
+  <ul className="list-disc pl-5 space-y-1 text-gray-800 font-medium">
     <li>Journal of Political Science and Leadership Research</li>
     <li>International Journal of Social Sciences and Management Research</li>
     <li>Journal of Public Administration and Social Welfare Research</li>
@@ -102,8 +102,8 @@ export default function JournalInfo() {
 </div>
 
 <div>
-  <h4 className="text-lg font-semibold mb-3 mt-8">Humanities</h4>
-  <ul className="list-disc pl-5 space-y-1">
+  <h4 className="text-lg font-bold text-gray-900 mb-3 mt-8">Humanities</h4>
+  <ul className="list-disc pl-5 space-y-1 text-gray-800 font-medium">
     <li>Research Journal of Mass Communication and Information Technology</li>
     <li>African Journal of History and Archaeology</li>
     <li>International Journal of English Language and Communication Studies</li>
@@ -116,20 +116,20 @@ export default function JournalInfo() {
 </div>
 
 <div>
-  <h4 className="text-lg font-semibold mb-3 mt-8">Engineering</h4>
-  <ul className="list-disc pl-5 space-y-1">
+  <h4 className="text-lg font-bold text-gray-900 mb-3 mt-8">Engineering</h4>
+  <ul className="list-disc pl-5 space-y-1 text-gray-800 font-medium">
     <li>International Journal of Engineering and Modern Technology</li>
   </ul>
 </div>
 
 
         <div className="mb-8">
-          <h3 className="text-2xl font-semibold mb-4">Publication Ethics</h3>
-          <div className="bg-yellow-50 p-6 rounded-lg">
-            <p className="text-gray-700 mb-4">
+          <h3 className="text-2xl font-bold text-gray-900 mb-4">Publication Ethics</h3>
+          <div className="bg-yellow-50 border border-yellow-200 shadow-md p-6 rounded-lg">
+            <p className="text-gray-800 font-medium mb-4">
               We adhere to the highest standards of publication ethics as outlined by:
             </p>
-            <ul className="space-y-2 text-gray-700">
+            <ul className="space-y-2 text-gray-800 font-medium">
               <li>• Committee on Publication Ethics (COPE)</li>
               <li>• International Committee of Medical Journal Editors (ICMJE)</li>
               <li>• World Association of Medical Editors (WAME)</li>
@@ -138,21 +138,21 @@ export default function JournalInfo() {
         </div>
 
         <div className="mb-8">
-          <h3 className="text-2xl font-semibold mb-4">Open Access Policy</h3>
-          <p className="text-gray-700">
+          <h3 className="text-2xl font-bold text-gray-900 mb-4">Open Access Policy</h3>
+          <p className="text-gray-800 font-medium">
             This journal provides immediate open access to its content on the principle that making 
             research freely available to the public supports a greater global exchange of knowledge. 
             All articles are published under Creative Commons Attribution License.
           </p>
         </div>
 
-        <div className="bg-green-50 p-6 rounded-lg">
-          <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
-          <div className="space-y-2 text-gray-700">
-            <div><strong>Editorial Office:</strong> editor@didee-publications.com</div>
-            <div><strong>Submissions:</strong> submissions@didee-publications.com</div>
-            <div><strong>Technical Support:</strong> support@didee-publications.com</div>
-            <div><strong>Website:</strong> https://didee-publications.com</div>
+        <div className="bg-green-50 border border-green-200 shadow-md p-6 rounded-lg">
+          <h3 className="text-xl font-bold text-gray-900 mb-4">Contact Information</h3>
+          <div className="space-y-2 text-gray-800 font-medium">
+            <div><span className="font-bold text-gray-900">Editorial Office:</span> editor@didee-publications.com</div>
+            <div><span className="font-bold text-gray-900">Submissions:</span> submissions@didee-publications.com</div>
+            <div><span className="font-bold text-gray-900">Technical Support:</span> support@didee-publications.com</div>
+            <div><span className="font-bold text-gray-900">Website:</span> https://didee-publications.com</div>
           </div>
         </div>
       </div>
