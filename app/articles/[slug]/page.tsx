@@ -7,6 +7,173 @@ interface ArticleProps {
 
 export const dynamicParams = false;
 
+function getArticleData(slug: string): ArticleData {
+  const articles: Record<string, ArticleData> = {
+    'psychosocial-factors-mental-health': {
+      title: "Psychosocial Factors as Determinants of Anti-Social Behaviour Among Emerging Adults During COVID-19 in Nigeria",
+      authors: [{ name: "Daniel Ojotule Offor", affiliation: "University of South Wales" }],
+      abstract: "This study examines psychosocial factors influencing anti-social behavior among emerging adults during COVID-19 in Nigeria.",
+      doi: "10.12345/didee.2024.003",
+      publishedDate: "January 15, 2024",
+      volume: "1", issue: "2", pages: "26-40",
+      keywords: ["Antisocial Behaviour", "Self-Esteem", "Emotional Intelligence", "COVID-19"],
+      pdfUrl: "/articles/psychosocial-factors-mental-health.pdf",
+      domain: "Psychology"
+    },
+    'philosophy-ethics-modern-society': {
+      title: "Existential Dialectics of Throwness and Nothingness in Heideggerian Philosophy",
+      authors: [{ name: "Daniel Ojotule Offor", affiliation: "University of South Wales" }],
+      abstract: "This research exposes Heidegger's idea of nothingness as a response to Hegelianism and foundation for phenomenology and existentialism.",
+      doi: "10.12345/didee.2024.002",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "2", pages: "11-25",
+      keywords: ["Dasein", "Existentiality", "Throwness", "Nothingness", "Heideggerian philosophy"],
+      pdfUrl: "/articles/philosophy-ethics-modern-society.pdf",
+      domain: "Philosophy"
+    },
+    'media-influence-adolescent-sexuality': {
+      title: "The Media Influence on the Sexuality of Adolescents and Young Adults",
+      authors: [{ name: "Daniel Ojotule Offor", affiliation: "University of South Wales" }],
+      abstract: "Analysis of media's impact on adolescent sexual development and behavior.",
+      doi: "10.12345/didee.2024.004",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "2", pages: "41-55",
+      keywords: ["Adolescents", "media", "sexuality", "sexual behavior"],
+      pdfUrl: "/articles/media-influence-adolescent-sexuality.pdf",
+      domain: "Media Studies"
+    },
+    'exorcism-catholic-church-gabriele-amorth': {
+      title: "EXORCISM IN THE CATHOLIC CHURCH ACCORDING TO GABRIELE AMORTH",
+      authors: [{ name: "Daniel Ojotule Offor", affiliation: "University of Nigeria" }],
+      abstract: "Examination of exorcism practices in the Catholic Church through Father Gabriele Amorth's work.",
+      doi: "10.12345/didee.2024.001",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "1", pages: "1-15",
+      keywords: ["Catholic Church", "Exorcism", "Gabriele Amorth", "Theology"],
+      pdfUrl: "/articles/exorcism-catholic-church-gabriele-amorth.pdf",
+      domain: "Theology"
+    },
+    'peer-influence-parental-support': {
+      title: "Peer Influence and Parental Support as Determinants of Anti-Social Behavior among Undergraduate Students in Selected Nigerian Universities",
+      authors: [{ name: "Daniel Ojotule Offor", affiliation: "University of South Wales" }],
+      abstract: "Study examining peer influence and parental support factors in anti-social behavior among Nigerian university students.",
+      doi: "10.12345/didee.2024.005",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "3", pages: "56-70",
+      keywords: ["Peer Influence", "Parental Support", "Anti-Social Behavior", "University Students"],
+      pdfUrl: "/articles/peer-influence-parental-support.pdf",
+      domain: "Psychology"
+    },
+    'soil-microbiome-crop-breeding': {
+      title: "Integrating Soil Microbiome Insights into Crop Breeding for Enhanced Agricultural Sustainability",
+      authors: [{ name: "Daniel Ojotule Offor", affiliation: "Agricultural Research Institute" }],
+      abstract: "Research on integrating soil microbiome knowledge into modern crop breeding techniques for sustainable agriculture.",
+      doi: "10.12345/didee.2024.006",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "3", pages: "71-85",
+      keywords: ["Soil Microbiome", "Crop Breeding", "Agricultural Sustainability", "Biotechnology"],
+      pdfUrl: "/articles/soil-microbiome-crop-breeding.pdf",
+      domain: "Agriculture"
+    },
+    'forensic-psychology-curtis-flowers': {
+      title: "Forensic Psychological Analysis of Evidentiary Failures and Jury Bias in the Curtis Flowers Case",
+      authors: [{ name: "Daniel Ojotule Offor", affiliation: "University of South Wales" }],
+      abstract: "Forensic psychological examination of evidentiary issues and jury bias in the Curtis Flowers legal case.",
+      doi: "10.12345/didee.2024.007",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "3", pages: "86-100",
+      keywords: ["Forensic Psychology", "Jury Bias", "Legal Evidence", "Criminal Justice"],
+      pdfUrl: "/articles/forensic-psychology-curtis-flowers.pdf",
+      domain: "Law"
+    },
+    'principals-perceptions': {
+      title: "Principals' Perceptions of Conditions of Service as Human Resource Management Challenges in Secondary Schools in Enugu State",
+      authors: [{ name: "Chima, Emmanuel Ibe", affiliation: "Department of Educational Management, Faculty of Education" }],
+      abstract: "Study on principals' perceptions of service conditions and HR management challenges in secondary schools.",
+      doi: "10.12345/didee.2024.008",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "4", pages: "101-115",
+      keywords: ["Educational Management", "Human Resources", "Secondary Schools", "Enugu State"],
+      pdfUrl: "/articles/principals-perceptions.pdf",
+      domain: "Education"
+    },
+    'the-impact-exorcism-practices': {
+      title: "The Impact of Exorcism Practices on Mental Health Outcomes",
+      authors: [{ name: "Daniel Ojotule Offor", affiliation: "Department of Clinical Psychology, University of South Wales" }],
+      abstract: "Examination of the psychological impact of exorcism practices on mental health outcomes.",
+      doi: "10.12345/didee.2024.009",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "4", pages: "116-130",
+      keywords: ["Exorcism", "Mental Health", "Clinical Psychology", "Theology"],
+      pdfUrl: "/articles/the-impact-exorcism-practices.pdf",
+      domain: "Theology"
+    },
+    'the-roles-contextual': {
+      title: "The Roles of Contextual Instructional Models in Addressing Misconceptions Held by Secondary School Physics Students",
+      authors: [{ name: "Kingsley T. Onah", affiliation: "Department of Science Education" }],
+      abstract: "Research on contextual instructional models for addressing physics misconceptions in secondary schools.",
+      doi: "10.12345/didee.2024.010",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "4", pages: "131-145",
+      keywords: ["Physics Education", "Instructional Models", "Misconceptions", "Secondary Schools"],
+      pdfUrl: "/articles/the-roles-contextual.pdf",
+      domain: "Education"
+    },
+    'youth-empowerment-pathway': {
+      title: "Youth Empowerment: A Pathway to Unlocking Employability and Entrepreneurial Skills in Enugu State, Nigeria",
+      authors: [{ name: "Odenigbo Veronica Ngozi", affiliation: "Department of Science Education, Enugu State University of Science and Technology" }, { name: "Ukwuaba Loretta Chika", affiliation: "" }],
+      abstract: "Study on youth empowerment strategies for developing employability and entrepreneurial skills.",
+      doi: "10.12345/didee.2024.011",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "4", pages: "146-160",
+      keywords: ["Youth Empowerment", "Employability", "Entrepreneurship", "Enugu State"],
+      pdfUrl: "/articles/youth-empowerment-pathway.pdf",
+      domain: "Education"
+    },
+    'influence-of-school-locations': {
+      title: "Influence of School Location on the Effectiveness of Multimedia Instruction in Christian Religious Studies in Edo State, Nigeria",
+      authors: [{ name: "Alexandre Onyekachi Ugwu", affiliation: "" }],
+      abstract: "Analysis of how school location affects multimedia instruction effectiveness in religious studies.",
+      doi: "10.12345/didee.2024.012",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "4", pages: "161-175",
+      keywords: ["School Location", "Multimedia Instruction", "Religious Studies", "Edo State"],
+      pdfUrl: "/articles/Influence-of-school-locations.pdf",
+      domain: "Education"
+    },
+    'enhancing-quality-assurance-in-biology-education': {
+      title: "Enhancing Quality Assurance in Biology Education Programme: Strategies for Effective Implementation of NCCE Benchmark in Colleges of Education",
+      authors: [{ name: "Abigail C. Obodo", affiliation: "Department of Science Education, Enugu State University of Science and Technology" }, { name: "Kingsley T. Onah", affiliation: "Department of Science Education, Enugu State University of Science and Technology" }, { name: "Jacinta L. Ogbonna", affiliation: "Department of Biology Education, Federal College of Education Technical" }],
+      abstract: "Strategies for implementing quality assurance in biology education programs in colleges of education.",
+      doi: "10.12345/didee.2024.013",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "4", pages: "176-190",
+      keywords: ["Quality Assurance", "Biology Education", "NCCE", "Colleges of Education"],
+      pdfUrl: "/articles/enhancing-quality-assurance-in-biology-education.pdf",
+      domain: "Education"
+    },
+    'counsellors-perception-of-peer-mentoring': {
+      title: "Counsellors Perception of Peer Mentoring on Students' Academic Performance in Secondary Schools in Enugu State",
+      authors: [{ name: "Ikeji Maureen Chinyeaka", affiliation: "Department of Guidance and Counselling, Faculty of Education, Peaceland University" }],
+      abstract: "Study on counsellors' perceptions of peer mentoring impact on academic performance in secondary schools.",
+      doi: "10.12345/didee.2024.014",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "4", pages: "191-205",
+      keywords: ["Peer Mentoring", "Academic Performance", "Counselling", "Secondary Schools"],
+      pdfUrl: "/articles/counsellors-perception-of-peer-mentoring.pdf",
+      domain: "Education"
+    }
+  };
+
+  return articles[slug] || {
+    title: "Article Not Found",
+    authors: [],
+    abstract: "This article could not be found.",
+    doi: "", publishedDate: "", volume: "", issue: "", pages: "",
+    keywords: [], pdfUrl: "", domain: ""
+  };
+}
+
 export function generateStaticParams() {
   return [
     { slug: 'psychosocial-factors-mental-health' },
@@ -144,161 +311,13 @@ export async function generateMetadata({ params }: ArticleProps): Promise<Metada
 }
 
 export default function ArticlePage({ params }: ArticleProps) {
-  // Real article data based on slug
-  const getArticleData = (slug: string): ArticleData => {
-    const articles: Record<string, any> = {
-      'psychosocial-factors-mental-health': {
-        title: "Psychosocial Factors as Determinants of Anti-Social Behaviour Among Emerging Adults During COVID-19 in Nigeria",
-        authors: [{ name: "Daniel Ojotule Offor", affiliation: "University of South Wales" }],
-        abstract: "This study examines psychosocial factors influencing anti-social behavior among emerging adults during COVID-19 in Nigeria.",
-        doi: "10.12345/didee.2024.003",
-        publishedDate: "January 15, 2024",
-        volume: "1", issue: "2", pages: "26-40",
-        keywords: ["Antisocial Behaviour", "Self-Esteem", "Emotional Intelligence", "COVID-19"],
-        pdfUrl: "/articles/psychosocial-factors-mental-health.pdf"
-      },
-      'philosophy-ethics-modern-society': {
-        title: "Existential Dialectics of Throwness and Nothingness in Heideggerian Philosophy",
-        authors: [{ name: "Daniel Ojotule Offor", affiliation: "University of South Wales" }],
-        abstract: "This research exposes Heidegger's idea of nothingness as a response to Hegelianism and foundation for phenomenology and existentialism.",
-        doi: "10.12345/didee.2024.002",
-        publishedDate: "January 1, 2024",
-        volume: "1", issue: "2", pages: "11-25",
-        keywords: ["Dasein", "Existentiality", "Throwness", "Nothingness", "Heideggerian philosophy"],
-        pdfUrl: "/articles/philosophy-ethics-modern-society.pdf"
-      },
-      'media-influence-adolescent-sexuality': {
-        title: "The Media Influence on the Sexuality of Adolescents and Young Adults",
-        authors: [{ name: "Daniel Ojotule Offor", affiliation: "University of South Wales" }],
-        abstract: "Analysis of media's impact on adolescent sexual development and behavior.",
-        doi: "10.12345/didee.2024.004",
-        publishedDate: "January 1, 2024",
-        volume: "1", issue: "2", pages: "41-55",
-        keywords: ["Adolescents", "media", "sexuality", "sexual behavior"],
-        pdfUrl: "/articles/media-influence-adolescent-sexuality.pdf"
-      },
-      'exorcism-catholic-church-gabriele-amorth': {
-        title: "EXORCISM IN THE CATHOLIC CHURCH ACCORDING TO GABRIELE AMORTH",
-        authors: [{ name: "Daniel Ojotule Offor", affiliation: "University of Nigeria" }],
-        abstract: "Examination of exorcism practices in the Catholic Church through Father Gabriele Amorth's work.",
-        doi: "10.12345/didee.2024.001",
-        publishedDate: "January 1, 2024",
-        volume: "1", issue: "1", pages: "1-15",
-        keywords: ["Catholic Church", "Exorcism", "Gabriele Amorth", "Theology"],
-        pdfUrl: "/articles/exorcism-catholic-church-gabriele-amorth.pdf"
-      },
-      'peer-influence-parental-support': {
-        title: "Peer Influence and Parental Support as Determinants of Anti-Social Behavior among Undergraduate Students in Selected Nigerian Universities",
-        authors: [{ name: "Daniel Ojotule Offor", affiliation: "University of South Wales" }],
-        abstract: "Study examining peer influence and parental support factors in anti-social behavior among Nigerian university students.",
-        doi: "10.12345/didee.2024.005",
-        publishedDate: "January 1, 2024",
-        volume: "1", issue: "3", pages: "56-70",
-        keywords: ["Peer Influence", "Parental Support", "Anti-Social Behavior", "University Students"],
-        pdfUrl: "/articles/peer-influence-parental-support.pdf"
-      },
-      'soil-microbiome-crop-breeding': {
-        title: "Integrating Soil Microbiome Insights into Crop Breeding for Enhanced Agricultural Sustainability",
-        authors: [{ name: "Daniel Ojotule Offor", affiliation: "Agricultural Research Institute" }],
-        abstract: "Research on integrating soil microbiome knowledge into modern crop breeding techniques for sustainable agriculture.",
-        doi: "10.12345/didee.2024.006",
-        publishedDate: "January 1, 2024",
-        volume: "1", issue: "3", pages: "71-85",
-        keywords: ["Soil Microbiome", "Crop Breeding", "Agricultural Sustainability", "Biotechnology"],
-        pdfUrl: "/articles/soil-microbiome-crop-breeding.pdf"
-      },
-      'forensic-psychology-curtis-flowers': {
-        title: "Forensic Psychological Analysis of Evidentiary Failures and Jury Bias in the Curtis Flowers Case",
-        authors: [{ name: "Daniel Ojotule Offor", affiliation: "University of South Wales" }],
-        abstract: "Forensic psychological examination of evidentiary issues and jury bias in the Curtis Flowers legal case.",
-        doi: "10.12345/didee.2024.007",
-        publishedDate: "January 1, 2024",
-        volume: "1", issue: "3", pages: "86-100",
-        keywords: ["Forensic Psychology", "Jury Bias", "Legal Evidence", "Criminal Justice"],
-        pdfUrl: "/articles/forensic-psychology-curtis-flowers.pdf"
-      },
-      'principals-perceptions': {
-        title: "Principals' Perceptions of Conditions of Service as Human Resource Management Challenges in Secondary Schools in Enugu State",
-        authors: [{ name: "Chima, Emmanuel Ibe", affiliation: "Department of Educational Management, Faculty of Education" }],
-        abstract: "Study on principals' perceptions of service conditions and HR management challenges in secondary schools.",
-        doi: "10.12345/didee.2024.008",
-        publishedDate: "January 1, 2024",
-        volume: "1", issue: "4", pages: "101-115",
-        keywords: ["Educational Management", "Human Resources", "Secondary Schools", "Enugu State"],
-        pdfUrl: "/articles/principals-perceptions.pdf"
-      },
-      'the-impact-exorcism-practices': {
-        title: "The Impact of Exorcism Practices on Mental Health Outcomes",
-        authors: [{ name: "Daniel Ojotule Offor", affiliation: "Department of Clinical Psychology, University of South Wales" }],
-        abstract: "Examination of the psychological impact of exorcism practices on mental health outcomes.",
-        doi: "10.12345/didee.2024.009",
-        publishedDate: "January 1, 2024",
-        volume: "1", issue: "4", pages: "116-130",
-        keywords: ["Exorcism", "Mental Health", "Clinical Psychology", "Theology"],
-        pdfUrl: "/articles/the-impact-exorcism-practices.pdf"
-      },
-      'the-roles-contextual': {
-        title: "The Roles of Contextual Instructional Models in Addressing Misconceptions Held by Secondary School Physics Students",
-        authors: [{ name: "Kingsley T. Onah", affiliation: "Department of Science Education" }],
-        abstract: "Research on contextual instructional models for addressing physics misconceptions in secondary schools.",
-        doi: "10.12345/didee.2024.010",
-        publishedDate: "January 1, 2024",
-        volume: "1", issue: "4", pages: "131-145",
-        keywords: ["Physics Education", "Instructional Models", "Misconceptions", "Secondary Schools"],
-        pdfUrl: "/articles/the-roles-contextual.pdf"
-      },
-      'youth-empowerment-pathway': {
-        title: "Youth Empowerment: A Pathway to Unlocking Employability and Entrepreneurial Skills in Enugu State, Nigeria",
-        authors: [{ name: "Odenigbo Veronica Ngozi", affiliation: "Department of Science Education, Enugu State University of Science and Technology" }, { name: "Ukwuaba Loretta Chika", affiliation: "" }],
-        abstract: "Study on youth empowerment strategies for developing employability and entrepreneurial skills.",
-        doi: "10.12345/didee.2024.011",
-        publishedDate: "January 1, 2024",
-        volume: "1", issue: "4", pages: "146-160",
-        keywords: ["Youth Empowerment", "Employability", "Entrepreneurship", "Enugu State"],
-        pdfUrl: "/articles/youth-empowerment-pathway.pdf"
-      },
-      'influence-of-school-locations': {
-        title: "Influence of School Location on the Effectiveness of Multimedia Instruction in Christian Religious Studies in Edo State, Nigeria",
-        authors: [{ name: "Alexandre Onyekachi Ugwu", affiliation: "" }],
-        abstract: "Analysis of how school location affects multimedia instruction effectiveness in religious studies.",
-        doi: "10.12345/didee.2024.012",
-        publishedDate: "January 1, 2024",
-        volume: "1", issue: "4", pages: "161-175",
-        keywords: ["School Location", "Multimedia Instruction", "Religious Studies", "Edo State"],
-        pdfUrl: "/articles/Influence-of-school-locations.pdf"
-      },
-      'enhancing-quality-assurance-in-biology-education': {
-        title: "Enhancing Quality Assurance in Biology Education Programme: Strategies for Effective Implementation of NCCE Benchmark in Colleges of Education",
-        authors: [{ name: "Abigail C. Obodo", affiliation: "Department of Science Education, Enugu State University of Science and Technology" }, { name: "Kingsley T. Onah", affiliation: "Department of Science Education, Enugu State University of Science and Technology" }, { name: "Jacinta L. Ogbonna", affiliation: "Department of Biology Education, Federal College of Education Technical" }],
-        abstract: "Strategies for implementing quality assurance in biology education programs in colleges of education.",
-        doi: "10.12345/didee.2024.013",
-        publishedDate: "January 1, 2024",
-        volume: "1", issue: "4", pages: "176-190",
-        keywords: ["Quality Assurance", "Biology Education", "NCCE", "Colleges of Education"],
-        pdfUrl: "/articles/enhancing-quality-assurance-in-biology-education.pdf"
-      },
-      'counsellors-perception-of-peer-mentoring': {
-        title: "Counsellors Perception of Peer Mentoring on Students' Academic Performance in Secondary Schools in Enugu State",
-        authors: [{ name: "Ikeji Maureen Chinyeaka", affiliation: "Department of Guidance and Counselling, Faculty of Education, Peaceland University" }],
-        abstract: "Study on counsellors' perceptions of peer mentoring impact on academic performance in secondary schools.",
-        doi: "10.12345/didee.2024.014",
-        publishedDate: "January 1, 2024",
-        volume: "1", issue: "4", pages: "191-205",
-        keywords: ["Peer Mentoring", "Academic Performance", "Counselling", "Secondary Schools"],
-        pdfUrl: "/articles/counsellors-perception-of-peer-mentoring.pdf"
-      }
-    };
-    
-    return articles[slug] || {
-      title: "Article Not Found",
-      authors: [],
-      abstract: "This article could not be found.",
-      doi: "", publishedDate: "", volume: "", issue: "", pages: "",
-      keywords: [], pdfUrl: ""
-    };
-  };
-
   const article = getArticleData(params.slug);
+
+  const breadcrumbItems = [
+    { name: 'Home', url: siteConfig.url },
+    { name: 'Articles', url: `${siteConfig.url}/articles` },
+    { name: article.title, url: `${siteConfig.url}/articles/${params.slug}` }
+  ];
 
   return (
     <div className="min-h-screen" style={{
@@ -308,31 +327,17 @@ export default function ArticlePage({ params }: ArticleProps) {
       backgroundRepeat: 'no-repeat',
       backgroundAttachment: 'fixed'
     }}>
+      {/* Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "ScholarlyArticle",
-            "headline": article.title,
-            "author": article.authors.map((author: any) => ({
-              "@type": "Person",
-              "name": author.name,
-              "affiliation": author.affiliation
-            })),
-            "datePublished": "2024-01-15",
-            "publisher": {
-              "@type": "Organization",
-              "name": "Didee Publications"
-            },
-            "isPartOf": {
-              "@type": "Periodical",
-              "name": "Didee Publications International Journal",
-              "issn": "2789-1234"
-            },
-            "identifier": article.doi,
-            "abstract": article.abstract
-          })
+          __html: JSON.stringify(generateArticleStructuredData(article, params.slug))
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(generateBreadcrumbStructuredData(breadcrumbItems))
         }}
       />
       
