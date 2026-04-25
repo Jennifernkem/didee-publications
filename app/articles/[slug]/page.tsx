@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { generateArticleStructuredData, generateBreadcrumbStructuredData, siteConfig, ArticleData } from '../../../lib/seo';
 
 interface ArticleProps {
   params: { slug: string };
@@ -43,44 +44,108 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: ArticleProps): Promise<Metadata> {
-  // In production, fetch article data from database
-  const article = {
-    title: "Sample Research Article",
-    authors: ["Dr. John Smith", "Prof. Jane Doe"],
-    abstract: "This is a sample abstract for demonstration purposes.",
-    doi: "10.12345/didee.2024.001",
-    publishedDate: "2024-01-15",
-    volume: "1",
-    issue: "1",
-    pages: "1-10"
-  };
+  const article = getArticleData(params.slug);
+  
+  if (!article.title || article.title === "Article Not Found") {
+    return {
+      title: 'Article Not Found | Didee Publications',
+      description: 'The requested article could not be found.',
+      robots: { index: false, follow: false }
+    };
+  }
+
+  const publishedDate = new Date(article.publishedDate);
+  const keywords = [
+    ...article.keywords,
+    'academic research',
+    'peer reviewed',
+    'scholarly article',
+    article.domain || 'research',
+    'Nigeria',
+    'international journal'
+  ];
 
   return {
     title: `${article.title} | Didee Publications`,
-    description: article.abstract,
+    description: article.abstract.length > 160 
+      ? article.abstract.substring(0, 157) + '...' 
+      : article.abstract,
+    keywords: keywords.join(', '),
+    authors: article.authors.map(author => ({ name: author.name })),
+    publisher: siteConfig.publisher,
+    openGraph: {
+      title: article.title,
+      description: article.abstract,
+      type: 'article',
+      publishedTime: article.publishedDate,
+      authors: article.authors.map(author => author.name),
+      section: article.domain || 'Research',
+      tags: article.keywords,
+      images: [
+        {
+          url: '/images/Individual-article.jpg',
+          width: 1200,
+          height: 630,
+          alt: article.title,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: article.title,
+      description: article.abstract.length > 200 
+        ? article.abstract.substring(0, 197) + '...' 
+        : article.abstract,
+      images: ['/images/Individual-article.jpg'],
+    },
+    alternates: {
+      canonical: `${siteConfig.url}/articles/${params.slug}`,
+    },
     other: {
+      // Google Scholar metadata
       "citation_title": article.title,
-      "citation_author": article.authors.join("; "),
-      "citation_publication_date": article.publishedDate,
+      "citation_author": article.authors.map(a => a.name).join("; "),
+      "citation_publication_date": publishedDate.getFullYear().toString(),
       "citation_journal_title": "Didee Publications International Journal",
-      "citation_issn": "2789-1234",
+      "citation_issn": siteConfig.issn,
       "citation_volume": article.volume,
       "citation_issue": article.issue,
       "citation_firstpage": article.pages.split("-")[0],
-      "citation_lastpage": article.pages.split("-")[1],
+      "citation_lastpage": article.pages.split("-")[1] || article.pages.split("-")[0],
       "citation_doi": article.doi,
-      "citation_pdf_url": `https://didee-publications.com/articles/${params.slug}.pdf`,
+      "citation_pdf_url": `${siteConfig.url}${article.pdfUrl}`,
+      "citation_abstract_html_url": `${siteConfig.url}/articles/${params.slug}`,
+      "citation_language": "en",
+      "citation_keywords": article.keywords.join("; "),
+      
+      // Dublin Core metadata
       "DC.Title": article.title,
-      "DC.Creator": article.authors.join("; "),
+      "DC.Creator": article.authors.map(a => a.name).join("; "),
       "DC.Date": article.publishedDate,
       "DC.Identifier": article.doi,
+      "DC.Description": article.abstract,
+      "DC.Subject": article.keywords.join("; "),
+      "DC.Type": "Text",
+      "DC.Format": "text/html",
+      "DC.Language": "en",
+      "DC.Rights": `Copyright ${publishedDate.getFullYear()} ${siteConfig.publisher}`,
+      
+      // Additional academic metadata
+      "prism.publicationName": "Didee Publications International Journal",
+      "prism.issn": siteConfig.issn,
+      "prism.volume": article.volume,
+      "prism.number": article.issue,
+      "prism.startingPage": article.pages.split("-")[0],
+      "prism.endingPage": article.pages.split("-")[1] || article.pages.split("-")[0],
+      "prism.publicationDate": article.publishedDate,
+      "prism.doi": article.doi,
     }
   };
 }
 
 export default function ArticlePage({ params }: ArticleProps) {
   // Real article data based on slug
-  const getArticleData = (slug: string) => {
+  const getArticleData = (slug: string): ArticleData => {
     const articles: Record<string, any> = {
       'psychosocial-factors-mental-health': {
         title: "Psychosocial Factors as Determinants of Anti-Social Behaviour Among Emerging Adults During COVID-19 in Nigeria",
