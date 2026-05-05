@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function InfluenceSchoolLocationsArticle() {
   const article = {
     title: "Influence of School Location on the Effectiveness of Multimedia Instruction in Christian Religious Studies in Edo State, Nigeria",
-    authors: [{ name: "Alexandre Onyekachi Ugwu", affiliation: "", email: "" }],
+    authors: [{ name: "Alexander Onyekachi Ugwu", affiliation: "", email: "" }],
     abstract: "This study investigated the influence of school location on the effectiveness of multimedia instruction in the teaching and learning of Christian Religious Studies (CRS) among Senior Secondary School II students in Edo State, Nigeria. Employing a quasi-experimental, pretest–posttest non-equivalent control group design, 156 students were purposively selected from urban and rural secondary schools. Data were collected using the Christian Religious Studies Achievement Test (CRSAT) and the Christian Religious Studies Interest Scale (CRSIS) with reliability coefficients of 0.88 and 0.89 respectively. Mean and standard deviation were used for descriptive analysis, while two-way ANOVA tested hypotheses at the 0.05 level of significance. Findings indicated that multimedia instruction significantly enhanced students' achievement and interest in CRS, but school location did not significantly moderate these effects. The study concludes that multimedia instructional strategies are effective irrespective of urban or rural school contexts and recommends increased provision of multimedia resources and teacher training across schools.",
     publishedDate: 'March 1, 2026',
     volume: "1", issue: "4", pages: "161-175",
