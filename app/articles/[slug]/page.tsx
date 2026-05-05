@@ -132,7 +132,7 @@ function getArticleData(slug: string): ArticleData {
     },
     'influence-of-school-locations': {
       title: "Influence of School Location on the Effectiveness of Multimedia Instruction in Christian Religious Studies in Edo State, Nigeria",
-      authors: [{ name: "Alexandre Onyekachi Ugwu", affiliation: "" }],
+      authors: [{ name: "Alexander Onyekachi Ugwu", affiliation: "" }],
       abstract: "Analysis of how school location affects multimedia instruction effectiveness in religious studies.",
       doi: "10.12345/didee.2024.012",
       publishedDate: "January 1, 2024",
