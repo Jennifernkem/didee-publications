@@ -27,6 +27,18 @@ export default function ArticlesPage() {
       {
         id: 'psychological-factors-affecting-students-wellbeing',
         title: 'Psychological Factors Affecting Wellbeing of Students Living with Sickle Cell Anemia in Senior Secondary School in Enugu State'
+      },
+      {
+        id: 'impact-of-counselling',
+        title: 'Impact of Counselling Interventions on Youth Socio-Economic Development in Abia State'
+      },
+      {
+        id: 'impact-of-emotional-intelligence',
+        title: 'Impact of Emotional Intelligence and Social Media on Mental Health of Students in Faculty of Education, Alex Ekwueme Federal University'
+      },
+      {
+        id: 'impact-of-social-media-on-mental-health',
+        title: 'Impact of Emotional Intelligence and Social Media on Mental Health of Students (Vol. 1, Issue 4, pp. 521-537)'
       }
     ],
     "Education": [
@@ -93,6 +105,42 @@ export default function ArticlesPage() {
       {
         id: 'utilization-of-sports-facilities',
         title: 'Utilization of Sports Facilities in Secondary Schools in Enugu State, Nigeria'
+      },
+      {
+        id: 'ai-powered-learning-in-business-education',
+        title: 'AI-Powered Learning in Business Education: Personalization, Ethics, and Curriculum Innovation'
+      },
+      {
+        id: 'availability-and-utilization-of-digital-tools',
+        title: 'Availability and Utilization of Digital Tools for Remote English Language Teaching in Secondary Schools in Enugu State'
+      },
+      {
+        id: 'career-guidance-strategies',
+        title: "Career Guidance Strategies for Increasing Students' Choice of Vocational and Technical Education Subjects in Secondary Schools in Ebonyi State"
+      },
+      {
+        id: 'detection-of-brain-bias-in-mathematics',
+        title: 'Detection of Item Bias in Mathematics Multiple Choice Test Items of West African Examination Council in Enugu State using Differential Item Functioning Technique'
+      },
+      {
+        id: 'digital-citizenship',
+        title: "Digital Citizenship and Students' Online Behaviour and Mental Health in Secondary Schools: Implications for Guidance and Counselling in Enugu Education Zone"
+      },
+      {
+        id: 'digital-storytelling-on-reading-habits',
+        title: "Teachers' Perception of the Impact of Digital Storytelling Tools on Pupil's Reading Habits and Comprehension in Primary Schools in Enugu State"
+      },
+      {
+        id: 'influence-of-counselling-intervention-on-youth',
+        title: 'Influence of Counselling Interventions on Youth Socio-Economic Development in Abia State, Nigeria'
+      },
+      {
+        id: 'investigating-the-role-of-entrepreneurship',
+        title: 'Investigating the role of entrepreneurship education on financial management skill development of business students'
+      },
+      {
+        id: 'teachers-perception-on-experimental-learning',
+        title: 'Teachers Perception on Extent Experiential Learning Enhances Cognitive Development of Secondary School Students in Enugu State'
       }
     ],
     "Philosophy": [
@@ -137,12 +185,34 @@ export default function ArticlesPage() {
       {
         id: 'environmental-sanitation',
         title: 'Environmental Sanitation Activities Utilized in Resolving Environmental Issues for Sustainable Community Development in South East States, Nigeria'
+      },
+      {
+        id: 'effect-of-combined',
+        title: 'Effect of Combined Application of Vermicompost Manure with Inorganic Fertilizer on Yam Productivity and Soil Properties of a Nutrient Depleted Tropical Alfisol'
       }
     ],
     "Law": [
       {
         id: 'forensic-psychology-curtis-flowers',
         title: 'Forensic Psychological Analysis of Evidentiary Failures and Jury Bias in the Curtis Flowers Case'
+      }
+    ],
+    "Health Sciences": [
+      {
+        id: 'factors-influencing-female-genital-mutilation',
+        title: 'Factors Influencing Continuation of Female Genital Mutilation among Women of Reproductive Age in Ebonyi State, Nigeria'
+      },
+      {
+        id: 'factors-to-menstrual-hygiene',
+        title: 'Factors to Menstrual Hygiene Practices Among Adolescent Female Secondary School Students in Nkanu West Local Government Area of Enugu State'
+      },
+      {
+        id: 'knowledge-and-practice-of-female-genital-mutilation',
+        title: 'Knowledge, Attitude, and Practice of Female Genital Mutilation Among Mothers and Traditional Birth Attendants in Rural Communities of Anambra State, Nigeria'
+      },
+      {
+        id: 'personalized-medicine-mgt-diabetes',
+        title: 'Personalized Medicine in the Management of Diabetes Mellitus: Pathophysiology, Diagnosis, and Emerging Therapeutic Strategies'
       }
     ]
   }
@@ -252,8 +322,8 @@ export default function ArticlesPage() {
           <h3 className="text-lg font-semibold text-gray-800 mb-2">Research Excellence</h3>
           <p className="text-sm text-gray-600 mb-4">Explore our collection of peer-reviewed articles across multiple disciplines.</p>
           <div className="text-xs text-gray-500">
-            <p><strong>Total Articles:</strong> {searchQuery ? totalArticles : 31}</p>
-            <p><strong>Domains:</strong> Psychology, Education, Philosophy, Media Studies, Theology, Agriculture, Law</p>
+            <p><strong>Total Articles:</strong> {searchQuery ? totalArticles : 47}</p>
+            <p><strong>Domains:</strong> Psychology, Education, Philosophy, Media Studies, Theology, Agriculture, Law, Health Sciences</p>
           </div>
         </div>
       </div>
