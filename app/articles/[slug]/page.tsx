@@ -470,6 +470,193 @@ function getArticleData(slug: string): ArticleData {
       keywords: ["Maternal Health", "Rural Women", "Community Education", "Enugu State"],
       pdfUrl: "/articles/corrected paper.pdf",
       domain: "Health Sciences"
+    },
+    'ai-powered-learning-in-business-education': {
+      title: "AI-Powered Learning in Business Education: Personalization, Ethics, and Curriculum Innovation",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines AI-powered learning in business education, focusing on personalization, ethics, and curriculum innovation.",
+      doi: "10.12345/didee.2024.044",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Artificial Intelligence", "Business Education", "Personalization", "Curriculum"],
+      pdfUrl: "/articles/ai-powered-learning-in-business-education.pdf",
+      domain: "Education"
+    },
+    'availability-and-utilization-of-digital-tools': {
+      title: "Availability and Utilization of Digital Tools for Remote English Language Teaching in Secondary Schools in Enugu State",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines the availability and utilization of digital tools for remote English language teaching in secondary schools in Enugu State.",
+      doi: "10.12345/didee.2024.045",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Digital Tools", "English Language Teaching", "Remote Learning", "Enugu State"],
+      pdfUrl: "/articles/availability-and-utilization-of-digital-tools.pdf",
+      domain: "Education"
+    },
+    'career-guidance-strategies': {
+      title: "Career Guidance Strategies for Increasing Students' Choice of Vocational and Technical Education Subjects in Secondary Schools in Ebonyi State",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines career guidance strategies for increasing students' choice of vocational and technical education subjects in Ebonyi State.",
+      doi: "10.12345/didee.2024.046",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Career Guidance", "Vocational Education", "Technical Education", "Ebonyi State"],
+      pdfUrl: "/articles/career-guidance-strategies.pdf",
+      domain: "Education"
+    },
+    'detection-of-brain-bias-in-mathematics': {
+      title: "Detection of Item Bias in Mathematics Multiple Choice Test Items of West African Examination Council in Enugu State using Differential Item Functioning Technique",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study detects item bias in mathematics multiple choice test items using differential item functioning technique in Enugu State.",
+      doi: "10.12345/didee.2024.047",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Item Bias", "Mathematics", "WAEC", "Differential Item Functioning"],
+      pdfUrl: "/articles/detection-of-brain-bias-in-mathematics.pdf",
+      domain: "Education"
+    },
+    'digital-citizenship': {
+      title: "Digital Citizenship and Students' Online Behaviour and Mental Health in Secondary Schools: Implications for Guidance and Counselling in Enugu Education Zone",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines digital citizenship and its implications for students' online behaviour and mental health in secondary schools.",
+      doi: "10.12345/didee.2024.048",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Digital Citizenship", "Online Behaviour", "Mental Health", "Guidance and Counselling"],
+      pdfUrl: "/articles/digital-citizenship.pdf",
+      domain: "Education"
+    },
+    'digital-storytelling-on-reading-habits': {
+      title: "Teachers' Perception of the Impact of Digital Storytelling Tools on Pupil's Reading Habits and Comprehension in Primary Schools in Enugu State",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines teachers' perceptions of digital storytelling tools' impact on reading habits and comprehension in primary schools.",
+      doi: "10.12345/didee.2024.049",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Digital Storytelling", "Reading Habits", "Primary Schools", "Enugu State"],
+      pdfUrl: "/articles/digital-storytelling-on-reading-habits.pdf",
+      domain: "Education"
+    },
+    'effect-of-combined': {
+      title: "Effect of Combined Application of Vermicompost Manure with Inorganic Fertilizer on Yam Productivity and Soil Properties of a Nutrient Depleted Tropical Alfisol",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines the effect of combined vermicompost manure and inorganic fertilizer application on yam productivity and soil properties.",
+      doi: "10.12345/didee.2024.050",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Vermicompost", "Inorganic Fertilizer", "Yam Productivity", "Soil Properties"],
+      pdfUrl: "/articles/effect-of-combined.pdf",
+      domain: "Agriculture"
+    },
+    'impact-of-counselling': {
+      title: "Impact of Counselling Interventions on Youth Socio-Economic Development in Abia State",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines the impact of counselling interventions on youth socio-economic development in Abia State.",
+      doi: "10.12345/didee.2024.051",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Counselling", "Youth Development", "Socio-Economic", "Abia State"],
+      pdfUrl: "/articles/impact-of-counselling.pdf",
+      domain: "Psychology"
+    },
+    'impact-of-emotional-intelligence': {
+      title: "Impact of Emotional Intelligence and Social Media on Mental Health of Students in Faculty of Education, Alex Ekwueme Federal University",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines the impact of emotional intelligence and social media on mental health of students in Alex Ekwueme Federal University.",
+      doi: "10.12345/didee.2024.052",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Emotional Intelligence", "Social Media", "Mental Health", "University Students"],
+      pdfUrl: "/articles/impact-of-emotional-intelligence.pdf",
+      domain: "Psychology"
+    },
+    'impact-of-social-media-on-mental-health': {
+      title: "Impact of Emotional Intelligence and Social Media on Mental Health of Students (Vol. 1, Issue 4, pp. 521-537)",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines the impact of emotional intelligence and social media on mental health of students.",
+      doi: "10.12345/didee.2024.053",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "4", pages: "521-537",
+      keywords: ["Emotional Intelligence", "Social Media", "Mental Health", "Students"],
+      pdfUrl: "/articles/impact-of-social-media-on-mental-health.pdf",
+      domain: "Psychology"
+    },
+    'influence-of-counselling-intervention-on-youth': {
+      title: "Influence of Counselling Interventions on Youth Socio-Economic Development in Abia State, Nigeria",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines the influence of counselling interventions on youth socio-economic development in Abia State, Nigeria.",
+      doi: "10.12345/didee.2024.054",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Counselling", "Youth", "Socio-Economic Development", "Abia State"],
+      pdfUrl: "/articles/influence-of-counselling-intervention-on-youth.pdf",
+      domain: "Education"
+    },
+    'investigating-the-role-of-entrepreneurship': {
+      title: "Investigating the role of entrepreneurship education on financial management skill development of business students",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study investigates the role of entrepreneurship education on financial management skill development among business students.",
+      doi: "10.12345/didee.2024.055",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Entrepreneurship Education", "Financial Management", "Business Students", "Skill Development"],
+      pdfUrl: "/articles/investigating-the-role-of-entrepreneurship.pdf",
+      domain: "Education"
+    },
+    'knowledge-and-practice-of-female-genital-mutilation': {
+      title: "Knowledge, Attitude, and Practice of Female Genital Mutilation Among Mothers and Traditional Birth Attendants in Rural Communities of Anambra State, Nigeria",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines knowledge, attitude, and practice of female genital mutilation among mothers and traditional birth attendants in Anambra State.",
+      doi: "10.12345/didee.2024.056",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Female Genital Mutilation", "Knowledge", "Attitude", "Anambra State"],
+      pdfUrl: "/articles/knowledge-and-practice-of-female-genital-mutilation.pdf",
+      domain: "Health Sciences"
+    },
+    'factors-influencing-female-genital-mutilation': {
+      title: "Factors Influencing Continuation of Female Genital Mutilation among Women of Reproductive Age in Ebonyi State, Nigeria",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines factors influencing the continuation of female genital mutilation among women of reproductive age in Ebonyi State.",
+      doi: "10.12345/didee.2024.057",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Female Genital Mutilation", "Reproductive Age", "Ebonyi State", "Health"],
+      pdfUrl: "/articles/factors-influencing-female-genital-mutilation.pdf",
+      domain: "Health Sciences"
+    },
+    'factors-to-menstrual-hygiene': {
+      title: "Factors to Menstrual Hygiene Practices Among Adolescent Female Secondary School Students in Nkanu West Local Government Area of Enugu State",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines factors influencing menstrual hygiene practices among adolescent female secondary school students in Enugu State.",
+      doi: "10.12345/didee.2024.058",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Menstrual Hygiene", "Adolescent Girls", "Secondary Schools", "Enugu State"],
+      pdfUrl: "/articles/factors-to-menstrual-hygiene.pdf",
+      domain: "Health Sciences"
+    },
+    'personalized-medicine-mgt-diabetes': {
+      title: "Personalized Medicine in the Management of Diabetes Mellitus: Pathophysiology, Diagnosis, and Emerging Therapeutic Strategies",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines personalized medicine approaches in the management of diabetes mellitus, including pathophysiology, diagnosis, and emerging therapeutic strategies.",
+      doi: "10.12345/didee.2024.059",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Personalized Medicine", "Diabetes Mellitus", "Pathophysiology", "Therapeutic Strategies"],
+      pdfUrl: "/articles/personalized-medicine-mgt-diabetes.pdf",
+      domain: "Health Sciences"
+    },
+    'teachers-perception-on-experimental-learning': {
+      title: "Teachers Perception on Extent Experiential Learning Enhances Cognitive Development of Secondary School Students in Enugu State",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines teachers' perceptions of how experiential learning enhances cognitive development of secondary school students in Enugu State.",
+      doi: "10.12345/didee.2024.060",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Experiential Learning", "Cognitive Development", "Secondary Schools", "Enugu State"],
+      pdfUrl: "/articles/teachers-perception-on-experimental-learning.pdf",
+      domain: "Education"
     }
   };
 
@@ -525,7 +712,24 @@ export function generateStaticParams() {
     { slug: 'delta-journal' },
     { slug: 'corrected paper' },
     { slug: 'doc-paper' },
-    { slug: 'perception-of-female-genital-mutilation' }
+    { slug: 'perception-of-female-genital-mutilation' },
+    { slug: 'ai-powered-learning-in-business-education' },
+    { slug: 'availability-and-utilization-of-digital-tools' },
+    { slug: 'career-guidance-strategies' },
+    { slug: 'detection-of-brain-bias-in-mathematics' },
+    { slug: 'digital-citizenship' },
+    { slug: 'digital-storytelling-on-reading-habits' },
+    { slug: 'effect-of-combined' },
+    { slug: 'impact-of-counselling' },
+    { slug: 'impact-of-emotional-intelligence' },
+    { slug: 'impact-of-social-media-on-mental-health' },
+    { slug: 'influence-of-counselling-intervention-on-youth' },
+    { slug: 'investigating-the-role-of-entrepreneurship' },
+    { slug: 'knowledge-and-practice-of-female-genital-mutilation' },
+    { slug: 'factors-influencing-female-genital-mutilation' },
+    { slug: 'factors-to-menstrual-hygiene' },
+    { slug: 'personalized-medicine-mgt-diabetes' },
+    { slug: 'teachers-perception-on-experimental-learning' }
   ];
 }
 
