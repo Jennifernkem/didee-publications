@@ -39,6 +39,18 @@ export default function ArticlesPage() {
       {
         id: 'impact-of-social-media-on-mental-health',
         title: 'Impact of Emotional Intelligence and Social Media on Mental Health of Students (Vol. 1, Issue 4, pp. 521-537)'
+      },
+      {
+        id: 'impact-of-ai-on-mentalhealth',
+        title: 'Impact of Artificial Intelligence on Mental Health: Opportunities, Risks, and Ethical Considerations'
+      },
+      {
+        id: 'influence-of-parental-seperation',
+        title: 'Influence of Parental Separation on the Psychological Well-Being of Secondary School Students'
+      },
+      {
+        id: 'delta-journal',
+        title: 'Impact of Psychological Counselling on the Economic Survival of Families in Isi-Uzo LGA of Enugu State: A 21st Century Approach'
       }
     ],
     "Education": [
@@ -141,6 +153,26 @@ export default function ArticlesPage() {
       {
         id: 'teachers-perception-on-experimental-learning',
         title: 'Teachers Perception on Extent Experiential Learning Enhances Cognitive Development of Secondary School Students in Enugu State'
+      },
+      {
+        id: 'e-assessments-applications',
+        title: 'E-Assessments Applications in Teaching and Learning in Nigerian Universities'
+      },
+      {
+        id: 'enhancing-the-teaching-of-mechanical-engineering',
+        title: 'Enhancing the Teaching of Mechanical Engineering Drawing Using Augmented Reality in Technical Colleges in Enugu State'
+      },
+      {
+        id: 'influence-of-school-infrastructure',
+        title: 'Influence of School Infrastructure on Academic Performance of Secondary School Students in Enugu State'
+      },
+      {
+        id: 'areji-journal',
+        title: 'Computer Competencies Required for E-Examinations by Students of National Open University of Nigeria in Enugu State Study Centres'
+      },
+      {
+        id: 'main-manuscript',
+        title: 'Assessment of Effectiveness of Online Vendor Platforms in Promoting Micro-Business Performance of Technology and Vocational Education Students in Universities in Ebonyi State'
       }
     ],
     "Philosophy": [
@@ -213,6 +245,20 @@ export default function ArticlesPage() {
       {
         id: 'personalized-medicine-mgt-diabetes',
         title: 'Personalized Medicine in the Management of Diabetes Mellitus: Pathophysiology, Diagnosis, and Emerging Therapeutic Strategies'
+      },
+      {
+        id: 'perception-of-female-genital-mutilation',
+        title: 'Perception of Female Genital Mutilation Among Women of Reproductive Age in Ebonyi State, Nigeria'
+      },
+      {
+        id: 'corrected paper',
+        title: 'Improving the Maternal Health of Rural Women Through Community Education Programmes in Enugu State, Nigeria'
+      }
+    ],
+    "Environment": [
+      {
+        id: 'doc-paper',
+        title: 'Waste Management Activities Utilized in Resolving Environmental Issues for Sustainable Community Development in South East States, Nigeria'
       }
     ]
   }
@@ -322,7 +368,7 @@ export default function ArticlesPage() {
           <h3 className="text-lg font-semibold text-gray-800 mb-2">Research Excellence</h3>
           <p className="text-sm text-gray-600 mb-4">Explore our collection of peer-reviewed articles across multiple disciplines.</p>
           <div className="text-xs text-gray-500">
-            <p><strong>Total Articles:</strong> {searchQuery ? totalArticles : 47}</p>
+            <p><strong>Total Articles:</strong> {searchQuery ? totalArticles : 58}</p>
             <p><strong>Domains:</strong> Psychology, Education, Philosophy, Media Studies, Theology, Agriculture, Law, Health Sciences</p>
           </div>
         </div>

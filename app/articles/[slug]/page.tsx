@@ -162,6 +162,127 @@ function getArticleData(slug: string): ArticleData {
       keywords: ["Peer Mentoring", "Academic Performance", "Counselling", "Secondary Schools"],
       pdfUrl: "/articles/counsellors-perception-of-peer-mentoring.pdf",
       domain: "Education"
+    },
+    'e-assessments-applications': {
+      title: "E-Assessments Applications in Teaching and Learning in Nigerian Universities",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines the application of e-assessment tools in teaching and learning in Nigerian universities.",
+      doi: "10.12345/didee.2024.015",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["E-Assessment", "Teaching", "Learning", "Nigerian Universities"],
+      pdfUrl: "/articles/e-assessments-applications.pdf",
+      domain: "Education"
+    },
+    'enhancing-the-teaching-of-mechanical-engineering': {
+      title: "Enhancing the Teaching of Mechanical Engineering Drawing Using Augmented Reality in Technical Colleges in Enugu State",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study investigates the use of augmented reality to enhance the teaching of mechanical engineering drawing in technical colleges.",
+      doi: "10.12345/didee.2024.016",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Augmented Reality", "Mechanical Engineering", "Technical Education", "Enugu State"],
+      pdfUrl: "/articles/enhancing-the-teaching-of-mechanical-engineering.pdf",
+      domain: "Education"
+    },
+    'influence-of-school-infrastructure': {
+      title: "Influence of School Infrastructure on Academic Performance of Secondary School Students in Enugu State",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines how school infrastructure affects the academic performance of secondary school students in Enugu State.",
+      doi: "10.12345/didee.2024.017",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["School Infrastructure", "Academic Performance", "Secondary Schools", "Enugu State"],
+      pdfUrl: "/articles/influence-of-school-infrastructure.pdf",
+      domain: "Education"
+    },
+    'areji-journal': {
+      title: "Computer Competencies Required for E-Examinations by Students of National Open University of Nigeria in Enugu State Study Centres",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study identifies the computer competencies required for e-examinations by students of the National Open University of Nigeria in Enugu State study centres.",
+      doi: "10.12345/didee.2024.018",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Computer Competencies", "E-Examinations", "NOUN", "Enugu State"],
+      pdfUrl: "/articles/areji-journal.pdf",
+      domain: "Education"
+    },
+    'main-manuscript': {
+      title: "Assessment of Effectiveness of Online Vendor Platforms in Promoting Micro-Business Performance of Technology and Vocational Education Students in Universities in Ebonyi State",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study assesses the effectiveness of online vendor platforms in promoting micro-business performance among technology and vocational education students in Ebonyi State universities.",
+      doi: "10.12345/didee.2024.019",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Online Vendor Platforms", "Micro-Business", "Vocational Education", "Ebonyi State"],
+      pdfUrl: "/articles/main-manuscript.pdf",
+      domain: "Education"
+    },
+    'impact-of-ai-on-mentalhealth': {
+      title: "Impact of Artificial Intelligence on Mental Health: Opportunities, Risks, and Ethical Considerations",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study explores the impact of artificial intelligence on mental health, examining opportunities, risks, and ethical considerations.",
+      doi: "10.12345/didee.2024.020",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Artificial Intelligence", "Mental Health", "Ethics", "Technology"],
+      pdfUrl: "/articles/impact-of-ai-on-mentalhealth.pdf",
+      domain: "Psychology"
+    },
+    'influence-of-parental-seperation': {
+      title: "Influence of Parental Separation on the Psychological Well-Being of Secondary School Students",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines how parental separation influences the psychological well-being of secondary school students.",
+      doi: "10.12345/didee.2024.021",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Parental Separation", "Psychological Well-Being", "Secondary School", "Students"],
+      pdfUrl: "/articles/influence-of-parental-seperation.pdf",
+      domain: "Psychology"
+    },
+    'delta-journal': {
+      title: "Impact of Psychological Counselling on the Economic Survival of Families in Isi-Uzo LGA of Enugu State: A 21st Century Approach",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study investigates the impact of psychological counselling on the economic survival of families in Isi-Uzo LGA of Enugu State.",
+      doi: "10.12345/didee.2024.022",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Psychological Counselling", "Economic Survival", "Families", "Enugu State"],
+      pdfUrl: "/articles/delta-journal.pdf",
+      domain: "Psychology"
+    },
+    'corrected paper': {
+      title: "Improving the Maternal Health of Rural Women Through Community Education Programmes in Enugu State, Nigeria",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines how community education programmes can improve the maternal health of rural women in Enugu State, Nigeria.",
+      doi: "10.12345/didee.2024.023",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Maternal Health", "Rural Women", "Community Education", "Enugu State"],
+      pdfUrl: "/articles/corrected paper.pdf",
+      domain: "Health Sciences"
+    },
+    'doc-paper': {
+      title: "Waste Management Activities Utilized in Resolving Environmental Issues for Sustainable Community Development in South East States, Nigeria",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines waste management activities used to resolve environmental issues for sustainable community development in South East Nigeria.",
+      doi: "10.12345/didee.2024.024",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Waste Management", "Environmental Issues", "Sustainable Development", "South East Nigeria"],
+      pdfUrl: "/articles/doc-paper.pdf",
+      domain: "Environment"
+    },
+    'perception-of-female-genital-mutilation': {
+      title: "Perception of Female Genital Mutilation Among Women of Reproductive Age in Ebonyi State, Nigeria",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines perceptions of female genital mutilation among women of reproductive age in Ebonyi State, Nigeria.",
+      doi: "10.12345/didee.2024.025",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Female Genital Mutilation", "Perception", "Reproductive Health", "Ebonyi State"],
+      pdfUrl: "/articles/perception-of-female-genital-mutilation.pdf",
+      domain: "Health Sciences"
     }
   };
 
@@ -206,7 +327,18 @@ export function generateStaticParams() {
     { slug: 'psychological-factors-affecting-students-wellbeing' },
     { slug: 'utilization-of-active-listening-skills' },
     { slug: 'utilization-of-online-learning-platforms' },
-    { slug: 'utilization-of-sports-facilities' }
+    { slug: 'utilization-of-sports-facilities' },
+    { slug: 'e-assessments-applications' },
+    { slug: 'enhancing-the-teaching-of-mechanical-engineering' },
+    { slug: 'influence-of-school-infrastructure' },
+    { slug: 'areji-journal' },
+    { slug: 'main-manuscript' },
+    { slug: 'impact-of-ai-on-mentalhealth' },
+    { slug: 'influence-of-parental-seperation' },
+    { slug: 'delta-journal' },
+    { slug: 'corrected paper' },
+    { slug: 'doc-paper' },
+    { slug: 'perception-of-female-genital-mutilation' }
   ];
 }
 
