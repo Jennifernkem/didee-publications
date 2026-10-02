@@ -145,8 +145,7 @@ export default function Home() {
       backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/images/hero-bg.jpg')",
       backgroundSize: 'cover',
       backgroundPosition: 'center center',
-      backgroundRepeat: 'no-repeat',
-      backgroundAttachment: 'fixed'
+      backgroundRepeat: 'no-repeat'
     }}>
       {/* Header */}
       <header className="bg-white border-b shadow-sm">
@@ -178,12 +177,10 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative py-12 md:py-20 bg-cover bg-center sharp-bg" style={{
-        backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1920&q=80')",
+        backgroundImage: "linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/images/hero-bg.jpg')",
         backgroundSize: 'cover',
         backgroundPosition: 'center center',
-        backgroundRepeat: 'no-repeat',
-        backgroundAttachment: 'fixed',
-        imageRendering: 'crisp-edges'
+        backgroundRepeat: 'no-repeat'
       }}>
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 md:mb-6 drop-shadow-lg">
