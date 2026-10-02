@@ -251,17 +251,6 @@ function getArticleData(slug: string): ArticleData {
       pdfUrl: "/articles/delta-journal.pdf",
       domain: "Psychology"
     },
-    'corrected paper': {
-      title: "Improving the Maternal Health of Rural Women Through Community Education Programmes in Enugu State, Nigeria",
-      authors: [{ name: "", affiliation: "" }],
-      abstract: "This study examines how community education programmes can improve the maternal health of rural women in Enugu State, Nigeria.",
-      doi: "10.12345/didee.2024.023",
-      publishedDate: "January 1, 2024",
-      volume: "1", issue: "5", pages: "",
-      keywords: ["Maternal Health", "Rural Women", "Community Education", "Enugu State"],
-      pdfUrl: "/articles/corrected paper.pdf",
-      domain: "Health Sciences"
-    },
     'doc-paper': {
       title: "Waste Management Activities Utilized in Resolving Environmental Issues for Sustainable Community Development in South East States, Nigeria",
       authors: [{ name: "", affiliation: "" }],
@@ -282,6 +271,204 @@ function getArticleData(slug: string): ArticleData {
       volume: "1", issue: "5", pages: "",
       keywords: ["Female Genital Mutilation", "Perception", "Reproductive Health", "Ebonyi State"],
       pdfUrl: "/articles/perception-of-female-genital-mutilation.pdf",
+      domain: "Health Sciences"
+    },
+    'academic-motivation-personality-type': {
+      title: "Academic Motivation, Personality Type, and Academic Self-Efficacy as Predictors of Library Usage Frequency among In-School Adolescents in Public Secondary Schools in Ibadan, Oyo State, Nigeria",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines academic motivation, personality type, and self-efficacy as predictors of library usage among secondary school adolescents in Ibadan.",
+      doi: "10.12345/didee.2024.026",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Academic Motivation", "Personality Type", "Self-Efficacy", "Library Usage"],
+      pdfUrl: "/articles/academic-motivation-personality-type.pdf",
+      domain: "Psychology"
+    },
+    'comparative-study-of-constraints': {
+      title: "Comparative Study of Constraints to Administrative Effectiveness of Public and Private Secondary Schools in Enugu State",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study compares constraints to administrative effectiveness in public and private secondary schools in Enugu State.",
+      doi: "10.12345/didee.2024.027",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Administrative Effectiveness", "Secondary Schools", "Public Schools", "Private Schools"],
+      pdfUrl: "/articles/comparative-study-of-constraints.pdf",
+      domain: "Education"
+    },
+    'cultural-soundscape': {
+      title: "Cultural Soundscapes: How African Music Shapes and Reflects Democratic Ideals",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study explores how African music shapes and reflects democratic ideals through cultural soundscapes.",
+      doi: "10.12345/didee.2024.028",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["African Music", "Democracy", "Cultural Soundscape", "Media Studies"],
+      pdfUrl: "/articles/cultural-soundscape.pdf",
+      domain: "Media Studies"
+    },
+    'effects-of-projected-nonprojected': {
+      title: "Comparative Study of the Effects of Projected and Non-Projected Instructional Materials on Students' Achievement in English Language in Secondary Schools in Enugu Education Zone",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study compares the effects of projected and non-projected instructional materials on English language achievement in secondary schools.",
+      doi: "10.12345/didee.2024.029",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Instructional Materials", "English Language", "Secondary Schools", "Enugu State"],
+      pdfUrl: "/articles/effects-of-projected-nonprojected.pdf",
+      domain: "Education"
+    },
+    'efficacy-of-multimedia-instruction': {
+      title: "Efficacy of Multimedia Instruction on Student Interest and Achievement in Christian Religious Studies in Edo State",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines the efficacy of multimedia instruction on student interest and achievement in Christian Religious Studies in Edo State.",
+      doi: "10.12345/didee.2024.030",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Multimedia Instruction", "Religious Studies", "Student Achievement", "Edo State"],
+      pdfUrl: "/articles/efficacy-of-multimedia-instruction.pdf",
+      domain: "Education"
+    },
+    'environmental-sanitation': {
+      title: "Environmental Sanitation Activities Utilized in Resolving Environmental Issues for Sustainable Community Development in South East States, Nigeria",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines environmental sanitation activities used to resolve environmental issues for sustainable community development in South East Nigeria.",
+      doi: "10.12345/didee.2024.031",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Environmental Sanitation", "Sustainable Development", "Community Development", "South East Nigeria"],
+      pdfUrl: "/articles/environmental-sanitation.pdf",
+      domain: "Agriculture"
+    },
+    'improved-drought-and-heat-tolerance': {
+      title: "Drought and Heat Tolerance Mechanisms in Underutilised Legume Species: A Systematic Review",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "A systematic review of drought and heat tolerance mechanisms in underutilised legume species.",
+      doi: "10.12345/didee.2024.032",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Drought Tolerance", "Heat Tolerance", "Legumes", "Agriculture"],
+      pdfUrl: "/articles/improved-drought-and-heat-tolerance.pdf",
+      domain: "Agriculture"
+    },
+    'influence-of-gender': {
+      title: "Influence of Gender on the Effectiveness of Multimedia Instruction in Christian Religious Studies in Edo State, Nigeria",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines how gender influences the effectiveness of multimedia instruction in Christian Religious Studies in Edo State.",
+      doi: "10.12345/didee.2024.033",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Gender", "Multimedia Instruction", "Religious Studies", "Edo State"],
+      pdfUrl: "/articles/influence-of-gender.pdf",
+      domain: "Education"
+    },
+    'influence-of-library-environment': {
+      title: "Influence of Library Environment, Resource Availability, and Study Duration on Students' Mental Health: The Mediating Role of Academic Stress among Polytechnic Ibadan Students",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines how library environment, resource availability, and study duration influence students' mental health among Polytechnic Ibadan students.",
+      doi: "10.12345/didee.2024.034",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Library Environment", "Mental Health", "Academic Stress", "Polytechnic Students"],
+      pdfUrl: "/articles/influence-of-library-environment.pdf",
+      domain: "Psychology"
+    },
+    'integrating-emerging-technologies': {
+      title: "Integrating Emerging Technologies into Guidance and Counselling for Sustainable Development in Public Universities in South-East, Nigeria",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines the integration of emerging technologies into guidance and counselling for sustainable development in South-East Nigerian universities.",
+      doi: "10.12345/didee.2024.035",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Emerging Technologies", "Guidance and Counselling", "Sustainable Development", "Universities"],
+      pdfUrl: "/articles/integrating-emerging-technologies.pdf",
+      domain: "Education"
+    },
+    'justice-and-rights': {
+      title: "Justice and Rights in Nozick's Libertarianism: What Prospect for Community and Nation?",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines justice and rights within Nozick's libertarian framework and its implications for community and nation.",
+      doi: "10.12345/didee.2024.036",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Justice", "Rights", "Libertarianism", "Nozick"],
+      pdfUrl: "/articles/justice-and-rights.pdf",
+      domain: "Philosophy"
+    },
+    'management-of-sports-facilities': {
+      title: "Management of Sports Facilities in Secondary Schools in Enugu State, Nigeria",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines the management of sports facilities in secondary schools in Enugu State, Nigeria.",
+      doi: "10.12345/didee.2024.037",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Sports Facilities", "Secondary Schools", "Management", "Enugu State"],
+      pdfUrl: "/articles/management-of-sports-facilities.pdf",
+      domain: "Education"
+    },
+    'principals-adoption-of-artificial-intelligence': {
+      title: "Principals Adoption of Artificial Intelligence (AI) for Human Resource Management in Secondary Schools in Enugu State",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines how school principals adopt artificial intelligence for human resource management in secondary schools in Enugu State.",
+      doi: "10.12345/didee.2024.038",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Artificial Intelligence", "Human Resource Management", "Secondary Schools", "Enugu State"],
+      pdfUrl: "/articles/principals-adoption-of-artificial-intelligence.pdf",
+      domain: "Education"
+    },
+    'psychological-factors-affecting-students-wellbeing': {
+      title: "Psychological Factors Affecting Wellbeing of Students Living with Sickle Cell Anemia in Senior Secondary School in Enugu State",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines psychological factors affecting the wellbeing of students living with sickle cell anemia in senior secondary schools in Enugu State.",
+      doi: "10.12345/didee.2024.039",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Psychological Factors", "Sickle Cell Anemia", "Student Wellbeing", "Secondary Schools"],
+      pdfUrl: "/articles/psychological-factors-affecting-students-wellbeing.pdf",
+      domain: "Psychology"
+    },
+    'utilization-of-active-listening-skills': {
+      title: "Utilization of Active Listening Skills for Enhancing Counselling Practice in Secondary Schools in Enugu State, Nigeria",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines the utilization of active listening skills for enhancing counselling practice in secondary schools in Enugu State.",
+      doi: "10.12345/didee.2024.040",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Active Listening", "Counselling", "Secondary Schools", "Enugu State"],
+      pdfUrl: "/articles/utilization-of-active-listening-skills.pdf",
+      domain: "Education"
+    },
+    'utilization-of-online-learning-platforms': {
+      title: "Utilization of Online Learning Platforms for Effective Instructional Delivery by University Business Educators in South-East, Nigeria",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines how university business educators utilize online learning platforms for effective instructional delivery in South-East Nigeria.",
+      doi: "10.12345/didee.2024.041",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Online Learning", "Business Education", "Instructional Delivery", "South-East Nigeria"],
+      pdfUrl: "/articles/utilization-of-online-learning-platforms.pdf",
+      domain: "Education"
+    },
+    'utilization-of-sports-facilities': {
+      title: "Utilization of Sports Facilities in Secondary Schools in Enugu State, Nigeria",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines the utilization of sports facilities in secondary schools in Enugu State, Nigeria.",
+      doi: "10.12345/didee.2024.042",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Sports Facilities", "Secondary Schools", "Utilization", "Enugu State"],
+      pdfUrl: "/articles/utilization-of-sports-facilities.pdf",
+      domain: "Education"
+    },
+    'corrected paper': {
+      title: "Improving the Maternal Health of Rural Women Through Community Education Programmes in Enugu State, Nigeria",
+      authors: [{ name: "", affiliation: "" }],
+      abstract: "This study examines how community education programmes can improve the maternal health of rural women in Enugu State, Nigeria.",
+      doi: "10.12345/didee.2024.043",
+      publishedDate: "January 1, 2024",
+      volume: "1", issue: "5", pages: "",
+      keywords: ["Maternal Health", "Rural Women", "Community Education", "Enugu State"],
+      pdfUrl: "/articles/corrected paper.pdf",
       domain: "Health Sciences"
     }
   };
