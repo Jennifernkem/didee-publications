@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { generateArticleStructuredData, generateBreadcrumbStructuredData, siteConfig, ArticleData } from '../../../lib/seo';
 
 interface ArticleProps {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 export const dynamicParams = false;
@@ -734,7 +734,8 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: ArticleProps): Promise<Metadata> {
-  const article = getArticleData(params.slug);
+  const { slug } = await params;
+  const article = getArticleData(slug);
   
   if (!article.title || article.title === "Article Not Found") {
     return {
@@ -789,7 +790,7 @@ export async function generateMetadata({ params }: ArticleProps): Promise<Metada
       images: ['/images/Individual-article.jpg'],
     },
     alternates: {
-      canonical: `${siteConfig.url}/articles/${params.slug}`,
+      canonical: `${siteConfig.url}/articles/${slug}`,
     },
     other: {
       // Google Scholar metadata
@@ -804,7 +805,7 @@ export async function generateMetadata({ params }: ArticleProps): Promise<Metada
       "citation_lastpage": article.pages.split("-")[1] || article.pages.split("-")[0],
       "citation_doi": article.doi,
       "citation_pdf_url": `${siteConfig.url}${article.pdfUrl}`,
-      "citation_abstract_html_url": `${siteConfig.url}/articles/${params.slug}`,
+      "citation_abstract_html_url": `${siteConfig.url}/articles/${slug}`,
       "citation_language": "en",
       "citation_keywords": article.keywords.join("; "),
       
@@ -833,13 +834,14 @@ export async function generateMetadata({ params }: ArticleProps): Promise<Metada
   };
 }
 
-export default function ArticlePage({ params }: ArticleProps) {
-  const article = getArticleData(params.slug);
+export default async function ArticlePage({ params }: ArticleProps) {
+  const { slug } = await params;
+  const article = getArticleData(slug);
 
   const breadcrumbItems = [
     { name: 'Home', url: siteConfig.url },
     { name: 'Articles', url: `${siteConfig.url}/articles` },
-    { name: article.title, url: `${siteConfig.url}/articles/${params.slug}` }
+    { name: article.title, url: `${siteConfig.url}/articles/${slug}` }
   ];
 
   return (
@@ -854,7 +856,7 @@ export default function ArticlePage({ params }: ArticleProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(generateArticleStructuredData(article, params.slug))
+          __html: JSON.stringify(generateArticleStructuredData(article, slug))
         }}
       />
       <script
