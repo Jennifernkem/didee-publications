@@ -230,15 +230,15 @@ function getArticleData(slug: string): ArticleData {
       domain: "Psychology"
     },
     'influence-of-parental-seperation': {
-      title: "Influence of Parental Separation on the Psychological Well-Being of Secondary School Students",
-      authors: [{ name: "", affiliation: "" }],
-      abstract: "This study examines how parental separation influences the psychological well-being of secondary school students.",
-      doi: "10.12345/didee.2024.021",
-      publishedDate: "January 1, 2024",
-      volume: "1", issue: "5", pages: "",
-      keywords: ["Parental Separation", "Psychological Well-Being", "Secondary School", "Students"],
+      title: "Influence of Parental Separation on the Academic Performance of Secondary School Students in Enugu Education Zone of Enugu State",
+      authors: [{ name: "Aka Chinelo Patricia", affiliation: "Department of Educational Management, Faculty of Education, Enugu State University of Science and Technology, Agbani, Enugu State, Nigeria" }],
+      abstract: "The main purpose of this study was to determine the influence of parental separation on the academic performance of students in secondary schools in Enugu Education Zone of Enugu State. Three research questions guided the study while four null hypotheses were tested at 0.05 level of significance. Descriptive survey research design was adopted for the study. The population comprised all 28,310 secondary school students in the 31 public secondary schools in Enugu Education Zone. The sample size was 565 students (209 male and 356 female). It was revealed that to a little extent parental separation influenced the cognitive and psychomotor skills of secondary school students, while to a great extent parental separation influenced the affective skills. The researcher recommended periodic seminars for parents to enlighten them on the need for good home environment and enhancement of students' academic performance.",
+      doi: "10.12345/didee.2026.021",
+      publishedDate: "September 1, 2026",
+      volume: "1", issue: "6", pages: "886-904",
+      keywords: ["Academic Performance", "Parental Separation", "Cognitive Skills", "Affective Skills", "Psychomotor Skills", "Secondary School"],
       pdfUrl: "/articles/influence-of-parental-seperation.pdf",
-      domain: "Psychology"
+      domain: "Education"
     },
     'delta-journal': {
       title: "Impact of Psychological Counselling on the Economic Survival of Families in Isi-Uzo LGA of Enugu State: A 21st Century Approach",
