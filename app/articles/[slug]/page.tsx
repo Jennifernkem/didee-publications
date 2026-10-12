@@ -460,7 +460,7 @@ function getArticleData(slug: string): ArticleData {
       pdfUrl: "/articles/utilization-of-sports-facilities.pdf",
       domain: "Education"
     },
-    'corrected paper': {
+    'corrected-paper': {
       title: "Improving the Maternal Health of Rural Women Through Community Education Programmes in Enugu State, Nigeria",
       authors: [{ name: "Adaobi Victoria Nwoye", affiliation: "Department of Educational Foundations, Enugu State University of Science and Technology" }, { name: "Ukamaka Teresa Eze", affiliation: "Department of Educational Foundations, Enugu State University of Science and Technology" }],
       abstract: "This study investigated the extent to which community education programmes improve the maternal health of rural women in Enugu State, Nigeria. The population comprised rural women of childbearing age (15-49 years), with a sample size of 400 respondents. Findings revealed that community education programmes promote poverty alleviation and literacy to a very great extent. The study concludes that community education programmes are essential for addressing the structural determinants of poor maternal health in rural areas.",
@@ -710,7 +710,7 @@ export function generateStaticParams() {
     { slug: 'impact-of-ai-on-mentalhealth' },
     { slug: 'influence-of-parental-seperation' },
     { slug: 'delta-journal' },
-    { slug: 'corrected paper' },
+    { slug: 'corrected-paper' },
     { slug: 'doc-paper' },
     { slug: 'perception-of-female-genital-mutilation' },
     { slug: 'ai-powered-learning-in-business-education' },

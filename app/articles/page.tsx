@@ -251,7 +251,7 @@ export default function ArticlesPage() {
         title: 'Perception of Female Genital Mutilation Among Women of Reproductive Age in Ebonyi State, Nigeria'
       },
       {
-        id: 'corrected paper',
+        id: 'corrected-paper',
         title: 'Improving the Maternal Health of Rural Women Through Community Education Programmes in Enugu State, Nigeria'
       }
     ],
