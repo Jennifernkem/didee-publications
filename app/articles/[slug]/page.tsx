@@ -879,7 +879,7 @@ export default async function ArticlePage({ params }: ArticleProps) {
               ))}
             </div>
             
-            <div className="bg-gray-50 p-4 rounded-lg mb-6">
+            <div className="bg-gray-50 p-4 rounded-lg mb-6 text-gray-900">
               <div className="grid md:grid-cols-2 gap-4 text-sm">
                 <div><strong>DOI:</strong> {article.doi}</div>
                 <div><strong>Published:</strong> {article.publishedDate}</div>
@@ -889,12 +889,12 @@ export default async function ArticlePage({ params }: ArticleProps) {
             </div>
             
             <div className="mb-6">
-              <h3 className="text-lg font-semibold mb-2">Abstract</h3>
+              <h3 className="text-lg font-semibold mb-2 text-gray-900">Abstract</h3>
               <p className="text-gray-700">{article.abstract}</p>
             </div>
             
             <div className="mb-6">
-              <h3 className="text-lg font-semibold mb-2">Keywords</h3>
+              <h3 className="text-lg font-semibold mb-2 text-gray-900">Keywords</h3>
               <div className="flex flex-wrap gap-2">
                 {article.keywords.map((keyword: string, index: number) => (
                   <span key={index} className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">
@@ -907,7 +907,7 @@ export default async function ArticlePage({ params }: ArticleProps) {
           
           <div className="prose max-w-none">
             <div className="bg-blue-50 p-6 rounded-lg mb-6">
-              <h3 className="text-lg font-semibold mb-2">Full Article</h3>
+              <h3 className="text-lg font-semibold mb-2 text-gray-900">Full Article</h3>
               <p className="text-gray-700 mb-4">Download the complete article as PDF:</p>
               <a 
                 href={article.pdfUrl} 
